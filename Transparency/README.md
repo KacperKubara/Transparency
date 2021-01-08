@@ -37,12 +37,13 @@ To avoid having to change your python path variable each time, use: ``` echo 'PY
 
 ### WSL2 Additional Comments on Installation from Kacper
 Run this instead:
+```
 conda create -n "maka_paper" Python=3.7
 conda activate maka_paper
 pip install -r requirements.txt
 conda install -c anaconda jupyter
-
-``` echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc```
+echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc
+```
 
 And you should be all good
 
