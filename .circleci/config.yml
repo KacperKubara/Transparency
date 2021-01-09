@@ -22,4 +22,4 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - *prepare_conda_env
+      - *prepare_build
