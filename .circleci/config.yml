@@ -18,6 +18,9 @@ prepare_build: &prepare_build
       python -m spacy download en
       conda install -c anaconda jupyter -y
       conda install -c anaconda pytest -y
+      cd Transparency
+      export PYTHONPATH=$PYTHONPATH:$(pwd)
+      cd ..
 
 run_tests: &run_tests
   run:
@@ -25,6 +28,9 @@ run_tests: &run_tests
     command: |
       source activate maka_paper
       conda env list
+      cd Transparency
+      export PYTHONPATH=$PYTHONPATH:$(pwd)
+      cd ..
       python -m pytest Transparency/tests/
 
 jobs:
