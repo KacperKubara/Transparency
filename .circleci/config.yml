@@ -34,6 +34,8 @@ jobs:
   test:
     <<: *defaults
     steps:
+      - checkout
+      - *prepare_build
       - *run_tests
 
 workflows:
