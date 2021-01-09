@@ -22,6 +22,7 @@ run_tests: &run_tests
   run:
     name: "Runs tests with Pytest"
     command: |
+      source activate maka_paper
       python -m pytest Transparency/tests/
 
 jobs:
