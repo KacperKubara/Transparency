@@ -1,11 +1,11 @@
-version: 2
+version: 2.1
 
 defaults: &defaults
   docker:
     - image: continuumio/miniconda3
   working_directory: ~/project
 
-prepare_conda: &prepare_build
+prepare_build: &prepare_build
   run:
     name: Prepares the project build
     command: |
@@ -19,6 +19,12 @@ prepare_conda: &prepare_build
       conda install -c anaconda jupyter -y
       conda install -c anaconda pytest -y
 
+run_tests: &run_tests
+  run:
+    name: "Runs tests with Pytest"
+    command: |
+      pytest Transparency/tests/
+
 jobs:
   build:
     <<: *defaults
@@ -27,8 +33,7 @@ jobs:
       - *prepare_build
   test:
     steps:
-      command: |
-        pytest Transparency/tests/
+      - *run_tests
 
 workflows:
   version: 2
