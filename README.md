@@ -37,18 +37,6 @@ Add your present working directory, in which the Transparency folder is present,
 
 To avoid having to change your python path variable each time, use: ``` echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc```
 
-### WSL2 Additional Comments on Installation from Kacper
-Run this instead:
-```
-conda create -n "maka_paper" Python=3.7
-conda activate maka_paper
-pip install -r requirements.txt
-conda install -c anaconda jupyter
-echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc
-```
-
-And you should be all good
-
 ### Requirements 
 
 ```
@@ -75,6 +63,19 @@ cd Transparency
 pip install -r requirements.txt
 python -m spacy download en
 ```
+### WSL2 Additional Comments on Installation from Kacper
+Run this instead of the lines above:
+```
+conda create -n "maka_paper" Python=3.7
+conda activate maka_paper
+pip install -r requirements.txt
+python -m spacy download en
+conda install -c anaconda jupyter
+conda install -c anaconda pytest
+echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc
+```
+
+And you should be all good
 
 ## Preparing the Datasets 
 
