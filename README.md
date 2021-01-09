@@ -76,8 +76,9 @@ conda install -c anaconda pytest
 ### GOLD COMMENT
 To set the PYTHONPATH:
 ```
-cd Transparency/Transparency
+cd Transparency
 echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc
+source ~/.bashrc
 reset
 ```
 You can check if the PYTHONPATH is set correctly by typing:
@@ -87,7 +88,7 @@ echo $PYTHONPATH
 
 In my case, it outputs:
 ```
-:/home/kacpe/repos/Transparency/Transparency
+:/home/kacpe/repos/Transparency
 ```
 
 ## Preparing the Datasets 
