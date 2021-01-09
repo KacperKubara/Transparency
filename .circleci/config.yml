@@ -16,4 +16,5 @@ jobs:
   build: 
     <<: *defaults
     steps:
+      - checkout
       - *prepare_conda
