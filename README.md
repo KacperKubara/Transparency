@@ -1,4 +1,4 @@
-[![KacperKubara](https://circleci.com/gh/KacperKubara/transparent_explainable_attention.svg?style=shield&circle-token=a5666e678dfb36927f320d07b004fd9ee6ae0a08)](https://app.circleci.com/pipelines/github/KacperKubara/transparent_explainable_attention)
+[![KacperKubara](https://circleci.com/gh/KacperKubara/Transparency.svg?style=shield&circle-token=a5666e678dfb36927f320d07b004fd9ee6ae0a08)](https://app.circleci.com/pipelines/github/KacperKubara/Transparency)
 
 # Towards Transparent and Explainable Attention Models
 
