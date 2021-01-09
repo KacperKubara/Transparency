@@ -32,6 +32,7 @@ jobs:
       - checkout
       - *prepare_build
   test:
+    <<: *defaults
     steps:
       - *run_tests
 
