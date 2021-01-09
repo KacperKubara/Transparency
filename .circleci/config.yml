@@ -1,21 +1,19 @@
-version: 2.1
+version: 2
 
-orbs:
-  python: circleci/python@0.2.1
+defaults: &defaults
+  docker:
+    - image: continuumio/miniconda3
+  working_directory: ~/project
+
+prepare_conda: &prepare_conda
+  run:
+    name: Prepare and activate the conda environment
+    command: |
+    conda create -n "maka_paper" python==3.7.9
+    conda activate maka_paper
 
 jobs:
-  build-and-test:
-    executor: python/default
+  build: 
+    <<: *defaults
     steps:
-      - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
-      - run:
-          command: ./manage.py test
-          name: Test
-
-workflows:
-  main:
-    jobs:
-      - build-and-test
+      - *prepare_conda
