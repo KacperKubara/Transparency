@@ -9,11 +9,11 @@ prepare_conda: &prepare_conda
   run:
     name: Prepare and activate the conda environment
     command: |
-    conda create -n "maka_paper" python==3.7.9
-    conda activate maka_paper
+      conda create -n "maka_paper" python==3.7.9
+      conda activate maka_paper
 
 jobs:
-  build: 
+  build:
     <<: *defaults
     steps:
       - checkout
