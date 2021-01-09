@@ -72,10 +72,23 @@ pip install -r requirements.txt
 python -m spacy download en
 conda install -c anaconda jupyter
 conda install -c anaconda pytest
+```
+### GOLD COMMENT
+To set the PYTHONPATH:
+```
+cd Transparency/Transparency
 echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc
+reset
+```
+You can check if the PYTHONPATH is set correctly by typing:
+```
+echo $PYTHONPATH
 ```
 
-And you should be all good
+In my case, it outputs:
+```
+:/home/kacpe/repos/Transparency/Transparency
+```
 
 ## Preparing the Datasets 
 
