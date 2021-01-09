@@ -3,9 +3,13 @@
 
 # In[1]:
 
+import os 
 
-get_ipython().system('wget https://s3.amazonaws.com/text-datasets/imdb_full.pkl')
-get_ipython().system('wget https://s3.amazonaws.com/text-datasets/imdb_word_index.json')
+if os.path.exists("imdb_full.pkl"):
+    print("[INFO]: Datasets already downloaded ... ")
+else:
+    get_ipython().system('wget https://s3.amazonaws.com/text-datasets/imdb_full.pkl')
+    get_ipython().system('wget https://s3.amazonaws.com/text-datasets/imdb_word_index.json')
 
 
 # In[19]:
