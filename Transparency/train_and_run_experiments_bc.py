@@ -3,7 +3,7 @@ parser = argparse.ArgumentParser(description='Run experiments on a dataset')
 parser.add_argument('--dataset', type=str, required=True)
 parser.add_argument("--data_dir", type=str, required=True)
 parser.add_argument("--output_dir", type=str)
-parser.add_argument('--encoder', type=str, choices=['vanilla_lstm', 'ortho_lstm', 'diversity_lstm'], required=True)
+parser.add_argument('--encoder', type=str, choices=['vanilla_lstm', 'ortho_lstm', 'diversity_lstm', "transformer"], required=True)
 parser.add_argument("--diversity",type=float,default=0)
 
 args, extras = parser.parse_known_args()
