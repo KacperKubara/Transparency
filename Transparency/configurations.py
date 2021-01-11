@@ -65,11 +65,37 @@ def generate_lstm_config(dataset) :
 
     return config
 
+def generate_diversity_transformer_config(dataset) :
+    
+    config = generate_basic_config(dataset, exp_name='lstm+tanh')
+    
+    hidden_size = dataset.hidden_size if hasattr(dataset, 'hidden_size') else 128
+    sparsity_lambda = dataset.sparsity_lambda if hasattr(dataset, 'sparsity_lambda') else 0.5
+
+
+    config['model']['encoder'].update({'type': 'transformer', 'hidden_size' : hidden_size})
+    config['model']['generator'].update({'hidden_size' : 64,'sparsity_lambda':sparsity_lambda})
+
+    diversity_weight = dataset.diversity
+    config['training']['diversity_weight'] = diversity_weight
+    config['training']['context_weight'] = 0
+    config['training']['exp_dirname'] += "__diversity_weight_" + str(diversity_weight)
+    return config
+
+def generate_transformer_config(dataset) :
+    
+    ##############
+
+    # TO-DO
+
+    #############
+    return config
 
 configurations = {
     'vanilla_lstm': generate_lstm_config,
     'diversity_lstm': generate_diversity_lstm_config,
-    'ortho_lstm': generate_orthogonal_lstm_config
+    'ortho_lstm': generate_orthogonal_lstm_config,
+    "transformer": generate_diversity_transformer_config
 }
 
 def wrap_config_for_qa(func) :
