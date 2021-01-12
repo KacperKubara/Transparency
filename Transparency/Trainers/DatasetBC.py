@@ -75,10 +75,12 @@ class Dataset() :
             'roc_auc' : 'roc_auc', 
             'pr_auc' : 'pr_auc'
         }
-
+        # batch size seems to be harcoded here
         self.bsize = 32
         if args is not None and hasattr(args, 'output_dir') :
             self.basepath = args.output_dir
+
+        self.n_iter = args.n_iter
 
     def display_stats(self) :
         stats = {}
