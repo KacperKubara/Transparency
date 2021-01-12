@@ -5,7 +5,7 @@
 #SBATCH --job-name=FirstRun
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=3
-#SBATCH --time=05:00:00
+#SBATCH --time=00:30:00
 #SBATCH --mem=32000M
 
 module purge
@@ -26,7 +26,7 @@ source activate fact_paper
 export PYTHONPATH=$HOME/Transparency
 
 # Run the script and train the model
-dataset_name=imdb
+dataset_name=20News_sports
 model_name=diversity_lstm
 output_path=./experiments
 diversity_weight=0.5
