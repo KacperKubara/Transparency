@@ -4,7 +4,8 @@ experiments
 *.pkl
 *.p 
 __pycache__
-
+# Dataset
+*cls-acl10-processed*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
