@@ -3,6 +3,7 @@ experiments
 *.pyc
 *.pkl
 *.p 
+*.csv
 __pycache__
 # Dataset
 *cls-acl10-processed*

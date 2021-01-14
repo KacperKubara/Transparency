@@ -2,7 +2,9 @@ import requests
 import tarfile 
 import os
 import json
-
+import pandas
+import subprocess
+import string
 
 def download_zips(url):
     if isinstance(url, dict):
@@ -66,15 +68,13 @@ def preprocess(lines, lang):
         # Preprocessing depending on the lang
         if lang == "en":
             with open("contraction_map.json") as f:
-                contraction_map = json.loads(f)
+                contraction_map = json.load(f)
         else:
             contraction_map=None
         new_line = tokenize_and_stem(new_line, lang, contraction_map)
         
         labels.append(target_to_int[target])
         X.append(new_line)
-
-        print(new_line)
  
     assert len(labels) == len(X)
     return X, labels
@@ -84,9 +84,11 @@ def tokenize_and_stem(line, lang, contraction_map=None):
     for word in line:
         # 1) Map digit tokens to <num>
         word = "<num>" if word.isdigit() else word
-        
+        if word in string.punctuation:
+            continue
+
         # 2) Lower case the words
-        word = word.lowercase()
+        word = word.lower()
         
         # 3) (en only) normalize contactions, e.g., don't -> do not
         if lang == "en":
@@ -95,11 +97,13 @@ def tokenize_and_stem(line, lang, contraction_map=None):
         
         # 4) Tokenize the words (NLTK for de, en, fr, MECAB for jp)
         if lang != "jp":
-            raise NotImplementedError
+            pass
         else:
-            raise NotImplementedError
+            pass
     
         new_line.append(word)
+
+
     return new_line
 
 if __name__ == "__main__":
@@ -124,4 +128,21 @@ if __name__ == "__main__":
     for lang in language_dirs:
         dir_path = "./cls-acl10-processed/" + lang
         labels, X = get_preprocessed_text(dir_path, lang)
-        
+        length = len(labels)
+        df = pandas.DataFrame({'text': X, 
+                               'label': labels, 
+                               'exp_split': ['train' for i in range(length)]
+                               })
+        df = df.sample(frac=1).reset_index(drop=True)
+        ix_1 = length//2
+        ix_2 = ix_1 + length//4
+        df.loc["exp_split", ix_1: ix_2] = "test"
+        df.loc["exp_split", ix_2:] = "dev"
+        df.to_csv('amazon_dataset_' + lang + '.csv', index=False)
+    print("All data has been preprocessed and saved")
+
+    for lang in language_dirs:
+        print(f"Calling External script")
+        dataset_name = '--data_file amazon_dataset_' + lang + '.csv'
+        vec_name = '--output_file amazon_dataset_' + lang + '.p'
+        get_ipython().run_line_magic('run', f'"../preprocess_data_BC.py" {dataset_name} {vec_name} --word_vectors_type None --min_df 35')
