@@ -72,7 +72,7 @@ def preprocess(lines, lang):
         else:
             contraction_map=None
         new_line = tokenize_and_stem(new_line, lang, contraction_map)
-        
+        new_line = " ".join(new_line)
         labels.append(target_to_int[target])
         X.append(new_line)
  
@@ -127,18 +127,20 @@ if __name__ == "__main__":
     print("Preprocessing the files")
     for lang in language_dirs:
         dir_path = "./cls-acl10-processed/" + lang
-        labels, X = get_preprocessed_text(dir_path, lang)
+        X, labels = get_preprocessed_text(dir_path, lang)
         length = len(labels)
+        ix_1 = length//2
+        ix_2 = length//4
+        keys = ['train']*ix_1 + ['test']*ix_2 + ['dev'] * (length - ix_1 - ix_2)
+        print(keys)
         df = pandas.DataFrame({'text': X, 
                                'label': labels, 
-                               'exp_split': ['train' for i in range(length)]
+                               'exp_split': keys
                                })
+        
         df = df.sample(frac=1).reset_index(drop=True)
-        ix_1 = length//2
-        ix_2 = ix_1 + length//4
-        df.loc["exp_split", ix_1: ix_2] = "test"
-        df.loc["exp_split", ix_2:] = "dev"
         df.to_csv('amazon_dataset_' + lang + '.csv', index=False)
+    
     print("All data has been preprocessed and saved")
 
     for lang in language_dirs:

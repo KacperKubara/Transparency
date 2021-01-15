@@ -54,6 +54,7 @@ class Dataset() :
             
         self.vec = pickle.load(open(path, 'rb'))
 
+        print(self.vec.seq_text.keys())
         X, Xd, Xt = self.vec.seq_text['train'], self.vec.seq_text['dev'], self.vec.seq_text['test']
         y, yd, yt = self.vec.label['train'], self.vec.label['dev'], self.vec.label['test']
 
@@ -104,6 +105,26 @@ def SST_dataset(args=None) :
     set_balanced_pos_weight(dataset)
     return dataset
 
+def CLS_dataset_en(args=None) :
+    dataset = Dataset(name='cls_en', path='preprocess/CLS/amazon_dataset_en.p', min_length=5, args=args)
+    set_balanced_pos_weight(dataset)
+    return dataset
+
+def CLS_dataset_de(args=None) :
+    dataset = Dataset(name='cls_de', path='preprocess/CLS/amazon_dataset_de.p', min_length=5, args=args)
+    set_balanced_pos_weight(dataset)
+    return dataset
+
+def CLS_dataset_fr(args=None) :
+    dataset = Dataset(name='cls_fr', path='preprocess/CLS/amazon_dataset_fr.p', min_length=5, args=args)
+    set_balanced_pos_weight(dataset)
+    return dataset
+
+def CLS_dataset_jp(args=None) :
+    dataset = Dataset(name='cls_jp', path='preprocess/CLS/amazon_dataset_jp.p', min_length=5, args=args)
+    set_balanced_pos_weight(dataset)
+    return dataset
+
 def IMDB_dataset(args=None) :
     dataset = Dataset(name='imdb', path='preprocess/IMDB/vec_imdb.p', min_length=6, args=args)
     set_balanced_pos_weight(dataset)
@@ -141,6 +162,10 @@ def Diabetes_dataset(args=None) :
 
 datasets = {
     "sst" : SST_dataset,
+    "cls_en": CLS_dataset_en,
+    "cls_de": CLS_dataset_de,
+    "cls_fr": CLS_dataset_fr,
+    "cls_jp": CLS_dataset_jp,
     "imdb" : IMDB_dataset,
     'amazon': Amazon,
     'yelp': Yelp,
