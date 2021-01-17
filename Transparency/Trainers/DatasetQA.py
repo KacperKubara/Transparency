@@ -64,6 +64,8 @@ class Dataset() :
         
         if args is not None and hasattr(args, 'output_dir') :
             self.basepath = args.output_dir
+        
+        self.n_iters = args.n_iter
 
     def display_stats(self) :
         stats = {}
@@ -103,14 +105,18 @@ def get_QQP(args=None) :
 def get_CNN(args=None) :
     CNN_dataset = Dataset(name='cnn', path='preprocess/CNN/vec_cnn.p', args=args)
     CNN_dataset.bsize = 90
-    CNN_dataset.n_iters = 12
+    # if n_iters not specified, set the original value
+    if not hasattr(args, 'n_iter'):
+        CNN_dataset.n_iters = 12
     return CNN_dataset
 
 def get_Babi_1(args=None) :
     Babi_1_dataset = Dataset(name='babi_1', path='preprocess/Babi/vec_babi_qa1_single-supporting-fact_.p', args=args)
     Babi_1_dataset.vec.word_dim = 50
     Babi_1_dataset.bsize = 50
-    Babi_1_dataset.n_iters = 100
+    # if n_iters not specified, set the original value
+    if not hasattr(args, 'n_iter'):
+        Babi_1_dataset.n_iters = 100
     Babi_1_dataset.hidden_size = 32
     return Babi_1_dataset
 
@@ -118,7 +124,9 @@ def get_Babi_2(args=None) :
     Babi_2_dataset = Dataset(name='babi_2', path='preprocess/Babi/vec_babi_qa2_two-supporting-facts_.p', args=args)
     Babi_2_dataset.vec.word_dim = 50
     Babi_2_dataset.bsize = 50
-    Babi_2_dataset.n_iters = 200
+    # if n_iters not specified, set the original value
+    if not hasattr(args, 'n_iter'):
+        Babi_2_dataset.n_iters = 200
     Babi_2_dataset.hidden_size = 64
     return Babi_2_dataset
 
@@ -126,7 +134,9 @@ def get_Babi_3(args=None) :
     Babi_3_dataset = Dataset(name='babi_3', path='preprocess/Babi/vec_babi_qa3_three-supporting-facts_.p', args=args)
     Babi_3_dataset.vec.word_dim = 50
     Babi_3_dataset.bsize = 50
-    Babi_3_dataset.n_iters = 200
+    # if n_iters not specified, set the original value
+    if not hasattr(args, 'n_iter'):
+        Babi_3_dataset.n_iters = 200
     Babi_3_dataset.hidden_size = 64
     return Babi_3_dataset
 

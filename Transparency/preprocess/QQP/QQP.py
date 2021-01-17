@@ -4,9 +4,10 @@
 # ### Downloading the Quora Question Paraphrase (QQP) Dataset
 #  
 # Download and extract the QQP dataset from https://gluebenchmark.com/task 
-# 
+#
 # You should have the following files QQP/train.tsv, QQP/test.tsv, QQP/dev.tsv
-
+#
+# Edit: Downloaded using "curl -O https://dl.fbaipublicfiles.com/glue/data/QQP-clean.zip"
 # In[10]:
 
 

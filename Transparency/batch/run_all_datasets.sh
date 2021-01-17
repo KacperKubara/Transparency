@@ -7,7 +7,8 @@ n_epochs=1
 
 # TODO: Once all datasets will be working, change to a higher number, for instance 5
 num_runs=1
-datasets="sst imdb amazon yelp 20News_sports tweet Anemia Diabetes"
+bc_datasets="sst imdb amazon yelp 20News_sports tweet Anemia Diabetes"
+qa_datasets="snli qqp cnn babi_1 babi_2 babi_3"
 models="vanilla_lstm ortho_lstm diversity_lstm"
 for dataset in $datasets; do
     echo "Dataset "${dataset}

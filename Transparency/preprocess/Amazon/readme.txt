@@ -18,3 +18,6 @@ The files train.csv and test.csv contain all the training samples as comma-spara
 Download:
 Download and extract the amazon_review_full_csv.tar.gz file from https://drive.google.com/drive/u/0/folders/0Bz8a_Dbh9Qhbfll6bVpmNUtUcFdjYmF2SEpmZUZUcVNiMUw1TWN6RDV3a0JHT3kxLVhVR2M
 Make sure that 'train.csv' and 'test.csv' files are present in this directory
+
+Download remarks:
+I didn't manage to download it directly from Linux, so I downloaded it locally on Windows and then uploaded it to Lisa.
