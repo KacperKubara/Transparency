@@ -20,7 +20,7 @@ cd $HOME/Transparency/Transparency
 source activate maka_paper
 
 # Line required by the repo
-export PYTHONPATH=$HOME/Transparency
+#export PYTHONPATH=$HOME/Transparency
 
 # Run the script and train the model
 # English
@@ -29,13 +29,13 @@ models="vanilla_lstm ortho_lstm diversity_lstm"
 diversity_weight=0.5
 n_epochs=1
 
-for data in $datasets:
+for data in $datasets
 do 
     output_path="./experiments/${data}"
-    for model in $models:
+    for model in $models
     do
         echo $data $model
-        echo python train_and_run_experiments_bc.py --dataset ${data} --data_dir . --output_dir ${output_path} --encoder ${model} --diversity ${diversity_weight} --n_iter ${n_epochs}
+        python train_and_run_experiments_bc.py --dataset ${data} --data_dir . --output_dir ${output_path} --encoder ${model} --diversity ${diversity_weight} --n_iter ${n_epochs}
 
     done
 done

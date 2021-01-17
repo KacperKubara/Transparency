@@ -54,7 +54,6 @@ class Dataset() :
             
         self.vec = pickle.load(open(path, 'rb'))
 
-        print(self.vec.seq_text.keys())
         X, Xd, Xt = self.vec.seq_text['train'], self.vec.seq_text['dev'], self.vec.seq_text['test']
         y, yd, yt = self.vec.label['train'], self.vec.label['dev'], self.vec.label['test']
 
