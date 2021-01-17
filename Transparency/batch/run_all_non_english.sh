@@ -17,7 +17,7 @@ module load Anaconda3/2018.12
 cd $HOME/Transparency/Transparency
 
 # Activate your environment
-source activate fact_paper
+source activate maka_paper
 
 # Line required by the repo
 export PYTHONPATH=$HOME/Transparency
