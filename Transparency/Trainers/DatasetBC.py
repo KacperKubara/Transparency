@@ -80,7 +80,8 @@ class Dataset() :
         if args is not None and hasattr(args, 'output_dir') :
             self.basepath = args.output_dir
 
-        self.n_iter = args.n_iter
+        if args is not None and hasattr(args, 'n_iter'):
+            self.n_iter = args.n_iter
 
     def display_stats(self) :
         stats = {}
