@@ -221,8 +221,8 @@ def generate_graphs(dataset, exp_name, model, test_data):
     # average_length = int(np.clip(test_data.get_stats('X')['mean_length'] * 0.1, 10, None))
     # logging.info("Average Length of test set %d", average_length)
 
-    # quant_dict = pload(model, 'quant_analysis')
-    # plot_quant_results(quant_dict, dirname=model.dirname)
+    quant_dict = pload(model, 'quant_analysis')
+    plot_quant_results(quant_dict, dirname=model.dirname)
     
     # logging.info("Generating Gradients Graph ...")
     # grads = pload(model, 'gradients')
@@ -244,9 +244,9 @@ def generate_graphs(dataset, exp_name, model, test_data):
     # perms = pload(model, 'permutations')
     # plot_permutations(test_data, perms, dirname=model.dirname)
 
-    logging.info("Generating importance ranking Graph ...")
-    importance_ranking = pload(model, 'importance_ranking')
-    plot_importance_ranking(test_data, importance_ranking, dirname=model.dirname)
+    # logging.info("Generating importance ranking Graph ...")
+    # importance_ranking = pload(model, 'importance_ranking')
+    # plot_importance_ranking(test_data, importance_ranking, dirname=model.dirname)
 
     # rationale_attn_dict = pload(model, 'rationale_attn')
     # plot_rationale(test_data,rationale_attn_dict,dirname=model.dirname)

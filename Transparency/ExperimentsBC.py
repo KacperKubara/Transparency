@@ -53,8 +53,8 @@ def run_experiments_on_latest_model(dataset, config='lstm', force_run=True) :
         test_data = dataset.test_data
         # TODO uncomment lines below after fixing the permutation plot
         # evaluator.gradient_experiment(test_data, force_run=force_run)
-        # evaluator.quantitative_analysis_experiment(test_data, dataset, force_run=force_run)
-        evaluator.importance_ranking_experiment(test_data, force_run=force_run)
+        evaluator.quantitative_analysis_experiment(test_data, dataset, force_run=force_run)
+        # evaluator.importance_ranking_experiment(test_data, force_run=force_run)
         # evaluator.conicity_analysis_experiment(test_data)
         # evaluator.permutation_experiment(test_data, force_run=force_run)
         # evaluator.integrated_gradient_experiment(dataset, force_run=force_run)

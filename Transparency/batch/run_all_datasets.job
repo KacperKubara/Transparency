@@ -41,11 +41,11 @@ models="vanilla_lstm ortho_lstm diversity_lstm"
 
 # train and evaluate binary classification datasets
 for dataset_name in $bc_datasets; do
-    echo "Dataset "${dataset_name}
+    echo "### Dataset "${dataset_name}
     for model_name in $models; do
-        echo "Model "${model_name}
+        echo "--- Model "${model_name}
         for (( i=0; i<num_runs; ++i)); do 
-            echo "Run "${i}
+            echo "*** Run "${i}
             python train_and_run_experiments_bc.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs}
         done
     done

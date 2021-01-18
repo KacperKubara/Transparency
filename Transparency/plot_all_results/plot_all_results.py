@@ -1,6 +1,7 @@
 import os, pickle, numpy as np
 from Transparency.common_code.plotting import * 
 from datetime import datetime
+import seaborn as sns
 
 def plot_importance_ranking_all_models(dataset_folder, model_folders):
     experiments_path = os.path.abspath('../experiments')
@@ -42,6 +43,46 @@ def plot_importance_ranking_all_models(dataset_folder, model_folders):
     os.makedirs(out_path)
     save_axis_in_file(fig, ax, out_path, "importance_ranking_MAvDY_all_models")
 
+def plot_bar_pos_att(dataset_folder, model_folders):
+    experiments_path = os.path.abspath('../experiments')
+    dataset_path = os.path.join(experiments_path, dataset_folder)
+    experiment_name = "quant_analysis"
+    model_dfs = []
+    for model in model_folders:
+        # get path to the model file
+        file = os.path.join(dataset_path, model_folders[model], experiment_name + '_pdump.pkl')
+
+        if not os.path.isfile(file) :
+            raise FileNotFoundError(file + " doesn't exist")
+
+        # read the file
+        pos_att = pickle.load(open(file, 'rb'))
+
+        cum_att = [tag[1][1] for tag in pos_att['pos_tags']]
+        tags = [tag[0] for tag in pos_att['pos_tags']]
+
+        cum_att = np.array(cum_att)
+        
+        # compute percentages
+        cum_att_perc = cum_att*100/np.sum(cum_att)
+
+        model_df = pd.DataFrame(data={"pos_tag":tags,"cum_att_perc":cum_att_perc, "model":model})
+        model_dfs.append(model_df)
+
+    # is this gonna work?
+    fig, ax = init_gridspec(2, 2, 1)
+    model_dfs = pd.concat(model_dfs)
+    
+    ax = sns.barplot(x="cum_att_perc", y="pos_tag", hue="model", data=model_dfs)
+    # is ylim=None okay?s
+    annotate(ax, ylim=None, ylabel="Part of Speech", xlabel="", legend=None, title=dataset_folder)
+    
+    # adjust_gridspec()
+    out_path = os.path.join(dataset_path, "all_models", str(now_to_unix_ts()))
+    os.makedirs(out_path)
+    save_axis_in_file(fig, ax, out_path, "pos_cummulative_attention")
+
+
 '''
     Return current timestamp in unix format
 '''
@@ -49,7 +90,13 @@ def now_to_unix_ts():
     time_now = datetime.now()
     return int((time_now - datetime(1970,1,1)).total_seconds())
 
-model_folders = {"Vanilla":"lstm+tanh/Mon_Jan_18_09:21:26_2021", 
-                    "Diversity":"lstm+tanh__diversity_weight_0.5/Mon_Jan_18_09:24:40_2021",
-                    "Ortho":"ortho_lstm+tanh/Mon_Jan_18_09:23:03_2021"}
-plot_importance_ranking_all_models(dataset_folder = '20News_sports', model_folders=model_folders)
+# model_folders = {"Vanilla":"lstm+tanh/Mon_Jan_18_09:21:26_2021", 
+#                     "Diversity":"lstm+tanh__diversity_weight_0.5/Mon_Jan_18_09:24:40_2021",
+#                     "Ortho":"ortho_lstm+tanh/Mon_Jan_18_09:23:03_2021"}
+
+# plot_importance_ranking_all_models(dataset_folder = '20News_sports', model_folders=model_folders)
+model_folders = {"Vanilla":"lstm+tanh/Mon_Jan_18_15:47:57_2021", 
+                    "Diversity":"lstm+tanh__diversity_weight_0.5/Mon_Jan_18_15:48:46_2021",
+                    "Ortho":"ortho_lstm+tanh/Mon_Jan_18_15:48:19_2021"}
+
+plot_bar_pos_att(dataset_folder = '20News_sports', model_folders=model_folders)
