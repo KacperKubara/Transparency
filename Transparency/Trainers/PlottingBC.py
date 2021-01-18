@@ -217,38 +217,39 @@ def plot_importance_ranking(test_data, importance_ranking, dirname='') :
 
 def generate_graphs(dataset, exp_name, model, test_data):
 
-    logging.info("Generating graph for %s", model.dirname)
-    average_length = int(np.clip(test_data.get_stats('X')['mean_length'] * 0.1, 10, None))
-    logging.info("Average Length of test set %d", average_length)
+    # logging.info("Generating graph for %s", model.dirname)
+    # average_length = int(np.clip(test_data.get_stats('X')['mean_length'] * 0.1, 10, None))
+    # logging.info("Average Length of test set %d", average_length)
 
-    quant_dict = pload(model, 'quant_analysis')
-    plot_quant_results(quant_dict, dirname=model.dirname)
+    # quant_dict = pload(model, 'quant_analysis')
+    # plot_quant_results(quant_dict, dirname=model.dirname)
     
-    logging.info("Generating Gradients Graph ...")
-    grads = pload(model, 'gradients')
-    process_grads(grads,test_data.X)
+    # logging.info("Generating Gradients Graph ...")
+    # grads = pload(model, 'gradients')
+    # process_grads(grads,test_data.X)
 
-    attn = test_data.attn_hat
-    yhat = test_data.yt_hat
+    # attn = test_data.attn_hat
+    # yhat = test_data.yt_hat
 
-    int_grads = pload(model, 'integrated_gradients')
-    int_grads = process_int_grads(int_grads,test_data.X)
+    # int_grads = pload(model, 'integrated_gradients')
+    # int_grads = process_int_grads(int_grads,test_data.X)
 
-    measure_dict = {'pearsonr':lambda x,y:pearsonr(x,y)[0],'jsd': lambda x,y:jsd(x,y), 'total deviation': lambda x,y: np.mean(np.abs(np.array(x) - np.array(y)))}
+    # measure_dict = {'pearsonr':lambda x,y:pearsonr(x,y)[0],'jsd': lambda x,y:jsd(x,y), 'total deviation': lambda x,y: np.mean(np.abs(np.array(x) - np.array(y)))}
     
-    for measure_name, measure in measure_dict.items():
-        plot_correlations(test_data, grads['XxE[X]'], attn, measure, measure_name, dirname=model.dirname, name='Attn_Gradient_X')
-        plot_correlations(test_data, int_grads, attn, measure, measure_name, dirname=model.dirname, name='Attn_Integrated_Gradient',num_samples=len(int_grads))        
+    # for measure_name, measure in measure_dict.items():
+    #     plot_correlations(test_data, grads['XxE[X]'], attn, measure, measure_name, dirname=model.dirname, name='Attn_Gradient_X')
+    #     plot_correlations(test_data, int_grads, attn, measure, measure_name, dirname=model.dirname, name='Attn_Integrated_Gradient',num_samples=len(int_grads))        
 
-    logging.info("Generating Permutations Graph ...")
-    perms = pload(model, 'permutations')
-    plot_permutations(test_data, perms, dirname=model.dirname)
+    # logging.info("Generating Permutations Graph ...")
+    # perms = pload(model, 'permutations')
+    # plot_permutations(test_data, perms, dirname=model.dirname)
 
     logging.info("Generating importance ranking Graph ...")
     importance_ranking = pload(model, 'importance_ranking')
     plot_importance_ranking(test_data, importance_ranking, dirname=model.dirname)
 
-    rationale_attn_dict = pload(model, 'rationale_attn')
-    plot_rationale(test_data,rationale_attn_dict,dirname=model.dirname)
-    
+    # rationale_attn_dict = pload(model, 'rationale_attn')
+    # plot_rationale(test_data,rationale_attn_dict,dirname=model.dirname)
+
+
 print("="*300)

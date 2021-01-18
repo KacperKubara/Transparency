@@ -24,5 +24,5 @@ encoders = [args.encoder]
 
 train_dataset_on_encoders(dataset, encoders)
 # if we are not running all experiments, we won't create files required for generating graphs
-# generate_graphs_on_encoders(dataset, encoders)
+generate_graphs_on_encoders(dataset, encoders)
 

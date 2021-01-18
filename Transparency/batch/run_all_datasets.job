@@ -1,0 +1,65 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+#SBATCH --job-name=RunAllDatasets
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+# TODO change this to more, e.g. 120h
+#SBATCH --time=1-00:00:00
+#SBATCH --mem=32000M
+
+module purge
+module load 2019
+module load Python/3.7.5-foss-2019b
+module load CUDA/10.1.243
+module load cuDNN/7.6.5.32-CUDA-10.1.243
+module load NCCL/2.5.6-CUDA-10.1.243
+module load Anaconda3/2018.12
+
+# Go to the script dir
+cd $HOME/Transparency/Transparency
+
+# Activate your environment
+source activate fact_paper
+
+# Line required by the repo
+export PYTHONPATH=$HOME/Transparency
+
+# general parameters
+output_path=./experiments
+diversity_weight=0.5
+# TODO: When testing, change this (to 8, I reckon) or don't specify this parameter
+n_epochs=1
+
+# TODO: Once all datasets will be working, change to a higher number, for instance 5
+num_runs=1
+# bc_datasets="sst imdb amazon yelp 20News_sports tweet Anemia Diabetes"
+bc_datasets="20News_sports"
+qa_datasets="snli qqp cnn babi_1 babi_2 babi_3"
+models="vanilla_lstm ortho_lstm diversity_lstm"
+
+# train and evaluate binary classification datasets
+for dataset_name in $bc_datasets; do
+    echo "Dataset "${dataset_name}
+    for model_name in $models; do
+        echo "Model "${model_name}
+        for (( i=0; i<num_runs; ++i)); do 
+            echo "Run "${i}
+            python train_and_run_experiments_bc.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs}
+        done
+    done
+done
+
+# train and evaluate other NLP datasets (NLI, QA)
+# TODO uncomment
+# for dataset_name in $qa_datasets; do
+#     echo "Dataset "${dataset_name}
+#     for model_name in $models; do
+#         echo "Model "${model_name}
+#         for (( i=0; i<num_runs; ++i)); do 
+#             echo "Run "${i}
+#             python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs}
+#         done
+#     done
+# done
