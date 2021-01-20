@@ -1,4 +1,9 @@
 import argparse
+import nltk
+
+nltk.download('averaged_perceptron_tagger')
+
+
 parser = argparse.ArgumentParser(description='Run experiments on a dataset')
 parser.add_argument('--dataset', type=str, required=True)
 parser.add_argument("--data_dir", type=str, required=True)
