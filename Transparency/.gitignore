@@ -2,6 +2,7 @@ unused_files
 *.pyc
 *.pkl
 *.p 
+*.th
 *.csv
 __pycache__
 # Dataset
