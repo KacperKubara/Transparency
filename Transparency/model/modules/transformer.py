@@ -4,7 +4,7 @@ from torch import nn
 import torch.nn.functional as F
 import random, math
 
-from Transparency.model.transformerUtils import  delete_weights, 
+from Transparency.model.transformerUtils import  delete_weights
 
 class SelfAttentionWide(nn.Module):
     def __init__(self, emb, heads=8, mask=False):
