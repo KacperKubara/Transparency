@@ -17,14 +17,14 @@ def delete_weights(weights, lengths, delete_prop):
     #print(torch.sum(mask))
     weights[i,:,:][mask] = float("-inf") # set the appropriate proportion of attention weights to 0
   
-  def get_conicity_mask(var1, lengths):
-  b, t, h = var1.size()
-  mask = torch.ones((b,t))
-  for batch_dim in range(b):
-    #print(batch_dim)
-    #print(int(lengths[batch_dim]))
-    mask[batch_dim, lengths[batch_dim]-1:] = 0
-  return mask
+def get_conicity_mask(var1, lengths):
+    b, t, h = var1.size()
+    mask = torch.ones((b,t))
+    for batch_dim in range(b):
+        #print(batch_dim)
+        #print(int(lengths[batch_dim]))
+        mask[batch_dim, lengths[batch_dim]-1:] = 0
+    return mask
 
 
 ##### CONICITY CALCULATION HELPERS
