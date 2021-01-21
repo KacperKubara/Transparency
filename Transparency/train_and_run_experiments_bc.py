@@ -1,5 +1,6 @@
 import argparse
 import nltk
+import time 
 
 nltk.download('averaged_perceptron_tagger')
 
@@ -18,6 +19,7 @@ args.attention = 'tanh'
 from Transparency.Trainers.DatasetBC import *
 from Transparency.ExperimentsBC import *
 
+start_time = time.time()
 dataset = datasets[args.dataset](args)
 
 if args.output_dir is not None :
@@ -27,3 +29,7 @@ dataset.diversity = args.diversity
 encoders = [args.encoder]
 train_dataset_on_encoders(dataset, encoders)
 generate_graphs_on_encoders(dataset, encoders)
+end_time = time.time()
+
+print(f"Computation time was {end_time - start_time}")
+print(f"For {args.dataset}, {args.encoder}")
