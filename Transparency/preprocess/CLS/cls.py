@@ -42,8 +42,8 @@ def get_preprocessed_text(dir_path, lang):
             lines = f.readlines()
         X_test, labels_test = preprocess(lines, lang)
 
-        X = X_train + X_test
-        labels = labels_train + labels_test
+        X += X_train + X_test
+        labels += labels_train + labels_test
 
     return X, labels
 
