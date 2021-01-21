@@ -94,12 +94,6 @@ def tokenize_and_stem(line, lang, contraction_map=None):
         if lang == "en":
             if word in contraction_map:
                 word = contraction_map[word]
-        
-        # 4) Tokenize the words (NLTK for de, en, fr, MECAB for jp)
-        if lang != "jp":
-            pass
-        else:
-            pass
     
         new_line.append(word)
 
