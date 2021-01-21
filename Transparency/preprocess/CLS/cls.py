@@ -132,7 +132,6 @@ if __name__ == "__main__":
         ix_1 = length//2
         ix_2 = length//4
         keys = ['train']*ix_1 + ['test']*ix_2 + ['dev'] * (length - ix_1 - ix_2)
-        print(keys)
         df = pandas.DataFrame({'text': X, 
                                'label': labels, 
                                'exp_split': keys
