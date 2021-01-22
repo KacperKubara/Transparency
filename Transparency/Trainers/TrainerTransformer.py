@@ -45,7 +45,7 @@ def go(arg):
 
     if arg.max_length < 0:
         mx = max([input.size(1) for inpu,_,_ in dataset.train_data])
-        mx = mx * 2
+        mx = mx + 0.25*mx # add 25% slack
         print(f'- maximum sequence length: {mx}')
     else:
         mx = arg.max_length
@@ -67,7 +67,7 @@ def go(arg):
     for e in range(arg.num_epochs):
         mean_conicity_values = []
         mean_nll_loss = []
-        print(f'\n epoch {e}')
+        print(f'\n epoch {e+1}')
         model.train(True)
 
         for i, batch in enumerate(tqdm.tqdm(dataset.train_data, position=0, leave=True)):
@@ -77,9 +77,6 @@ def go(arg):
 
             input = [X, X_unpadded_len]
             label = y
-            #print("LABEL shape", label.shape)
-            #print(label)
-
             out = model(input)
 
             # CONICITY CONSTRAINT ON THE VALUES OF THE ATTENTION HEADS
@@ -87,9 +84,6 @@ def go(arg):
                                                                   get_conicity_mask(model.tblocks[-1].attention.values[:,:,i,:], input[1]) , \
                                                                   input[1]) for i in range(model.tblocks[-1].heads) ]) # [#heads, batch_size]
             mean_batch_conicity  = torch.mean(heads_batch_conicity,(-1,0)) # [#scalar]. first takes the mean of a each head's batch, then of heads
-
-            #print("Sample conicity val", batch_conicity)
-            #print("Sample conicity val per head", mean_batch_conicity)
             mean_conicity_values.append(mean_batch_conicity)
 
             nll = F.nll_loss(out, label)
@@ -129,7 +123,7 @@ def go(arg):
               'loss': loss,
               }, SAVE_PATH.format(round(acc,3)))
 
-            print(f'-- {"test" if arg.final else "validation"} accuracy {acc:.3}')
+            print(f'-- {"validation"} accuracy {acc:.3}')
             mean_epoch_conicity = torch.mean(torch.stack(mean_conicity_values))
             print("Mean concity value {}".format(mean_epoch_conicity))
             # Upon epoch completion, write to tensoraboard

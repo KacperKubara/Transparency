@@ -11,18 +11,14 @@ def delete_weights(weights, lengths, delete_prop):
   assert weights.size(0) == lengths.size(0), "The dimension of the lengths does not match the b_size*num_heads!"
 
   indices = torch.argsort(torch.argsort(weights, dim = 2, descending = True)) # get the indicies of weights from smallest to largest
-  #indices += 1
   for i in range(weights.size(0)):
     mask = ~indices[i,:,:].ge(delete_prop*(lengths[i]))
-    #print(torch.sum(mask))
     weights[i,:,:][mask] = float("-inf") # set the appropriate proportion of attention weights to 0
   
 def get_conicity_mask(var1, lengths):
     b, t, h = var1.size()
     mask = torch.ones((b,t))
     for batch_dim in range(b):
-        #print(batch_dim)
-        #print(int(lengths[batch_dim]))
         mask[batch_dim, lengths[batch_dim]-1:] = 0
     return mask
 
@@ -80,7 +76,7 @@ def d(tensor=None):
     return 'cuda' if tensor.is_cuda else 'cpu'
 
 
-def eval_acc(model, iterator, mx = 512):
+def eval_acc(model, iterator):
   """ Calculates the accuracy of the model on an iterator"""
   model.eval()
   tot, cor= 0.0, 0.0
@@ -90,10 +86,15 @@ def eval_acc(model, iterator, mx = 512):
     input = [X, X_unpadded_len]
     label = y
 
-    if input[0].size(1) > mx:
-        input[0] = input[0][:, :mx]
     out = model(input).argmax(dim=1)
+    print("Out", out)
+    print("Label", label)
+    print("Size", input[0].size(0))
+    
     tot += float(input[0].size(0))
     cor += float((label == out).sum().item())
-  acc = cor / tot
+    print("Cor", cor)
+
+  print("tot", tot)
+  acc = float(cor)/float(tot)
   return acc

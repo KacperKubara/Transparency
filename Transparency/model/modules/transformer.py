@@ -55,11 +55,10 @@ class SelfAttentionWide(nn.Module):
 
         # - get dot product of queries and keys, and scale
         dot = torch.bmm(queries, keys.transpose(1, 2)) # weights
-        #print("Shape of the weights", dot.shape)
 
         assert dot.size() == (b*h, t, t)
 
-        if self.mask: # mask out the upper half of the dot matrix, excluding the diagonal
+        if self.mask: # mask out the upper half of the dot matrix, excluding the diagonal. Not used in the repo
             mask_(dot, maskval=float('-inf'), mask_diagonal=False)
 
         dot = F.softmax(dot, dim=2)
@@ -105,7 +104,6 @@ class SelfAttentionNarrow(nn.Module):
         x_lengths = x[1]#.to(device) # [batch_size], holds the lengths of unpadded sequences
         x = x[0]#.to(device) # [batch_size, seq_length]
         
-        #print("INput shape", x.shape)
         b, t, e = x.size()
         h = self.heads
         assert e == self.emb, f'Input embedding dim ({e}) should match layer embedding dim ({self.emb})'
@@ -138,7 +136,6 @@ class SelfAttentionNarrow(nn.Module):
 
         # - get dot product of queries and keys, and scale
         dot = torch.bmm(queries, keys.transpose(1, 2))
-        #print("Shape of the weights", dot.shape)
         assert dot.size() == (b*h, t, t)
 
 
@@ -150,8 +147,6 @@ class SelfAttentionNarrow(nn.Module):
         repeat_factor = int(dot.size(0)/x_lengths.size(0)) # how many times to repeat the vector containing the lengths?
         X_len_extended = x_lengths.repeat(repeat_factor)
         maxlen = dot.size(1) # maximum seq_length in the batch
-        #print("maxlen",maxlen)
-        #print(X_len_extended)
 
         idx = torch.arange(maxlen, device=d() ).unsqueeze(0).expand(dot.size())#.to(device)
         len_expanded = X_len_extended.unsqueeze(1).unsqueeze(1).expand(dot.size())#.to(device)
@@ -222,7 +217,6 @@ class TransformerBlock(nn.Module):
         x = self.norm2(fedforward + x)
 
         x = self.do(x)
-        #print("Block output shape", x.shape)
         return x
 
         
