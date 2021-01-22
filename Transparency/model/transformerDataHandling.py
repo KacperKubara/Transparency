@@ -183,9 +183,13 @@ class DataHolder() :
     X_unpadded_len= []
     X_max_length = max([len(self.X[self.ix + i]) for i in range(self.batch_size)]) # maxiumum unpadded length in a batch
 
+    if self.padding_length == -1: # no limit on maximum sequence length
+        trim = X_max_length
+    else: 
+        trim = min(X_max_length, self.padding_length)
     for i in range(self.batch_size):
-      X_sample = self.X[self.ix + i][: min(X_max_length, self.padding_length)]
-      X_padded.append(X_sample + [self.pad_token] * (min(X_max_length, self.padding_length) - len(X_sample)))
+      X_sample = self.X[self.ix + i][: trim]
+      X_padded.append(X_sample + [self.pad_token] * (trim- len(X_sample)))
       X_unpadded_len.append(len(X_sample))
     
     X_batch = X_padded 
@@ -340,7 +344,7 @@ datasets = {
 def vectorize_data(data_file, min_df, word_vectors_type=None):
   vec = Vectorizer(min_df=min_df)
 
-  df = pd.read_csv(io.BytesIO(uploaded[data_file]))
+  df = pd.read_csv(data_file)
   
   assert 'text' in df.columns, "No Text Field"
   assert 'label' in df.columns, "No Label Field"
