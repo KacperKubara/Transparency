@@ -48,9 +48,9 @@ def _conicity(hidden, masks, lengths):
     Shape [batch_size]
 
   """
-  hidden_states = hidden.to(device)    # [batch size, seq_length, hiddem_dim]
+  hidden_states = hidden#.to(device)    # [batch size, seq_length, hiddem_dim]
   b,l,h = hidden_states.size()
-  masks = masks.float().to(device) #[batch_size, hidden dim]
+  masks = masks.float()#.to(device) #[batch_size, hidden dim]
   lengths = (lengths.float() - 2) ## (B)
 
   hidden_states = hidden_states* (masks.unsqueeze(2))
@@ -79,15 +79,6 @@ def d(tensor=None):
         return 'cuda' if torch.cuda.is_available() else 'cpu'
     return 'cuda' if tensor.is_cuda else 'cpu'
 
-def here(subpath=None):
-    """
-    :return: the path in which the package resides (the directory containing the 'former' dir)
-    """
-    if subpath is None:
-        return os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
-
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), '../..', subpath))
-
 
 def eval_acc(model, iterator, mx = 512):
   """ Calculates the accuracy of the model on an iterator"""
@@ -96,8 +87,8 @@ def eval_acc(model, iterator, mx = 512):
 
   for batch in iterator:
 
-    input = list(batch.text)#[0]
-    label = batch.label - 1
+    input = [X, X_unpadded_len]
+    label = y
 
     if input[0].size(1) > mx:
         input[0] = input[0][:, :mx]

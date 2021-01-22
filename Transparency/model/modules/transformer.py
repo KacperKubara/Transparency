@@ -4,7 +4,8 @@ from torch import nn
 import torch.nn.functional as F
 import random, math
 
-from Transparency.model.transformerUtils import  delete_weights
+from Transparency.model.transformerUtils import  delete_weights, d
+
 
 class SelfAttentionWide(nn.Module):
     def __init__(self, emb, heads=8, mask=False):
@@ -101,8 +102,8 @@ class SelfAttentionNarrow(nn.Module):
 
     def forward(self, x):
 
-        x_lengths = x[1].to(device) # [batch_size], holds the lengths of unpadded sequences
-        x = x[0].to(device) # [batch_size, seq_length]
+        x_lengths = x[1]#.to(device) # [batch_size], holds the lengths of unpadded sequences
+        x = x[0]#.to(device) # [batch_size, seq_length]
         
         #print("INput shape", x.shape)
         b, t, e = x.size()
@@ -149,6 +150,8 @@ class SelfAttentionNarrow(nn.Module):
         repeat_factor = int(dot.size(0)/x_lengths.size(0)) # how many times to repeat the vector containing the lengths?
         X_len_extended = x_lengths.repeat(repeat_factor)
         maxlen = dot.size(1) # maximum seq_length in the batch
+        #print("maxlen",maxlen)
+        #print(X_len_extended)
 
         idx = torch.arange(maxlen, device=d() ).unsqueeze(0).expand(dot.size())#.to(device)
         len_expanded = X_len_extended.unsqueeze(1).unsqueeze(1).expand(dot.size())#.to(device)
@@ -170,7 +173,7 @@ class SelfAttentionNarrow(nn.Module):
           #dot_non_inf[dot_non_inf==float("-inf")] = 0
 
           #print("Sum dot after deleting", torch.sum(dot_non_inf))
-        
+         # print("dot", dot)
           dot[~mask] = float("-inf") # get the padded values back to 0
           dot = F.softmax(dot, dim=2) # normalize back
           #print(dot)

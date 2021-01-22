@@ -4,6 +4,7 @@ from math import ceil
 from tqdm import tqdm
 from torchtext.vocab import pretrained_aliases
 import torch
+import pandas as pd
 
 SOS = "<SOS>"
 EOS = "<EOS>"
@@ -196,7 +197,7 @@ class DataHolder() :
     y_batch = self.y[self.ix: self.ix + self.batch_size]
     self.ix += self.batch_size
 
-    return torch.Tensor(X_batch), torch.Tensor(y_batch), torch.Tensor(X_unpadded_len)
+    return torch.Tensor(X_batch).to(torch.int64), torch.Tensor(y_batch).to(torch.int64), torch.Tensor(X_unpadded_len).to(torch.int64)
 
   def get_stats(self, field='X') :
     assert field in self.attributes
