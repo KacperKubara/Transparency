@@ -86,15 +86,13 @@ def eval_acc(model, iterator, mx = 512):
   tot, cor= 0.0, 0.0
 
   for batch in iterator:
-
+    X, y, X_unpadded_len = batch
     input = [X, X_unpadded_len]
     label = y
 
     if input[0].size(1) > mx:
         input[0] = input[0][:, :mx]
     out = model(input).argmax(dim=1)
-    #print("Out",out)
-    #print("Label", label)
     tot += float(input[0].size(0))
     cor += float((label == out).sum().item())
   acc = cor / tot
