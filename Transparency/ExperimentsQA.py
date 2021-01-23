@@ -43,7 +43,7 @@ def train_dataset_on_encoders(dataset, encoders):
     for e in encoders:
         train_dataset(dataset, e) 
         # the line below is commented solely to reduce runtime of the script and number of conducted experiments
-        # run_experiments_on_latest_model(dataset, e)
+        run_experiments_on_latest_model(dataset, e)
 
 def generate_graphs_on_encoders(dataset, encoders):
     for e in encoders:

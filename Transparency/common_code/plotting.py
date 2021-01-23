@@ -19,8 +19,8 @@ histcolor = '#143f7a'
 
 conscmap = mpl.colors.LinearSegmentedColormap.from_list("", ["#142c89", "#142c89"])
 
-def init_gridspec(nrow, ncol, nax) :
-    fig = plt.figure(figsize=(15, 15))
+def init_gridspec(nrow, ncol, nax, figsize=(15, 15)) :
+    fig = plt.figure(figsize=figsize)
     gs = gridspec.GridSpec(nrow, ncol, figure=fig)
     axes = []
     for i in range(nax) :
