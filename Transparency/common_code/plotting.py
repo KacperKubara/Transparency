@@ -67,15 +67,15 @@ def save_axis_in_file(fig, ax, dirname, filename):
 def save_table_in_file(table, dirname, filename) :
     table.to_csv(os.path.join(dirname, filename + '.csv'), index=True)
 
-def annotate(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, legend='upper left') :
-    if xlabel is not None : ax.set_xlabel(xlabel, fontsize=20)
-    if ylabel is not None : ax.set_ylabel(ylabel, fontsize=20)
-    ax.tick_params(labelsize=20)
+def annotate(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, legend='upper left', fontsize=20) :
+    if xlabel is not None : ax.set_xlabel(xlabel, fontsize=fontsize)
+    if ylabel is not None : ax.set_ylabel(ylabel, fontsize=fontsize)
+    ax.tick_params(labelsize=fontsize)
     if title is not None : ax.set_title(title)
     if xlim is not None : ax.set_xlim(*xlim)
     if ylim is not None : ax.set_ylim(*ylim)
 
-    set_square_aspect(ax)
+    # set_square_aspect(ax)
     sns.despine(ax=ax)
     if legend is None and ax.get_legend() is not None : ax.get_legend().remove()
     if legend is not None:

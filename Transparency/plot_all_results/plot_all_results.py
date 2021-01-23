@@ -46,12 +46,11 @@ def plot_importance_ranking_all_models(dataset_folder, model_folders, dataset_ty
         model_df['model'] = model
         model_dfs.append(model_df)
 
-    fig, ax = init_gridspec(2, 2, 1, figsize=(8,15))
+    fig, ax = init_gridspec(2, 2, 1, figsize=(15,8))
     model_dfs = pd.concat(model_dfs)
 
     ax = sns.boxplot(x="model", y="y", hue="class", data=model_dfs)
-
-    annotate(ax, ylim=(-0.05, 1.05), ylabel="Fraction of attention weights removed", xlabel="", legend=None, title=dataset_folder)
+    annotate(ax, ylim=(-0.05, 1.05), ylabel="Fraction of attention weights removed", xlabel="", legend=None, title=dataset_folder, fontsize = 12)
     # adjust_gridspec()
     save_axis_in_file(fig, ax, out_path, f"{dataset_folder}_importance_ranking_MAvDY_all_models")
 
@@ -80,11 +79,11 @@ def plot_bar_pos_att_all_models(dataset_folder, model_folders):
         model_df = pd.DataFrame(data={"pos_tag":tags,"cum_att_perc":cum_att_perc, "model":model})
         model_dfs.append(model_df)
 
-    fig, ax = init_gridspec(2, 2, 1, figsize=(8, 15))
+    fig, ax = init_gridspec(2, 2, 1, figsize=(15, 8))
     model_dfs = pd.concat(model_dfs)
     
     ax = sns.barplot(x="cum_att_perc", y="pos_tag", hue="model", data=model_dfs)
-    annotate(ax, ylim=None, ylabel="Part of Speech", xlabel="", legend=None, title=dataset_folder)
+    annotate(ax, ylim=None, ylabel="Part of Speech", xlabel="", legend=None, title=dataset_folder, fontsize = 15)
     
     # adjust_gridspec()
     save_axis_in_file(fig, ax, out_path, f"{dataset_folder}_pos_cummulative_attention")
