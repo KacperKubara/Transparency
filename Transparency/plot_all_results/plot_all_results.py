@@ -225,6 +225,47 @@ def make_table4(datasets):
     with open(table4_path, "w") as f:
         f.write(table4_latex)
 
+def get_hyperparams(datasets):
+    hps_latex = "### Latex content for hyperparameter table \n"
+    for dataset_name, dataset in datasets.items():
+        dataset_hps = f"{dataset_name} & "
+        # The hyperparameters are the same for all models of the same dataset so we only take one model.
+        model_name = "Vanilla"
+        model_folder = dataset["model_folders"][model_name]
+
+        hps = os.path.join(experiments_path, dataset["exp_folder_name"], model_folder, "config.json")
+        with open(hps) as f:
+            hps = json.load(f)
+
+        vocab_size = hps["model"]["encoder"]["vocab_size"]
+        embed_size = hps["model"]["encoder"]["embed_size"]
+        hidden_size = hps["model"]["encoder"]["hidden_size"]
+
+        batch_size = hps["training"]["bsize"]
+        # weight decay is always 1e-05
+        # weight_decay = hps["training"]["weight_decay"]
+
+        '''
+            Other hps that should be included:
+            - epochs
+            - optimizer & learning rate - Adam and 0.001
+        '''
+        
+        # get number of epochs by counting lines in a file logging metrics per epoch
+        epochs = os.path.join(experiments_path, dataset["exp_folder_name"], model_folder, "epoch.txt")
+        with open(epochs) as f:
+            epochs = f.readlines()
+
+        num_epochs = len(epochs)
+
+        dataset_hps += f"{batch_size} & {embed_size} & {hidden_size} & {num_epochs} & {vocab_size} \\\\ \n"
+        
+        hps_latex += dataset_hps
+
+    hps_path = os.path.join(out_path,"hps_latex.txt")
+    with open(hps_path, "w") as f:
+        f.write(hps_latex)
+
 if __name__=="__main__":
 
     datasets = {"SST":{"exp_folder_name":"sst",
@@ -279,6 +320,7 @@ if __name__=="__main__":
     make_table2(datasets)
     make_table3(datasets)
     make_table4(datasets)
+    get_hyperparams(datasets)
 
     for dataset_name, dataset in datasets.items():
         print(f"### Plots for dataset ${dataset_name}")

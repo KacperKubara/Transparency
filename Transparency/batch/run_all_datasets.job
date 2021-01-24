@@ -35,8 +35,9 @@ n_epochs=1
 # TODO: Once all datasets will be working, change to a higher number, for instance 5
 num_runs=1
 # bc_datasets="sst imdb amazon yelp 20News_sports tweet Anemia Diabetes"
-bc_datasets="20News_sports"
-qa_datasets="snli qqp cnn babi_1 babi_2 babi_3"
+bc_datasets="tweet"
+# qa_datasets="snli qqp cnn babi_1 babi_2 babi_3"
+qa_datasets="babi_3"
 models="vanilla_lstm ortho_lstm diversity_lstm"
 
 # train and evaluate binary classification datasets
@@ -52,14 +53,13 @@ for dataset_name in $bc_datasets; do
 done
 
 # train and evaluate other NLP datasets (NLI, QA)
-# TODO uncomment
-# for dataset_name in $qa_datasets; do
-#     echo "Dataset "${dataset_name}
-#     for model_name in $models; do
-#         echo "Model "${model_name}
-#         for (( i=0; i<num_runs; ++i)); do 
-#             echo "Run "${i}
-#             python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs}
-#         done
-#     done
-# done
+for dataset_name in $qa_datasets; do
+    echo "### Dataset "${dataset_name}
+    for model_name in $models; do
+        echo "--- Model "${model_name}
+        for (( i=0; i<num_runs; ++i)); do 
+            echo "*** Run "${i}
+            python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs} --attention tanh
+        done
+    done
+done
