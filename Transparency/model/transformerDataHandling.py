@@ -197,7 +197,7 @@ class DataHolder() :
     
     X_batch = X_padded 
     y_batch = self.y[self.ix: self.ix + self.batch_size]
-    self.ix += self.batch_size
+    self.ix += 1 #self.batch_size
 
     return torch.Tensor(X_batch).to(torch.int64), torch.Tensor(y_batch).to(torch.int64), torch.Tensor(X_unpadded_len).to(torch.int64)
 
@@ -247,7 +247,7 @@ class Dataset() :
         'pr_auc' : 'pr_auc'
     }
 
-    self.bsize = 32
+    #self.bsize = 32
     if args is not None and hasattr(args, 'output_dir') :
       self.basepath = args.output_dir
 
