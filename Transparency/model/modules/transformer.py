@@ -104,6 +104,7 @@ class SelfAttentionNarrow(nn.Module):
         x_lengths = x[1]#.to(device) # [batch_size], holds the lengths of unpadded sequences
         x = x[0]#.to(device) # [batch_size, seq_length]
         
+        #print(x.shape)
         b, t, e = x.size()
         h = self.heads
         assert e == self.emb, f'Input embedding dim ({e}) should match layer embedding dim ({self.emb})'
@@ -163,12 +164,6 @@ class SelfAttentionNarrow(nn.Module):
           #print("deleting stuff!!")
           dot = delete_weights(dot, X_len_extended, delete_prop= self.delete_prop)
 
-          # Just for checking
-          #dot_non_inf = dot
-          #dot_non_inf[dot_non_inf==float("-inf")] = 0
-
-          #print("Sum dot after deleting", torch.sum(dot_non_inf))
-         # print("dot", dot)
           dot[~mask] = float("-inf") # get the padded values back to 0
           dot = F.softmax(dot, dim=2) # normalize back
           #print(dot)
@@ -208,6 +203,7 @@ class TransformerBlock(nn.Module):
 
         attended = self.attention(x)
 
+        lengths = x[1]
         x = self.norm1(attended + x[0])
 
         x = self.do(x)
@@ -217,7 +213,7 @@ class TransformerBlock(nn.Module):
         x = self.norm2(fedforward + x)
 
         x = self.do(x)
-        return x
+        return (x, lengths)
 
         
 class CTransformer(nn.Module):
@@ -267,7 +263,7 @@ class CTransformer(nn.Module):
         x[0] = tokens + positions
         x[0] = self.do(x[0])
 
-        x_block_out = self.tblocks(x) 
+        x_block_out,_ = self.tblocks(x) 
         self.transformer_out = x_block_out
 
 
