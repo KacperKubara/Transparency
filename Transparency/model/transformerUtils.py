@@ -87,14 +87,14 @@ def eval_acc(model, iterator):
     label = y
 
     out = model(input).argmax(dim=1)
-    print("Out", out)
-    print("Label", label)
-    print("Size", input[0].size(0))
+    #print("Out", out)
+    #print("Label", label)
+    #print("Size", input[0].size(0))
     
     tot += float(input[0].size(0))
     cor += float((label == out).sum().item())
-    print("Cor", cor)
+    #print("Cor", cor)
 
-  print("tot", tot)
+  #print("tot", tot)
   acc = float(cor)/float(tot)
   return acc

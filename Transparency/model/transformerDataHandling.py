@@ -11,9 +11,9 @@ EOS = "<EOS>"
 PAD = "<0>"
 UNK = "<UNK>"
 
-import spacy, re
+import re
 
-nlp = spacy.load("en", disable=["parser", "tagger", "ner"])
+#nlp = spacy.load("en", disable=["parser", "tagger", "ner"])
 
 
 class Vectorizer:
@@ -178,8 +178,9 @@ class DataHolder() :
 
   def __next__(self):
     if self.ix >= self.ix_max:
-      raise StopIteration
-    
+        self.ix = 0 
+        raise StopIteration
+      
     X_padded = []
     X_unpadded_len= []
     X_max_length = max([len(self.X[self.ix + i]) for i in range(self.batch_size)]) # maxiumum unpadded length in a batch
@@ -188,6 +189,7 @@ class DataHolder() :
         trim = X_max_length
     else: 
         trim = min(X_max_length, self.padding_length)
+
     for i in range(self.batch_size):
       X_sample = self.X[self.ix + i][: trim]
       X_padded.append(X_sample + [self.pad_token] * (trim- len(X_sample)))

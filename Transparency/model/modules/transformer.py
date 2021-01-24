@@ -259,6 +259,7 @@ class CTransformer(nn.Module):
         :param x: A batch by sequence length integer tensor of token indices.
         :return: predicted log-probability vectors for each token based on the preceding tokens.
         """
+        #print(x[0].shape)
         tokens = self.token_embedding(x[0])
         b, t, e = tokens.size()
 
@@ -276,5 +277,5 @@ class CTransformer(nn.Module):
         
         x = self.toprobs(x)
         
-
+        #print(F.log_softmax(x, dim=1))
         return F.log_softmax(x, dim=1)
