@@ -21,7 +21,7 @@ def go(arg):
     Creates and trains a basic transformer for the sentiment classification task.
     """
 
-
+    device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
     #torch.set_deterministic(True)
     torch.manual_seed(arg.seed)
 
@@ -55,11 +55,12 @@ def go(arg):
      num_classes=NUM_CLS, max_pool=arg.max_pool, delete_prop=arg.delete_prop)
 
     if torch.cuda.is_available():
-        print("Cuda baby")
-        model.cuda()
+        print("[INFO]: GPU training enabled")
+        model.to(device)
+        
 
     opt = torch.optim.Adam(lr=arg.lr, params=model.parameters())
-    sch = torch.optim.lr_scheduler.LambdaLR(opt, lambda i: min(i / (arg.lr_warmup / arg.batch_size), 1.0))
+    #sch = torch.optim.lr_scheduler.LambdaLR(opt, lambda i: min(i / (arg.lr_warmup / arg.batch_size), 1.0))
 
     # training loop
     seen = 0
@@ -75,7 +76,7 @@ def go(arg):
             opt.zero_grad()
             X, y, X_unpadded_len = batch
 
-            input = [X, X_unpadded_len]
+            input = [X.to(device), X_unpadded_len.to(device)]
             label = y
             out = model(input)
 
@@ -105,7 +106,8 @@ def go(arg):
                 nn.utils.clip_grad_norm_(model.parameters(), arg.gradient_clipping)
 
             opt.step()
-            sch.step()
+            #sch.step()
+            print("Factor = ", round(0.65 ** i,3)," , Learning Rate = ",round(opt.param_groups[0]["lr"],3))
 
             seen += input[0].size(0)
             #tbw.add_scalar('classification/train-loss', float(loss.item()), seen)
