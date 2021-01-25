@@ -12,10 +12,14 @@ import json
     Towards transparent and explainable attention models. arXiv preprint arXiv:2004.14243.
 '''
 
-def plot_importance_ranking_all_models(dataset_folder, model_folders, dataset_type):
+def plot_importance_ranking_all_models(dataset_name):
     print("Plot importance for all models...")
     experiment_name = "importance_ranking"
     model_dfs = []
+
+    model_folders = datasets[dataset_name]["model_folders"]
+    dataset_type = datasets[dataset_name]["type"]
+
     for model in model_folders:
         # get path to the model file
         file = os.path.join(in_dataset_path, model_folders[model], experiment_name + '_pdump.pkl')
@@ -50,14 +54,17 @@ def plot_importance_ranking_all_models(dataset_folder, model_folders, dataset_ty
     model_dfs = pd.concat(model_dfs)
 
     ax = sns.boxplot(x="model", y="y", hue="class", data=model_dfs)
-    annotate(ax, ylim=(-0.05, 1.05), ylabel="Fraction of attention weights removed", xlabel="", legend=None, title=dataset_folder, fontsize = 12)
+    annotate(ax, ylim=(-0.05, 1.05), ylabel="Fraction removed", xlabel="", legend=None, title=dataset_name, fontsize = 15)
     # adjust_gridspec()
     save_axis_in_file(fig, ax, out_path, f"{dataset_folder}_importance_ranking_MAvDY_all_models")
 
-def plot_bar_pos_att_all_models(dataset_folder, model_folders):
+def plot_bar_pos_att_all_models(dataset_name):
     print("Plot POS attention for all models...")
     experiment_name = "quant_analysis"
     model_dfs = []
+
+    model_folders = datasets[dataset_name]["model_folders"]
+
     for model in model_folders:
         # get path to the model file
         file = os.path.join(in_dataset_path, model_folders[model], experiment_name + '_pdump.pkl')
@@ -83,16 +90,20 @@ def plot_bar_pos_att_all_models(dataset_folder, model_folders):
     model_dfs = pd.concat(model_dfs)
     
     ax = sns.barplot(x="cum_att_perc", y="pos_tag", hue="model", data=model_dfs)
-    annotate(ax, ylim=None, ylabel="Part of Speech", xlabel="", legend=None, title=dataset_folder, fontsize = 15)
+    annotate(ax, ylim=None, ylabel="Part of Speech", xlabel="", legend=None, title=dataset_name, fontsize = 15)
     
     # adjust_gridspec()
     save_axis_in_file(fig, ax, out_path, f"{dataset_folder}_pos_cummulative_attention")
 
-def plot_permutations_all_models(dataset_folder, model_folders, dataset_type):
+def plot_permutations_all_models(dataset_name):
     print("Plot permutations for all models...")
     experiment_name = "permutations"
     model_dfs = []
     xlim=(0, 1.0)
+
+    model_folders = datasets[dataset_name]["model_folders"]
+    dataset_type = datasets[dataset_name]["type"]
+
     for model in model_folders:
         # get path to the model file
         file = os.path.join(in_dataset_path, model_folders[model], experiment_name + '_pdump.pkl')
@@ -127,9 +138,6 @@ def plot_permutations_all_models(dataset_folder, model_folders, dataset_type):
         else:
             assert False, "Wrong dataset type. Dataset type can be either 'bc', or 'qa'."
         
-        # plot_violin_by_class(ax[0], max_attn, med_diff, yhat, xlim=(0, 1.0))
-        # code from plot_violin_by class()
-        # def plot_violin_by_class(ax, X_vals, Y_vals, yhat, xlim, bins=4) :
 
         # don't move this line out of this for loop because it is modified below, so we need to reset it to 4 for every model
         bins = 4
@@ -141,13 +149,6 @@ def plot_permutations_all_models(dataset_folder, model_folders, dataset_type):
         for p in xbins :
             xnames.append("[" + "{:.2f}".format(bins[p]) + ',\n' + "{:.2f}".format(bins[p+1]) + ")")
         
-        # classes = np.zeros((len(yhat,)))
-        # if len(yhat.shape) == 1 or yhat.shape[1] == 1:
-        #     yhat = yhat.flatten()
-        #     yhat = np.round(yhat)
-        #     unique_y = np.sort(np.unique(yhat))
-        #     if len(unique_y) < 4 :
-        #         classes = yhat
 
         model_df = pd.DataFrame({'bin' : xnames, 'val' : med_diff, 'model' : model})
         model_dfs.append(model_df)
@@ -159,7 +160,7 @@ def plot_permutations_all_models(dataset_folder, model_folders, dataset_type):
 
     # ax.get_legend().remove()
 
-    annotate(ax, xlim=xlim, ylabel="Max attention", xlabel="Median Output Difference", legend=None, title=dataset_folder)
+    annotate(ax, xlim=xlim, ylabel="Max attention", xlabel="Median Output Difference", legend=None, title=dataset_name, title_fontsize=30)
 
     # adjust_gridspec()
     save_axis_in_file(fig, ax, out_path, f"{dataset_folder}_permutation")
@@ -322,20 +323,20 @@ if __name__=="__main__":
     make_table4(datasets)
     get_hyperparams(datasets)
 
-    for dataset_name, dataset in datasets.items():
-        print(f"### Plots for dataset ${dataset_name}")
+    for dataset_name in datasets:
+        print(f"### Plots for dataset {dataset_name}")
 
-        dataset_folder = dataset["exp_folder_name"]
-        model_folders = dataset["model_folders"]
-        dataset_type = dataset["type"]
+        dataset_folder = datasets[dataset_name]["exp_folder_name"]
+        
         in_dataset_path = os.path.join(experiments_path, dataset_folder)
 
         # plot importance (Figure 3)
-        plot_importance_ranking_all_models(dataset_folder = dataset_folder, model_folders = model_folders, dataset_type = dataset_type)
+        plot_importance_ranking_all_models(dataset_name)
 
         # create POS tag attention bar plots for all models (Figure 4)
-        plot_bar_pos_att_all_models(dataset_folder = dataset_folder, model_folders = model_folders)
+        plot_bar_pos_att_all_models(dataset_name)
 
         # create permutations violin plots for all models (Figure 5)
-        plot_permutations_all_models(dataset_folder = dataset_folder, model_folders = model_folders, dataset_type = dataset_type)
+        plot_permutations_all_models(dataset_name)
+        
     

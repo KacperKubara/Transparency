@@ -67,11 +67,16 @@ def save_axis_in_file(fig, ax, dirname, filename):
 def save_table_in_file(table, dirname, filename) :
     table.to_csv(os.path.join(dirname, filename + '.csv'), index=True)
 
-def annotate(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, legend='upper left', fontsize=20) :
+def annotate(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, legend='upper left', fontsize=20, title_fontsize=None) :
     if xlabel is not None : ax.set_xlabel(xlabel, fontsize=fontsize)
     if ylabel is not None : ax.set_ylabel(ylabel, fontsize=fontsize)
     ax.tick_params(labelsize=fontsize)
-    if title is not None : ax.set_title(title)
+    if title is not None :
+        if title_fontsize is not None: 
+            ax.set_title(title, fontsize = title_fontsize)
+        else:
+            ax.set_title(title)
+
     if xlim is not None : ax.set_xlim(*xlim)
     if ylim is not None : ax.set_ylim(*ylim)
 

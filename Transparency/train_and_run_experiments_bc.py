@@ -20,6 +20,12 @@ from Transparency.ExperimentsBC import *
 
 dataset = datasets[args.dataset](args)
 print("dataset.n_iter", dataset.n_iter)
+
+if hasattr(dataset, "n_iter"):
+    print("dataset.n_iter", dataset.n_iter)
+else:
+    print("Number of iterations not specified")
+
 if args.output_dir is not None :
     dataset.output_dir = args.output_dir
 
