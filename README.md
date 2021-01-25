@@ -56,6 +56,7 @@ spacy==2.1.3
 matplotlib==3.0.3
 ipython==7.4.0
 scikit_learn==0.20.3
+easy_dict==1.9
 ```
 
 Install the required packages and download the spacy en model:
