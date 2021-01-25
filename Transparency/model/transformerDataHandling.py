@@ -167,6 +167,7 @@ class DataHolder() :
     self.padding_length = padding_length
     self.pad_token = pad_token
     self.batch_size = batch_size
+    self.org_batch_size = batch_size # used when #examaples is not divisible by the batch size
     self.ix_max = len(X) // batch_size
     self.ix = 0
     self.X = X
@@ -178,7 +179,12 @@ class DataHolder() :
 
   def __next__(self):
     if self.ix >= self.ix_max:
-        self.ix = 0 
+      if self.batch_size != self.org_batch_size: 
+        self.batch_size = self.org_batch_size
+        self.ix = 0
+        raise StopIteration
+      self.batch_size = len(self.X) - self.ix_max*self.org_batch_size # change the temporary batch size to enable one smaller batch
+      if self.batch_size ==0:
         raise StopIteration
       
     X_padded = []
