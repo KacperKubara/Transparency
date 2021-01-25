@@ -7,13 +7,12 @@ def train_dataset(dataset, config='lstm') :
 
     config = configurations[config](dataset)
     trainer = Trainer(dataset, config=config, _type=dataset.trainer_type)
-    if hasattr(dataset,'n_iter'):
+    if hasattr(dataset, "n_iter"):
         n_iters = dataset.n_iter
     else:
         n_iters = 8
 
     print("Number of epochs", n_iters)
-    print("dataset.n_iter", dataset.n_iter)
     
     trainer.train(dataset.train_data, dataset.dev_data, n_iters=n_iters, save_on_metric=dataset.save_on_metric)
     evaluator = Evaluator(dataset, trainer.model.dirname, _type=dataset.trainer_type)

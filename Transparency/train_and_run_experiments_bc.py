@@ -17,9 +17,7 @@ args.attention = 'tanh'
 
 from Transparency.Trainers.DatasetBC import *
 from Transparency.ExperimentsBC import *
-
 dataset = datasets[args.dataset](args)
-print("dataset.n_iter", dataset.n_iter)
 
 if hasattr(dataset, "n_iter"):
     print("dataset.n_iter", dataset.n_iter)

@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=3
 # TODO change this to more, e.g. 120h
-#SBATCH --time=12:00:00
+#SBATCH --time=4:30:00
 #SBATCH --mem=32000M
 
 module purge
