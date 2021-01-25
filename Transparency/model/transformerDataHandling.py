@@ -5,6 +5,7 @@ from tqdm import tqdm
 from torchtext.vocab import pretrained_aliases
 import torch
 import pandas as pd
+import easydict
 
 SOS = "<SOS>"
 EOS = "<EOS>"
@@ -185,6 +186,8 @@ class DataHolder() :
         raise StopIteration
       self.batch_size = len(self.X) - self.ix_max*self.org_batch_size # change the temporary batch size to enable one smaller batch
       if self.batch_size ==0:
+        self.batch_size = self.org_batch_size
+        self.ix = 0
         raise StopIteration
       
     X_padded = []
@@ -335,20 +338,6 @@ def Diabetes_dataset(vec=None, args=None) :
     set_balanced_pos_weight(dataset)
     return dataset
 
-datasets = {
-    "sst" : SST_dataset,
-    "cls_en": CLS_dataset_en,
-    "cls_de": CLS_dataset_de,
-    "cls_fr": CLS_dataset_fr,
-    "cls_jp": CLS_dataset_jp,
-    "imdb" : IMDB_dataset,
-    'amazon': Amazon,
-    'yelp': Yelp,
-    "20News_sports" : News20_dataset,
-    "tweet" : ADR_dataset,
-    "Anemia" : Anemia_dataset,
-    "Diabetes" : Diabetes_dataset,
-}
 
 def vectorize_data(data_file, min_df, word_vectors_type=None):
   vec = Vectorizer(min_df=min_df)
@@ -376,3 +365,79 @@ def vectorize_data(data_file, min_df, word_vectors_type=None):
   vec.embeddings = None
   return vec
 
+datasets = {
+    "sst" : SST_dataset,
+    "cls_en": CLS_dataset_en,
+    "cls_de": CLS_dataset_de,
+    "cls_fr": CLS_dataset_fr,
+    "cls_jp": CLS_dataset_jp,
+    "imdb" : IMDB_dataset,
+    'amazon': Amazon,
+    'yelp': Yelp,
+    "20News_sports" : News20_dataset,
+    "tweet" : ADR_dataset,
+    "Anemia" : Anemia_dataset,
+    "Diabetes" : Diabetes_dataset,
+}
+
+dataset_config = {
+    'sst': {"data_dir": "preprocess/SST/vec_sst.p",
+            "use_emb": True,
+            "arg": easydict.EasyDict({
+                "dataset_name": "sst",
+                "num_epochs": 15,
+                "batch_size": 32,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 50 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
+            },
+
+    '20News_sports': {"data_dir": "vec_20news_sports.p",
+            "use_emb": True,
+            "arg": easydict.EasyDict({
+                "dataset_name": "20News_sports",
+                "num_epochs": 15,
+                "batch_size": 1,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 50 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
+            },
+            
+    'imdb': {"data_dir": "vec_imdb.p",
+            "use_emb": True,
+            "arg": easydict.EasyDict({
+                "dataset_name": "imdb",
+                "num_epochs": 15,
+                "batch_size": 32,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 512 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
+            }
+}
