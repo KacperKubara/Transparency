@@ -5,8 +5,11 @@ slurm-*.out
 *.pyc
 *.pkl
 *.p 
+*.th
+*.csv
 __pycache__
-
+# Dataset
+*cls-acl10-processed*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -106,7 +106,6 @@ class Model() :
         sorting_idx = get_sorting_index_with_noise_from_lengths([len(x) for x in data_in], noise_frac=0.1)
         data = [data_in[i] for i in sorting_idx]
         target = [target_in[i] for i in sorting_idx]
-
         self.encoder.train()
         self.decoder.train()
         bsize = self.bsize
