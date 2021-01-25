@@ -36,7 +36,7 @@ if __name__ == "__main__":
     #                    help="Tensorboard logging directory",
     #                    default='./runs')
 
-    parser.add_argument("--max-pool", dest="max_pool",
+    parser.add_argument("--max_pool", dest="max_pool",
                         help="Use max pooling in the final classification layer.",
                         action="store_true")
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
                         help="RNG seed. Negative for random",
                         default=1, type=int)
 
-    parser.add_argument("--gradient-clipping",
+    parser.add_argument("--gradient_clipping",
                             dest="gradient_clipping",
                             help="Gradient clipping.",
                             default=1.0, type=float)
