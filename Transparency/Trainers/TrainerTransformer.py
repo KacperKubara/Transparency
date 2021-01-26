@@ -135,7 +135,7 @@ def go(config):
 
 
             # DIVERSITY COMPOMNENT
-            if arg.diversity_transformer == "diversity_transformer":
+            if arg.diversity_transformer:
                 print("diversity", nll, arg.diversity_weight*mean_batch_conicity )
                 loss = nll + arg.diversity_weight*mean_batch_conicity
             else: 
