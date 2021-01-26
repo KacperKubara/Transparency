@@ -25,7 +25,7 @@ def get_conicity_mask(var1, lengths):
 
 ##### CONICITY CALCULATION HELPERS
 def _conicity(hidden, masks, lengths):
-"""
+  """
   Calculates the concity of a set with shape [batch_size, seq_length, emb_dim]. 
 
   Parameters:
