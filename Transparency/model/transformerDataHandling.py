@@ -427,7 +427,47 @@ dataset_config = {
                 "dataset_name": "imdb",
                 "num_epochs": 20,
                 "batch_size": 16,
-                "lr":0.0001,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 512 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
+            },
+
+    'amazon': {"data_dir": "vec_amazon.p",
+            "use_emb": True,
+            "arg": easydict.EasyDict({
+                "dataset_name": "imdb",
+                "num_epochs": 20,
+                "batch_size": 16,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 512 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
+            },
+
+    'tweets': {"data_dir": "vec_adr.p",
+            "use_emb": True,
+            "arg": easydict.EasyDict({
+                "dataset_name": "imdb",
+                "num_epochs": 20,
+                "batch_size": 16,
+                "lr":0.0005,
                 "embedding_size": 300,
                 "max_length": 512 ,
                 "num_heads":4, #8,
@@ -440,4 +480,5 @@ dataset_config = {
                 "diversity_weight": 0.5
                 })
             }
+ 
 }
