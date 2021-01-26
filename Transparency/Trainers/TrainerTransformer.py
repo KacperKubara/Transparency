@@ -119,7 +119,6 @@ def go(config):
             batch_target = target[n:n+bsize]
             y = torch.FloatTensor(batch_target).to(torch.int64)
 
-            count += 1
             opt.zero_grad()
             input = [X.to(device), X_unpadded_len.to(device)]
             label = y.to(device)
@@ -153,7 +152,6 @@ def go(config):
             #print("Factor = ", round(0.65 ** i,3)," , Learning Rate = ",round(opt.param_groups[0]["lr"],3))
 
             #tbw.add_scalar('classification/train-loss', float(loss.item()), seen)
-        print('COUNT', count)
         with torch.no_grad():
             
             data = dataset.dev_data.X
