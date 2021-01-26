@@ -461,7 +461,7 @@ dataset_config = {
                 })
             },
 
-    'tweets': {"data_dir": "vec_adr.p",
+    'tweet': {"data_dir": "vec_adr.p",
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "imdb",
