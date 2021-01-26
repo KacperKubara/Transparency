@@ -385,7 +385,7 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "sst",
-                "num_epochs": 15,
+                "num_epochs": 30,
                 "batch_size": 32,
                 "lr":0.0001,
                 "embedding_size": 300,
