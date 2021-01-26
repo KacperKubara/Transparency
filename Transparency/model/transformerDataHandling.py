@@ -479,6 +479,26 @@ dataset_config = {
                 "diversity_transformer": True,
                 "diversity_weight": 0.5
                 })
+            },
+
+    'cls_en': {"data_dir": "amazon_dataset_en.p",
+            "use_emb": False,
+            "arg": easydict.EasyDict({
+                "dataset_name": "cls_en",
+                "num_epochs": 15,
+                "batch_size": 16,
+                "lr":0.0005,
+                "embedding_size": 300,
+                "max_length": 512 ,
+                "num_heads":4, #8,
+                "depth":1,
+                "seed":1,
+                "max_pool": True,
+                "lr_warmup":5_000,
+                "gradient_clipping":5.0,
+                "diversity_transformer": True,
+                "diversity_weight": 0.5
+                })
             }
  
 }
