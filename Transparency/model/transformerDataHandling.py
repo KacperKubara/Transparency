@@ -385,7 +385,7 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "sst",
-                "num_epochs": 20,
+                "num_epochs": 15,
                 "batch_size": 16,
                 "lr":0.0001,
                 "embedding_size": 300,
@@ -405,7 +405,7 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "20News_sports",
-                "num_epochs": 20,
+                "num_epochs": 15,
                 "batch_size": 16, #32,
                 "lr":0.0001,
                 "embedding_size": 300,
@@ -425,7 +425,7 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "imdb",
-                "num_epochs": 20,
+                "num_epochs": 15,
                 "batch_size": 16,
                 "lr":0.0005,
                 "embedding_size": 300,
@@ -445,9 +445,9 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "amazon",
-                "num_epochs": 20,
-                "batch_size": 16,
-                "lr":0.0005,
+                "num_epochs": 8, # because it's huge
+                "batch_size": 64,
+                "lr":0.001,
                 "embedding_size": 300,
                 "max_length": 512 ,
                 "num_heads":4, #8,
@@ -465,7 +465,7 @@ dataset_config = {
             "use_emb": True,
             "arg": easydict.EasyDict({
                 "dataset_name": "tweet",
-                "num_epochs": 20,
+                "num_epochs": 15,
                 "batch_size": 16,
                 "lr":0.0005,
                 "embedding_size": 300,
