@@ -2,7 +2,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Run Preprocessing on dataset')
 parser.add_argument('--data_file', type=str, required=True)
 parser.add_argument("--output_file", type=str, required=True)
-parser.add_argument('--word_vectors_type', type=str, choices=['glove.840B.300d', 'fasttext.simple.300d', 'mimic', 'pubmed'], required=True)
+parser.add_argument('--word_vectors_type', type=str, choices=['glove.840B.300d', 'fasttext.simple.300d', 'mimic', 'pubmed', 'None'], required=True)
 parser.add_argument('--min_df', type=int, required=True)
 
 args, extras = parser.parse_known_args()
