@@ -32,7 +32,7 @@ def go(config):
 
     arg = dataset_config[config.dataset_name]["arg"]
     dataset_config[config.dataset_name]["arg"].diversity_transformer = True if config.model_type=="diversity_transformer" else False
-    print("Diversity",  dataset_config[config.dataset_name]["arg"].diversity_transformer ) 
+    print("Options:", arg)
 
     logging_path = os.path.join("experiments", arg.dataset_name, config.model_type, f'experiment_{get_curr_time()}.txt')
 
@@ -70,9 +70,6 @@ def go(config):
     # training loop
     best_acc = 0
 
-    
-    #total_iter = len(batches)
-    
     if dataset.max_length is None:
         mx = max([len(input) for input in dataset.train_data.X])
         mx = int(mx + 0.25*mx) # add 25% slack
@@ -84,8 +81,10 @@ def go(config):
     model = CTransformer(emb=arg.embedding_size, heads=arg.num_heads, depth=arg.depth, seq_length=mx, num_tokens=dataset.vec.vocab_size,
      num_classes=NUM_CLS)
 
-    model.token_embedding.weight.data.copy_(torch.from_numpy(dataset.vec.embeddings))
-    model.token_embedding.weight.requires_grad = False
+    if config["use_emb"]:
+        print("Using pretrained embeddings ... ")
+        model.token_embedding.weight.data.copy_(torch.from_numpy(dataset.vec.embeddings))
+        model.token_embedding.weight.requires_grad = False
 
     if torch.cuda.is_available():
         print("[INFO]: GPU training enabled")
@@ -94,7 +93,6 @@ def go(config):
     opt = torch.optim.Adam(lr=arg.lr, params=model.parameters(), weight_decay=0.00001)
     sch = torch.optim.lr_scheduler.LambdaLR(opt, lambda i: min(i / (arg.lr_warmup / arg.batch_size), 1.0))
 
-    
 
     for e in range(arg.num_epochs):
         mean_conicity_values = []
@@ -112,8 +110,7 @@ def go(config):
         bsize = arg.batch_size
         batches = list(range(0, N, bsize))
         batches = shuffle(batches)
-        count = 0
-        #for i, batch in enumerate(tqdm.tqdm(dataset.train_data, position=0, leave=True)):
+ 
         for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True)):
             batch_doc = data[n:n+bsize]
             batch_data = BatchHolder(batch_doc)

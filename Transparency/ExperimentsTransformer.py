@@ -29,7 +29,6 @@ if __name__ == "__main__":
     
 
     arg = parser.parse_args()
-    print("Options:", arg)
     run_experiments(arg)
 
 """
