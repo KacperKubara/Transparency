@@ -58,21 +58,20 @@ def _conicityy(hidden, masks, lengths):
   conicity = cosine_sim.sum(1) / lengths  # (B)
   return conicity
 
-def _conicity(self, hidden, masks, lengths):
+def _conicity(hidden, masks, lengths):
+  hidden_states = hidden    # (B,L,H)
+  b,l,h = hidden_states.size()
+  masks = masks.float() #(B,L)
+  lengths = (lengths.float() - 2) ## (B)
 
-        hidden_states = hidden    # (B,L,H)
-        b,l,h = hidden_states.size()
-        masks = masks.float() #(B,L)
-        lengths = (lengths.float() - 2) ## (B)
+  hidden_states = hidden_states* (1-masks.unsqueeze(2))
+  mean_state = hidden_states.sum(1) / lengths.unsqueeze(1)
+  mean_state = mean_state.unsqueeze(1) #.repeat(1,l,1) #(B,L,H)
+  cosine_sim = torch.abs(torch.nn.functional.cosine_similarity(hidden_states, mean_state, dim=2, eps=1e-6))  #(B,L)
+  cosine_sim = cosine_sim*(1-masks)
 
-        hidden_states = hidden_states* (1-masks.unsqueeze(2))
-        mean_state = hidden_states.sum(1) / lengths.unsqueeze(1)
-        mean_state = mean_state.unsqueeze(1) #.repeat(1,l,1) #(B,L,H)
-        cosine_sim = torch.abs(torch.nn.functional.cosine_similarity(hidden_states, mean_state, dim=2, eps=1e-6))  #(B,L)
-        cosine_sim = cosine_sim*(1-masks)
-
-        conicity = cosine_sim.sum(1) / lengths  # (B)
-        return conicity
+  conicity = cosine_sim.sum(1) / lengths  # (B)
+  return conicity
     
 
 #### TRAINING LOOP HELPERS
