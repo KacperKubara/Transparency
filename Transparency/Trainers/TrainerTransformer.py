@@ -81,7 +81,7 @@ def go(config):
     model = CTransformer(emb=arg.embedding_size, heads=arg.num_heads, depth=arg.depth, seq_length=mx, num_tokens=dataset.vec.vocab_size,
      num_classes=NUM_CLS)
 
-    if config[arg.dataset_name]["use_emb"]:
+    if dataset_config[config.dataset_name]["use_emb"]:
         print("Using pretrained embeddings ... ")
         model.token_embedding.weight.data.copy_(torch.from_numpy(dataset.vec.embeddings))
         model.token_embedding.weight.requires_grad = False
