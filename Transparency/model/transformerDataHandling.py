@@ -386,7 +386,7 @@ dataset_config = {
             "arg": easydict.EasyDict({
                 "dataset_name": "sst",
                 "num_epochs": 30,
-                "batch_size": 32,
+                "batch_size": 4,
                 "lr":0.0001,
                 "embedding_size": 300,
                 "max_length": 50 ,
