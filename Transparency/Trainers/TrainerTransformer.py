@@ -46,7 +46,7 @@ def go(config):
     log_file.write(f'Using device {device}')
 
     #torch.set_deterministic(True)
-    torch.manual_seed(arg.seed)
+    #torch.manual_seed(arg.seed)
 
     # Used for converting between nats and bits
     NUM_CLS = 2
