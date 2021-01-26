@@ -46,7 +46,7 @@ def _conicity(hidden, masks, lengths):
   """
   hidden_states = hidden#.to(device)    # [batch size, seq_length, hiddem_dim]
   b,l,h = hidden_states.size()
-  masks = masks.float()#.to(device) #[batch_size, hidden dim]
+  masks = masks.float().to(d()) #[batch_size, hidden dim]
   lengths = (lengths.float() - 2) ## (B)
 
   hidden_states = hidden_states* (masks.unsqueeze(2))
