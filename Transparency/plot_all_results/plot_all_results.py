@@ -291,9 +291,26 @@ if __name__=="__main__":
                                            "Diversity":"lstm+tanh__diversity_weight_0.5/Wed_Jan_20_02:01:35_2021",
                                            "Orthogonal": "ortho_lstm+tanh/Wed_Jan_20_01:35:55_2021"},
                         },
-                # Tweets
-                # SNLI
-                # QQP
+                "Tweets":{"exp_folder_name":"tweet",
+                          "type":"bc",
+                          "model_folders":{"Vanilla":"lstm+tanh/Mon_Jan_25_12:16:06_2021",
+                                           "Diversity":"lstm+tanh__diversity_weight_0.5/Mon_Jan_25_13:23:48_2021",
+                                           "Orthogonal":"ortho_lstm+tanh/Mon_Jan_25_12:46:08_2021"}
+
+                        },
+                "SNLI":{"exp_folder_name":"snli",
+                        "type":"qa",
+                        "model_folders":{"Vanilla":"lstm+tanh/Sat_Jan_23_15:15:14_2021",
+                                         "Diversity":"lstm+tanh__diversity_weight_0.5/Sat_Jan_23_21:14:50_2021",
+                                         "Orthogonal":"ortho_lstm+tanh/Sat_Jan_23_17:49:53_2021"}
+                        },
+                "QQP":{"exp_folder_name":"QQP",
+                       "type":"qa",
+                       "model_folders":{"Vanilla":"lstm+tanh/Sat_Jan_23_23:49:18_2021",
+                                        "Diversity":"lstm+tanh__diversity_weight_0.5/Sun_Jan_24_07:54:06_2021",
+                                        "Orthogonal":"ortho_lstm+tanh/Sun_Jan_24_03:15:01_2021"}
+
+                },
                 "bAbI 1":{"exp_folder_name":"babi_1",
                           "type":"qa",
                           "model_folders":{"Vanilla":"lstm+tanh/Wed_Jan_20_23:54:13_2021",
@@ -305,9 +322,14 @@ if __name__=="__main__":
                           "model_folders":{"Vanilla":"lstm+tanh/Thu_Jan_21_01:49:56_2021",
                                            "Diversity":"lstm+tanh__diversity_weight_0.5/Thu_Jan_21_06:04:25_2021",
                                            "Orthogonal":"ortho_lstm+tanh/Thu_Jan_21_03:38:39_2021"}
-                         }
-                # bAbi 3
-                
+                         },
+                "bAbi 3":{"exp_folder_name":"babi_3",
+                          "type":"qa",
+                          "model_folders":{"Vanilla":"lstm+tanh/Sun_Jan_24_15:02:27_2021",
+                                           "Diversity":"lstm+tanh__diversity_weight_0.5/Sun_Jan_24_17:53:08_2021",
+                                           "Orthogonal":"ortho_lstm+tanh/Sun_Jan_24_16:14:47_2021"}
+
+                        }
                 }
 
     
