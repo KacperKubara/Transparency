@@ -125,9 +125,12 @@ def go(config):
             out = model(input)
 
             # CONICITY CONSTRAINT ON THE VALUES OF THE ATTENTION HEADS
+            #heads_batch_conicity =  torch.stack([_conicity(model.tblocks[-1].attention.values[:,:,i,:], 
+            #                                                      get_conicity_mask(model.tblocks[-1].attention.values[:,:,i,:], input[1]) , \
+            #                                                      input[1]) for i in range(model.tblocks[-1].heads) ]) # [#heads, batch_size], only looks at the last trans block
             heads_batch_conicity =  torch.stack([_conicity(model.tblocks[-1].attention.values[:,:,i,:], 
-                                                                  get_conicity_mask(model.tblocks[-1].attention.values[:,:,i,:], input[1]) , \
-                                                                  input[1]) for i in range(model.tblocks[-1].heads) ]) # [#heads, batch_size], only looks at the last trans block
+                                                                  batch_data.masks , \
+                                                                  input[1]) for i in range(model.tblocks[-1].heads) ]) 
             mean_batch_conicity  = torch.mean(heads_batch_conicity,(-1,0)) # [#scalar]. first takes the mean of a each head's batch, then of heads
             mean_conicity_values.append(mean_batch_conicity)
 
