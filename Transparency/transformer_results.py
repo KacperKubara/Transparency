@@ -7,7 +7,7 @@ import numpy as np
 
 def gather_stats(arg):
     log_file = open("god_script_transformer", "w+" )
-    options = ["diversity_transformer", "vanilla_transformer"]
+    options = ["vanilla_transformer", "diversity_transformer"]
     
     for d in datasets.keys():
 
@@ -29,10 +29,16 @@ def gather_stats(arg):
                 
                 print(f'\n Val_acc {best_acc}, test_acc {test_acc}, conicity {mean_epoch_conicity}')
 
-            log_file.write(f'\n Mean test accuracies {np.mean(test_accs)}, std {np.std(test_accs)}')
-            log_file.write(f'\n Mean conicities {np.mean(conicities)}, std {np.std(conicities)}')
-            print(f'Mean test accuracies {np.mean(test_accs)}, std {np.std(test_accs)}')
-            print(f'Mean conicities {np.mean(conicities)}, std {np.std(conicities)}')
+            mean_test_accs = np.mean(test_accs)
+            std_test_accs = np.std(test_accs)
+
+            mean_conicities = np.mean(conicities)
+            std_conicities =  np.std(conicities)
+
+            log_file.write(f'\n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
+            log_file.write(f'\n Mean conicities {mean_conicities}, std {std_conicities}')
+            print(f'\n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
+            print(f'\n Mean conicities {mean_conicities}, std {std_conicities}')
 
 
 
