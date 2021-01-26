@@ -444,7 +444,7 @@ dataset_config = {
     'amazon': {"data_dir": "vec_amazon.p",
             "use_emb": True,
             "arg": easydict.EasyDict({
-                "dataset_name": "imdb",
+                "dataset_name": "amazon",
                 "num_epochs": 20,
                 "batch_size": 16,
                 "lr":0.0005,
@@ -464,7 +464,7 @@ dataset_config = {
     'tweet': {"data_dir": "vec_adr.p",
             "use_emb": True,
             "arg": easydict.EasyDict({
-                "dataset_name": "imdb",
+                "dataset_name": "tweet",
                 "num_epochs": 20,
                 "batch_size": 16,
                 "lr":0.0005,
