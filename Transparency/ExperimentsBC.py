@@ -11,7 +11,6 @@ def train_dataset(dataset, config='lstm') :
         n_iters = dataset.n_iter
     else:
         n_iters = 8
-    
     trainer.train(dataset.train_data, dataset.dev_data, n_iters=n_iters, save_on_metric=dataset.save_on_metric)
     evaluator = Evaluator(dataset, trainer.model.dirname, _type=dataset.trainer_type)
     _ = evaluator.evaluate(dataset.test_data, save_results=True)

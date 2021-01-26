@@ -1,0 +1,165 @@
+Running SLURM prolog script on indigo51.cluster.local
+===============================================================================
+Job started on Sun Jan 17 17:29:58 GMT 2021
+Job ID          : 1248425
+Job name        : run_all_non_english.sh
+WorkDir         : /mainfs/home/kjk1n18/Transparency/Transparency
+Command         : /mainfs/home/kjk1n18/Transparency/Transparency/batch/run_all_non_english.sh
+Partition       : gpu
+Num hosts       : 1
+Num cores       : 1
+Num of tasks    : 1
+Hosts allocated : indigo51
+Job Output Follows ...
+===============================================================================
+Lmod has detected the following error: The following module(s) are unknown:
+"2019"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "2019"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"Python/3.7.5-foss-2019b"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "Python/3.7.5-foss-2019b"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"CUDA/10.1.243"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "CUDA/10.1.243"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuDNN/7.6.5.32-CUDA-10.1.243"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cuDNN/7.6.5.32-CUDA-10.1.243"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"NCCL/2.5.6-CUDA-10.1.243"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "NCCL/2.5.6-CUDA-10.1.243"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"Anaconda3/2018.12"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "Anaconda3/2018.12"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+cls_en vanilla_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_en ortho_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_en diversity_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_de vanilla_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_de ortho_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_de diversity_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_fr vanilla_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_fr ortho_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_fr diversity_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_jp vanilla_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_jp ortho_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+cls_jp diversity_lstm
+Traceback (most recent call last):
+  File "train_and_run_experiments_bc.py", line 13, in <module>
+    from Transparency.Trainers.DatasetBC import *
+ModuleNotFoundError: No module named 'Transparency'
+==============================================================================
+Running epilogue script on indigo51.
+
+Submit time  : 2021-01-17T17:29:12
+Start time   : 2021-01-17T17:29:49
+End time     : 2021-01-17T17:29:54
+Elapsed time : 00:00:05 (Timelimit=1-06:00:00)
+
+Job ID: 1248425
+Cluster: i5
+User/Group: kjk1n18/fp
+State: FAILED (exit code 1)
+Cores: 1
+CPU Utilized: 00:00:04
+CPU Efficiency: 80.00% of 00:00:05 core-walltime
+Job Wall-clock time: 00:00:05
+Memory Utilized: 2.05 MB
+Memory Efficiency: 0.00% of 0.00 MB
+
