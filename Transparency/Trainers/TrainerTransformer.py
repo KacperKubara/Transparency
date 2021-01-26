@@ -13,7 +13,7 @@ from argparse import ArgumentParser
 import random, tqdm, sys, math, gzip
 import os
 from Transparency.model.transformerUtils import get_curr_time, delete_weights, _conicity, d, eval_acc, get_conicity_mask
-from Transparency.model.transformerDataHandling import vectorize_data, dataset_config#, datasets
+from Transparency.model.transformerDataHandling import vectorize_data, dataset_config, datasets
 
 from Transparency.Trainers.DatasetBC import datasets
 from Transparency.model.modelUtils import BatchHolder, get_sorting_index_with_noise_from_lengths
@@ -43,6 +43,7 @@ def go(config):
     log_file.write(f"Options: {arg}")
 
     device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
+    use_tqdm = True if torch.cuda.is_available() else False
     log_file.write(f'Using device {device}')
 
     #torch.set_deterministic(True)
@@ -51,20 +52,6 @@ def go(config):
     # Used for converting between nats and bits
     NUM_CLS = 2
     SAVE_PATH = os.path.join(logging_path, "model.pt")
-
-    # Create the dataset
-    dataset_args = {}
-    dataset_args['padding_length'] = arg.max_length
-    dataset_args['padding_token']  = 0
-    dataset_args['batch_size'] = arg.batch_size
-    
-    #vec = vectorize_data(os.path.join("preprocess", arg.dataset_name.upper(), "{}_dataset.csv".format(arg.dataset_name)), min_df=1) 
-    print(os.path.join("preprocess", arg.dataset_name.upper(), "vec_{}.p".format(arg.dataset_name)) )
-    
-
-    #vec = pickle.load(open(os.path.join("preprocess", arg.dataset_name.upper(), "vec_{}.p".format(arg.dataset_name)), "rb") )
-    #vec = pickle.load(open("preprocess/20News/vec_20news_sports.p", "rb") )
-    #dataset = datasets[arg.dataset_name](vec, arg.batch_size)
     dataset = datasets[arg.dataset_name]()
 
     # training loop
@@ -111,7 +98,7 @@ def go(config):
         batches = list(range(0, N, bsize))
         batches = shuffle(batches)
  
-        for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True)):
+        for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True, disable = use_tqdm)):
             batch_doc = data[n:n+bsize]
             batch_data = BatchHolder(batch_doc)
             X = batch_data.seq
@@ -238,3 +225,5 @@ def go(config):
     total_time = time.time() - start_time
     print(f"Execution took {total_time:.3} seconds")
     log_file.write(f"\n total time {total_time:.3} [seconds]")
+
+    return best_acc, test_acc, mean_epoch_conicity

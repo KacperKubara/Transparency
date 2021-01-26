@@ -3,7 +3,8 @@ from argparse import ArgumentParser
 import os 
 
 def run_experiments(arg):
-    go(arg)
+    result = go(arg)
+    return result
 
 
 
