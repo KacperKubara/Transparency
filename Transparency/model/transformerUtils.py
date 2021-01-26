@@ -24,8 +24,8 @@ def get_conicity_mask(var1, lengths):
 
 
 ##### CONICITY CALCULATION HELPERS
-def _conicityy(hidden, masks, lengths):
-  """
+def _conicity(hidden, masks, lengths):
+"""
   Calculates the concity of a set with shape [batch_size, seq_length, emb_dim]. 
 
   Parameters:
@@ -34,7 +34,7 @@ def _conicityy(hidden, masks, lengths):
   hidden: torch.Tensor
     Assuming shape [batch_size, seq_length, emb_dim] 
   masks: torch.Tensor
-    mask [batch_size, seq_length] with 0's indiciating that the value has been padded
+    mask [batch_size, seq_length] with 0's indiciating that the value has not been padded
   lengths: torch.Tensor
     Shape [batch_size]. Contains unpadded sequence lenghts. Used to normalize conicity.
 
@@ -44,21 +44,7 @@ def _conicityy(hidden, masks, lengths):
     Shape [batch_size]
 
   """
-  hidden_states = hidden#.to(device)    # [batch size, seq_length, hiddem_dim]
-  b,l,h = hidden_states.size()
-  masks = masks.float().to(d()) #[batch_size, hidden dim]
-  lengths = (lengths.float() - 2) ## (B)
 
-  hidden_states = hidden_states* (masks.unsqueeze(2))
-  mean_state = hidden_states.sum(1) / lengths.unsqueeze(1)
-  mean_state = mean_state.unsqueeze(1) #.repeat(1,l,1) #(B,L,H)
-  cosine_sim = torch.abs(torch.nn.functional.cosine_similarity(hidden_states, mean_state, dim=2, eps=1e-6))  #(B,L)
-  cosine_sim = cosine_sim*(masks)
-
-  conicity = cosine_sim.sum(1) / lengths  # (B)
-  return conicity
-
-def _conicity(hidden, masks, lengths):
   hidden_states = hidden    # (B,L,H)
   b,l,h = hidden_states.size()
   masks = masks.float() #(B,L)

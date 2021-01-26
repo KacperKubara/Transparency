@@ -430,7 +430,7 @@ dataset_config = {
                 "lr":0.0005,
                 "embedding_size": 300,
                 "max_length": 512 ,
-                "num_heads":4, #8,
+                "num_heads":1, #8,
                 "depth":1,
                 "seed":1,
                 "max_pool": True,
