@@ -1,0 +1,52 @@
+version: 2.1
+
+defaults: &defaults
+  docker:
+    - image: continuumio/miniconda3
+  working_directory: ~/project
+
+prepare_build: &prepare_build
+  run:
+    name: Prepares the project build
+    command: |
+      apt-get -y install make
+      apt-get -y install g++
+      conda create -n "maka_paper" python==3.7.9 -y
+      source activate maka_paper
+      conda env list
+      pip install -r Transparency/requirements.txt
+      python -m spacy download en
+      conda install -c anaconda jupyter -y
+      conda install -c anaconda pytest -y
+      export PYTHONPATH=$PYTHONPATH:$(pwd)
+
+run_tests: &run_tests
+  run:
+    name: "Runs tests with Pytest"
+    command: |
+      source activate maka_paper
+      conda env list
+      export PYTHONPATH=$PYTHONPATH:$(pwd)
+      python -m pytest Transparency/tests/
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - *prepare_build
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - *prepare_build
+      - *run_tests
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build

@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+#SBATCH --job-name=RunAllDatasetsQA
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --time=2-00:00:00
+#SBATCH --mem=62000M
+#SBATCH --mail-type=END
+#SBATCH --mail-user=blazej.dol@gmail.com
+
+module purge
+module load 2019
+module load Python/3.7.5-foss-2019b
+module load CUDA/10.1.243
+module load cuDNN/7.6.5.32-CUDA-10.1.243
+module load NCCL/2.5.6-CUDA-10.1.243
+module load Anaconda3/2018.12
+
+# Go to the script dir
+cd $HOME/Transparency/Transparency
+
+# Activate your environment
+source activate fact_paper
+
+# Line required by the repo
+export PYTHONPATH=$HOME/Transparency
+
+# general parameters
+output_path=./experiments
+diversity_weight=0.5
+
+# Use this parameter for testing, otherwise don't specify so that the predefined number of epochs is used 
+# n_epochs=1
+
+# Change the number of runs to higher to measure perfomance standard deviation
+num_runs=1
+
+# I put small datasets first so if there is an error in the script, it will occur faster
+qa_datasets="snli qqp"
+# Skipped QA datasets: cnn
+models="vanilla_lstm ortho_lstm diversity_lstm"
+
+
+# train and evaluate other NLP datasets (NLI, QA)
+for dataset_name in $qa_datasets; do
+    echo "### Dataset "${dataset_name}
+    for model_name in $models; do
+        echo "--- Model "${model_name}
+        for (( i=0; i<num_runs; ++i)); do 
+            echo "*** Run "${i}
+            python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --attention tanh
+            #  --n_iter ${n_epochs}
+        done
+    done
+done
