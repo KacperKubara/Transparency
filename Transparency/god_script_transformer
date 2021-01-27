@@ -1,0 +1,21 @@
+
+ 
+ 
+ 
+ Working on the dataset sst
+ 
+  
+ Running model type vanilla_transformer
+ Dataset sst, model type vanilla_transformer, run 1    
+ Val_acc 0.5408038976857491, test_acc 0.5495652173913044, conicity 0.26428845524787903
+ Dataset sst, model type vanilla_transformer, run 2    
+ Val_acc 0.5712545676004872, test_acc 0.5605797101449276, conicity 0.27133145928382874
+ Dataset sst, model type vanilla_transformer, run 3    
+ Val_acc 0.4835566382460414, test_acc 0.5002898550724638, conicity 0.2780713140964508
+ 
+ Mean test accuracies 0.5368115942028986, std 0.026213327837680236
+ 
+  Mean conicities 0.27123040954271954, std 0.00562728222131827
+ 
+  
+ Running model type diversity_transformer

@@ -11,43 +11,44 @@ def gather_stats(arg):
     
     for d in datasets.keys():
 
-        print(f"\n Working on the dataset {d}")
+        print(f"\n \n \n \n Working on the dataset {d}")
+        log_file.write(f"\n \n \n \n Working on the dataset {d}")
         for opt in options:
-            test_accs = []
-            conicities = []
-            print(f"\n Running model type {opt}")
-            for i in range(arg.num_runs):
-                print(f'\n Dataset {d}, model type {opt}, run {i+1}')
-                run_params = easydict.EasyDict({"model_type":opt,"dataset_name": d})
-                best_acc, test_acc, mean_epoch_conicity = run_experiments(run_params)
-                
-                test_accs.append(test_acc)
-                conicities.append(conicities)
+            try:
+                test_accs = []
+                conicities = []
+                print(f"\n \n  \n Running model type {opt}")
+                log_file.write(f"\n \n  \n Running model type {opt}")
+                for i in range(arg.num_runs):
+                    print(f'\n Dataset {d}, model type {opt}, run {i+1}')
+                    run_params = easydict.EasyDict({"model_type":opt,"dataset_name": d})
+                    best_acc, test_acc, mean_epoch_conicity = run_experiments(run_params)
+                    
+                    test_accs.append(test_acc)
+                    conicities.append(mean_epoch_conicity.item())
 
-                log_file.write(f'\n Dataset {d}, model type {opt}, run {i+1}')
-                log_file.write(f'    \n Val_acc {best_acc}, test_acc {test_acc}, conicity {mean_epoch_conicity}')
-                
-                print(f'\n Val_acc {best_acc}, test_acc {test_acc}, conicity {mean_epoch_conicity}')
+                    log_file.write(f'\n Dataset {d}, model type {opt}, run {i+1}')
+                    log_file.write(f'    \n Val_acc {best_acc}, test_acc {test_acc}, conicity {mean_epoch_conicity}')
+                    
+                    print(f'\n Val_acc {best_acc}, test_acc {test_acc}, conicity {mean_epoch_conicity}')
 
-            mean_test_accs = np.mean(test_accs)
-            std_test_accs = np.std(test_accs)
+                mean_test_accs = np.mean(test_accs)
+                std_test_accs = np.std(test_accs)
+                mean_conicities = np.mean(conicities)
+                std_conicities =  np.std(conicities)
 
-            mean_conicities = np.mean(conicities)
-            std_conicities =  np.std(conicities)
-
-            log_file.write(f'\n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
-            log_file.write(f'\n Mean conicities {mean_conicities}, std {std_conicities}')
-            print(f'\n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
-            print(f'\n Mean conicities {mean_conicities}, std {std_conicities}')
-
-
-
-
+                log_file.write(f'\n \n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
+                log_file.write(f'\n \n  Mean conicities {mean_conicities}, std {std_conicities}')
+                print(f'\n Mean test accuracies {mean_test_accs}, std {std_test_accs}')
+                print(f'\n Mean conicities {mean_conicities}, std {std_conicities}')
+            except Exception as e:
+                print(f'\n Dataset {d}, model type {opt} failed with exception {e}')
+            
 
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--num_runs", help = "How many times to run all datasets?",
-                        default = 2, type = int)
+                        default = 3, type = int)
     
 
     arg = parser.parse_args()
