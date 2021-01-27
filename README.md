@@ -1,12 +1,10 @@
 [![KacperKubara](https://circleci.com/gh/KacperKubara/Transparency.svg?style=shield&circle-token=a5666e678dfb36927f320d07b004fd9ee6ae0a08)](https://app.circleci.com/pipelines/github/KacperKubara/Transparency)
 
 # Towards Transparent and Explainable Attention Models
-Siema
-
 Code for [Towards Transparent and Explainable Attention Models](https://www.aclweb.org/anthology/2020.acl-main.387/) paper (ACL 2020)
 
+Please not that the code is a modified copy of: https://github.com/akashkm99/Interpretable-Attention
 When using this code, please cite:
-
 ```
 @inproceedings{mohankumar-etal-2020-towards,
     title = "Towards Transparent and Explainable Attention Models",
@@ -29,7 +27,19 @@ When using this code, please cite:
 This codebase has been built based on this [repo](https://github.com/successar/AttentionExplanation) 
 
 ## Installation 
+### Installing repository with a Docker image
+Make sure that you have a [Docker](https://docs.docker.com/get-docker/) installed. If you use Windows10, you need to have [WSL2](https://docs.microsoft.com/en-gb/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package) as well.
 
+Follow this steps to run the repo with Docker:
+
+1)  `git clone  https://github.com/KacperKubara/Transparency.git`
+2)  `cd Transparency`
+3)  `docker build -t transparency .` (can take a while to install)
+4)  `docker run -it transparency`
+5)  `conda activate maka_paper`
+6)  Now you have the exact setup necessary for running the package along with all necessary dependencies
+
+### Manual installation
 Clone this repository into a folder named Transparency (This step is necessary)
 
 Add your present working directory, in which the Transparency folder is present, to your python path 
@@ -38,7 +48,7 @@ Add your present working directory, in which the Transparency folder is present,
 
 To avoid having to change your python path variable each time, use: ``` echo 'PYTHONPATH=$PYTHONPATH:'$(pwd) >> ~/.bashrc```
 
-### Requirements 
+#### Requirements 
 
 ```
 torch==1.1.0
@@ -65,7 +75,7 @@ cd Transparency
 pip install -r requirements.txt
 python -m spacy download en
 ```
-### WSL2 Additional Comments on Installation from Kacper
+#### WSL2 Additional Comments on Installation from Kacper
 Run this instead of the lines above:
 ```
 conda create -n "maka_paper" Python=3.7
@@ -75,7 +85,7 @@ python -m spacy download en
 conda install -c anaconda jupyter
 conda install -c anaconda pytest
 ```
-### GOLD COMMENT
+#### GOLD COMMENT
 To set the PYTHONPATH:
 ```
 cd Transparency
