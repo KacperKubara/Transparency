@@ -54,9 +54,6 @@ def go(config):
     SAVE_PATH = os.path.join(logging_path, "model.pt")
     dataset = datasets[arg.dataset_name]()
 
-    # training loop
-    best_acc = 0
-
     if dataset.max_length is None:
         mx = max([len(input) for input in dataset.train_data.X])
         mx = int(mx + 0.25*mx) # add 25% slack
@@ -80,7 +77,8 @@ def go(config):
     opt = torch.optim.Adam(lr=arg.lr, params=model.parameters(), weight_decay=0.00001)
     sch = torch.optim.lr_scheduler.LambdaLR(opt, lambda i: min(i / (arg.lr_warmup / arg.batch_size), 1.0))
 
-
+    # training loop
+    best_acc = 0
     for e in range(arg.num_epochs):
         mean_conicity_values = []
         print(f'\n epoch {e+1}')
@@ -160,9 +158,6 @@ def go(config):
                 input = [X.to(device), X_unpadded_len.to(device)]
                 label = y.to(device)
                 out = model(input).argmax(dim=1)
-                #print("Out", out)
-                #print("Label", label)
-                #print("Size", input[0].size(0))
                 tot += float(input[0].size(0))
                 cor += float((label == out).sum().item())
                 #print(tot)
@@ -203,6 +198,7 @@ def go(config):
     N = len(data)
     batches = list(range(0, N, bsize))
     tot, cor= 0.0, 0.0
+    mean_conicity_values = []
     for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True)):
         batch_doc = data[n:n+bsize]
         batch_data = BatchHolder(batch_doc)
@@ -214,12 +210,17 @@ def go(config):
         input = [X.to(device), X_unpadded_len.to(device)]
         label = y.to(device)
         out = model(input).argmax(dim=1)
-        #print("Out", out)
-        #print("Label", label)
-        #print("Size", input[0].size(0))
+
+        heads_batch_conicity =  torch.stack([_conicity(model.tblocks[-1].attention.values[:,:,i,:], 
+                                                                  batch_data.masks , \
+                                                                  input[1]) for i in range(model.tblocks[-1].heads) ]) 
+        mean_batch_conicity  = torch.mean(heads_batch_conicity,(-1,0)) # [#scalar]. first takes the mean of a each head's batch, then of heads
+        mean_conicity_values.append(mean_batch_conicity)
+
         tot += float(input[0].size(0))
         cor += float((label == out).sum().item())
-        #print(tot)
+        
+    mean_epoch_conicity = torch.mean(torch.stack(mean_conicity_values))
     test_acc = float(cor)/float(tot)
     print(f"Training concluded. Best model with validation accuracy {best_acc:.3} achieved test accuracy: {test_acc}")
     total_time = time.time() - start_time
