@@ -10,7 +10,9 @@ def gather_stats(arg):
     options = ["vanilla_transformer", "diversity_transformer"]
     
     for d in datasets.keys():
-
+        if d == "amazon":
+            print("Skipping amazon")
+            continue
         print(f"\n \n \n \n Working on the dataset {d}")
         log_file.write(f"\n \n \n \n Working on the dataset {d}")
         for opt in options:

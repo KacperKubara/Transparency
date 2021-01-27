@@ -27,4 +27,4 @@ export PYTHONPATH=$HOME/Transparency
 
 # Run the script and train the model
 
-python transformer_results.py --num_runs 3
+python transformer_results.py --num_runs 5
