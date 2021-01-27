@@ -147,7 +147,7 @@ def go(config):
             N = len(data)
             batches = list(range(0, N, bsize))
             tot, cor= 0.0, 0.0
-            for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True)):
+            for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True, disable = use_tqdm)):
                 batch_doc = data[n:n+bsize]
                 batch_data = BatchHolder(batch_doc)
                 X = batch_data.seq
@@ -199,7 +199,7 @@ def go(config):
     batches = list(range(0, N, bsize))
     tot, cor= 0.0, 0.0
     mean_conicity_values = []
-    for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True)):
+    for i,n in enumerate(tqdm.tqdm(batches, position = 0, leave = True, disable = use_tqdm)):
         batch_doc = data[n:n+bsize]
         batch_data = BatchHolder(batch_doc)
         X = batch_data.seq
@@ -219,7 +219,7 @@ def go(config):
 
         tot += float(input[0].size(0))
         cor += float((label == out).sum().item())
-        
+
     mean_epoch_conicity = torch.mean(torch.stack(mean_conicity_values))
     test_acc = float(cor)/float(tot)
     print(f"Training concluded. Best model with validation accuracy {best_acc:.3} achieved test accuracy: {test_acc}")
