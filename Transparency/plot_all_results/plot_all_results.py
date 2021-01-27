@@ -293,9 +293,9 @@ if __name__=="__main__":
                         },
                 "Tweets":{"exp_folder_name":"tweet",
                           "type":"bc",
-                          "model_folders":{"Vanilla":"lstm+tanh/Mon_Jan_25_12:16:06_2021",
-                                           "Diversity":"lstm+tanh__diversity_weight_0.5/Mon_Jan_25_13:23:48_2021",
-                                           "Orthogonal":"ortho_lstm+tanh/Mon_Jan_25_12:46:08_2021"}
+                          "model_folders":{"Vanilla":"lstm+tanh/Tue_Jan_26_18:03:04_2021",
+                                           "Diversity":"lstm+tanh__diversity_weight_0.5/Tue_Jan_26_19:17:13_2021",
+                                           "Orthogonal":"ortho_lstm+tanh/Tue_Jan_26_18:41:36_2021"}
 
                         },
                 "SNLI":{"exp_folder_name":"snli",
