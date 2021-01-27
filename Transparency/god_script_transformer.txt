@@ -1,0 +1,335 @@
+
+ 
+ 
+ 
+ Working on the dataset sst
+ 
+  
+ Running model type vanilla_transformer
+ Dataset sst, model type vanilla_transformer, run 1    
+ Val_acc 0.730816077953715, test_acc 0.7223188405797102, conicity 0.234064981341362
+ Dataset sst, model type vanilla_transformer, run 2    
+ Val_acc 0.7198538367844093, test_acc 0.7020289855072464, conicity 0.23180997371673584
+ Dataset sst, model type vanilla_transformer, run 3    
+ Val_acc 0.7405602923264312, test_acc 0.6904347826086956, conicity 0.23609602451324463
+ Dataset sst, model type vanilla_transformer, run 4    
+ Val_acc 0.7320341047503045, test_acc 0.7223188405797102, conicity 0.23678083717823029
+ Dataset sst, model type vanilla_transformer, run 5    
+ Val_acc 0.7442143727161997, test_acc 0.7252173913043478, conicity 0.23808468878269196
+ 
+ Mean test accuracies 0.712463768115942, std 0.013791741743038075
+ 
+  Mean conicities 0.23536730110645293, std 0.002202904116886411
+ 
+  
+ Running model type diversity_transformer
+ Dataset sst, model type diversity_transformer, run 1    
+ Val_acc 0.7344701583434835, test_acc 0.7333333333333333, conicity 0.13389404118061066
+ Dataset sst, model type diversity_transformer, run 2    
+ Val_acc 0.7271619975639464, test_acc 0.7089855072463768, conicity 0.13540112972259521
+ Dataset sst, model type diversity_transformer, run 3    
+ Val_acc 0.7429963459196103, test_acc 0.7310144927536232, conicity 0.13524112105369568
+ Dataset sst, model type diversity_transformer, run 4    
+ Val_acc 0.7174177831912302, test_acc 0.6776811594202898, conicity 0.1330675184726715
+ Dataset sst, model type diversity_transformer, run 5    
+ Val_acc 0.730816077953715, test_acc 0.6910144927536231, conicity 0.13688160479068756
+ 
+ Mean test accuracies 0.7084057971014492, std 0.021814362576494817
+ 
+  Mean conicities 0.13489708304405212, std 0.0013163701052337866
+ 
+ 
+ 
+ Working on the dataset cls_en
+ 
+  
+ Running model type vanilla_transformer
+ Dataset cls_en, model type vanilla_transformer, run 1    
+ Val_acc 0.782594198066022, test_acc 0.7915971990663555, conicity 0.20420154929161072
+ Dataset cls_en, model type vanilla_transformer, run 2    
+ Val_acc 0.788596198732911, test_acc 0.7842614204734911, conicity 0.21138103306293488
+ Dataset cls_en, model type vanilla_transformer, run 3    
+ Val_acc 0.7879293097699233, test_acc 0.7635878626208736, conicity 0.20368550717830658
+ Dataset cls_en, model type vanilla_transformer, run 4    
+ Val_acc 0.8039346448816272, test_acc 0.7929309769923307, conicity 0.21887849271297455
+ Dataset cls_en, model type vanilla_transformer, run 5    
+ Val_acc 0.7932644214738246, test_acc 0.7719239746582194, conicity 0.2191399484872818
+ 
+ Mean test accuracies 0.7808602867622542, std 0.011408285311286745
+ 
+  Mean conicities 0.2114573061466217, std 0.0067401734059793625
+ 
+  
+ Running model type diversity_transformer
+ Dataset cls_en, model type diversity_transformer, run 1    
+ Val_acc 0.7839279759919974, test_acc 0.782594198066022, conicity 0.11185159534215927
+ Dataset cls_en, model type diversity_transformer, run 2    
+ Val_acc 0.7862620873624542, test_acc 0.7502500833611204, conicity 0.11225184798240662
+ Dataset cls_en, model type diversity_transformer, run 3    
+ Val_acc 0.7975991997332444, test_acc 0.7932644214738246, conicity 0.11473792046308517
+ Dataset cls_en, model type diversity_transformer, run 4    
+ Val_acc 0.7912637545848616, test_acc 0.7789263087695899, conicity 0.11100376397371292
+ Dataset cls_en, model type diversity_transformer, run 5    
+ Val_acc 0.7869289763254418, test_acc 0.7792597532510837, conicity 0.1121482327580452
+ 
+ Mean test accuracies 0.776858952984328, std 0.014283572221230443
+ 
+  Mean conicities 0.11239867210388184, std 0.0012491134255505983
+ 
+ 
+ 
+ Working on the dataset cls_de
+ 
+  
+ Running model type vanilla_transformer
+ Dataset cls_de, model type vanilla_transformer, run 1    
+ Val_acc 0.7897897897897898, test_acc 0.7835223482321547, conicity 0.2174363136291504
+ Dataset cls_de, model type vanilla_transformer, run 2    
+ Val_acc 0.8031364698031365, test_acc 0.789859906604403, conicity 0.2095586359500885
+ Dataset cls_de, model type vanilla_transformer, run 3    
+ Val_acc 0.7994661327994661, test_acc 0.7368245496997998, conicity 0.23135511577129364
+ Dataset cls_de, model type vanilla_transformer, run 4    
+ Val_acc 0.7994661327994661, test_acc 0.7891927951967979, conicity 0.20391090214252472
+ Dataset cls_de, model type vanilla_transformer, run 5    
+ Val_acc 0.7931264597931265, test_acc 0.7751834556370913, conicity 0.21059173345565796
+ 
+ Mean test accuracies 0.7749166110740494, std 0.019759790344074588
+ 
+  Mean conicities 0.21457054018974303, std 0.009428813343058284
+ 
+  
+ Running model type diversity_transformer
+ Dataset cls_de, model type diversity_transformer, run 1    
+ Val_acc 0.7984651317984651, test_acc 0.7725150100066711, conicity 0.11095813661813736
+ Dataset cls_de, model type diversity_transformer, run 2    
+ Val_acc 0.7977977977977978, test_acc 0.7681787858572382, conicity 0.11030041426420212
+ Dataset cls_de, model type diversity_transformer, run 3    
+ Val_acc 0.7887887887887888, test_acc 0.7805203468979319, conicity 0.11217409372329712
+ Dataset cls_de, model type diversity_transformer, run 4    
+ Val_acc 0.8004671338004671, test_acc 0.7681787858572382, conicity 0.11271963268518448
+ Dataset cls_de, model type diversity_transformer, run 5    
+ Val_acc 0.8001334668001334, test_acc 0.7568378919279519, conicity 0.11137160658836365
+ 
+ Mean test accuracies 0.7692461641094063, std 0.007668589990925448
+ 
+  Mean conicities 0.11150477677583695, std 0.0008591738912358637
+ 
+ 
+ 
+ Working on the dataset cls_fr
+ 
+  
+ Running model type vanilla_transformer
+ Dataset cls_fr, model type vanilla_transformer, run 1    
+ Val_acc 0.7911244577911245, test_acc 0.7941961307538359, conicity 0.21911445260047913
+ Dataset cls_fr, model type vanilla_transformer, run 2    
+ Val_acc 0.7877877877877878, test_acc 0.8125416944629753, conicity 0.2263982594013214
+ Dataset cls_fr, model type vanilla_transformer, run 3    
+ Val_acc 0.7891224557891224, test_acc 0.784856571047365, conicity 0.20681269466876984
+ Dataset cls_fr, model type vanilla_transformer, run 4    
+ Val_acc 0.7951284617951284, test_acc 0.8108739159439626, conicity 0.20621700584888458
+ Dataset cls_fr, model type vanilla_transformer, run 5    
+ Val_acc 0.7917917917917918, test_acc 0.8072048032021347, conicity 0.21358639001846313
+ 
+ Mean test accuracies 0.8019346230820548, std 0.010693360963349757
+ 
+  Mean conicities 0.2144257605075836, std 0.00763376094246298
+ 
+  
+ Running model type diversity_transformer
+ Dataset cls_fr, model type diversity_transformer, run 1    
+ Val_acc 0.7831164497831165, test_acc 0.7731821214142762, conicity 0.11614509671926498
+ Dataset cls_fr, model type diversity_transformer, run 2    
+ Val_acc 0.7854521187854521, test_acc 0.8072048032021347, conicity 0.11486803740262985
+ Dataset cls_fr, model type diversity_transformer, run 3    
+ Val_acc 0.7897897897897898, test_acc 0.8068712474983322, conicity 0.11461054533720016
+ Dataset cls_fr, model type diversity_transformer, run 4    
+ Val_acc 0.7911244577911245, test_acc 0.8085390260173448, conicity 0.1139175221323967
+ Dataset cls_fr, model type diversity_transformer, run 5    
+ Val_acc 0.7941274607941274, test_acc 0.8098732488325551, conicity 0.11266414821147919
+ 
+ Mean test accuracies 0.8011340893929286, std 0.01401632660351581
+ 
+  Mean conicities 0.11444106996059418, std 0.0011442275582233229
+ 
+ 
+ 
+ Working on the dataset cls_jp
+ 
+  
+ Running model type vanilla_transformer
+ Dataset cls_jp, model type vanilla_transformer, run 1    
+ Val_acc 0.7867156208277704, test_acc 0.750417083750417, conicity 0.1943400651216507
+ Dataset cls_jp, model type vanilla_transformer, run 2    
+ Val_acc 0.7890520694259012, test_acc 0.7514180847514181, conicity 0.21645547449588776
+ Dataset cls_jp, model type vanilla_transformer, run 3    
+ Val_acc 0.790720961281709, test_acc 0.721388054721388, conicity 0.21945372223854065
+ Dataset cls_jp, model type vanilla_transformer, run 4    
+ Val_acc 0.7867156208277704, test_acc 0.6082749416082749, conicity 0.227670818567276
+ Dataset cls_jp, model type vanilla_transformer, run 5    
+ Val_acc 0.7817089452603472, test_acc 0.745412078745412, conicity 0.22784820199012756
+ 
+ Mean test accuracies 0.7153820487153819, std 0.05465502132045806
+ 
+  Mean conicities 0.21715365648269652, std 0.012257419902088085
+ 
+  
+ Running model type diversity_transformer
+ Dataset cls_jp, model type diversity_transformer, run 1    
+ Val_acc 0.787716955941255, test_acc 0.7711044377711045, conicity 0.10661593824625015
+ Dataset cls_jp, model type diversity_transformer, run 2    
+ Val_acc 0.7726969292389854, test_acc 0.726393059726393, conicity 0.11044424772262573
+ Dataset cls_jp, model type diversity_transformer, run 3    
+ Val_acc 0.7813751668891856, test_acc 0.7517517517517518, conicity 0.11009214073419571
+ Dataset cls_jp, model type diversity_transformer, run 4    
+ Val_acc 0.7897196261682243, test_acc 0.7764431097764432, conicity 0.11292150616645813
+ Dataset cls_jp, model type diversity_transformer, run 5    
+ Val_acc 0.7860480640854473, test_acc 0.7510844177510844, conicity 0.11111383140087128
+ 
+ Mean test accuracies 0.7553553553553554, std 0.01767918786886467
+ 
+  Mean conicities 0.1102375328540802, std 0.002056765873575847
+ 
+ 
+ 
+ Working on the dataset imdb
+ 
+  
+ Running model type vanilla_transformer
+ Dataset imdb, model type vanilla_transformer, run 1    
+ Val_acc 0.8317430765650454, test_acc 0.7947658402203857, conicity 0.24284592270851135
+ Dataset imdb, model type vanilla_transformer, run 2    
+ Val_acc 0.8245287409820805, test_acc 0.8234618916437099, conicity 0.24691861867904663
+ Dataset imdb, model type vanilla_transformer, run 3    
+ Val_acc 0.8301140330463114, test_acc 0.8014233241505969, conicity 0.2321823239326477
+ Dataset imdb, model type vanilla_transformer, run 4    
+ Val_acc 0.825692343495462, test_acc 0.8005050505050505, conicity 0.2376309335231781
+ Dataset imdb, model type vanilla_transformer, run 5    
+ Val_acc 0.8280195485222248, test_acc 0.8250688705234159, conicity 0.22251321375370026
+ 
+ Mean test accuracies 0.8090449954086317, std 0.012645364963961953
+ 
+  Mean conicities 0.2364182025194168, std 0.008536233628700015
+ 
+  
+ Running model type diversity_transformer
+ Dataset imdb, model type diversity_transformer, run 1    
+ Val_acc 0.8247614614847568, test_acc 0.8078512396694215, conicity 0.08105482161045074
+ Dataset imdb, model type diversity_transformer, run 2    
+ Val_acc 0.8312776355596928, test_acc 0.8119834710743802, conicity 0.08080114424228668
+ Dataset imdb, model type diversity_transformer, run 3    
+ Val_acc 0.8235978589713754, test_acc 0.8163452708907254, conicity 0.08136851340532303
+ Dataset imdb, model type diversity_transformer, run 4    
+ Val_acc 0.8233651384686991, test_acc 0.8163452708907254, conicity 0.08086797595024109
+ Dataset imdb, model type diversity_transformer, run 5    
+ Val_acc 0.8287177100302536, test_acc 0.821625344352617, conicity 0.08078371733427048
+ 
+ Mean test accuracies 0.8148301193755738, std 0.004638418248066838
+ 
+  Mean conicities 0.0809752345085144, std 0.00021885750826422293
+ 
+ 
+ 
+ Working on the dataset yelp
+ 
+  
+ Running model type vanilla_transformer
+ 
+  
+ Running model type diversity_transformer
+ 
+ 
+ 
+ Working on the dataset 20News_sports
+ 
+  
+ Running model type vanilla_transformer
+ Dataset 20News_sports, model type vanilla_transformer, run 1    
+ Val_acc 0.8201438848920863, test_acc 0.7535014005602241, conicity 0.18005768954753876
+ Dataset 20News_sports, model type vanilla_transformer, run 2    
+ Val_acc 0.802158273381295, test_acc 0.7310924369747899, conicity 0.17643216252326965
+ Dataset 20News_sports, model type vanilla_transformer, run 3    
+ Val_acc 0.7913669064748201, test_acc 0.7647058823529411, conicity 0.18499141931533813
+ Dataset 20News_sports, model type vanilla_transformer, run 4    
+ Val_acc 0.7805755395683454, test_acc 0.773109243697479, conicity 0.191864475607872
+ Dataset 20News_sports, model type vanilla_transformer, run 5    
+ Val_acc 0.802158273381295, test_acc 0.7787114845938375, conicity 0.185075044631958
+ 
+ Mean test accuracies 0.7602240896358543, std 0.01686265203730244
+ 
+  Mean conicities 0.1836841583251953, std 0.005221183884262523
+ 
+  
+ Running model type diversity_transformer
+ Dataset 20News_sports, model type diversity_transformer, run 1    
+ Val_acc 0.8561151079136691, test_acc 0.8263305322128851, conicity 0.12188851833343506
+ Dataset 20News_sports, model type diversity_transformer, run 2    
+ Val_acc 0.8237410071942446, test_acc 0.8067226890756303, conicity 0.12277653813362122
+ Dataset 20News_sports, model type diversity_transformer, run 3    
+ Val_acc 0.7769784172661871, test_acc 0.7703081232492998, conicity 0.12288931012153625
+ Dataset 20News_sports, model type diversity_transformer, run 4    
+ Val_acc 0.8201438848920863, test_acc 0.7591036414565826, conicity 0.12179671227931976
+ Dataset 20News_sports, model type diversity_transformer, run 5    
+ Val_acc 0.8237410071942446, test_acc 0.773109243697479, conicity 0.12005584686994553
+ 
+ Mean test accuracies 0.7871148459383753, std 0.025241188405756423
+ 
+  Mean conicities 0.12188138514757156, std 0.001015580819197736
+ 
+ 
+ 
+ Working on the dataset tweet
+ 
+  
+ Running model type vanilla_transformer
+ Dataset tweet, model type vanilla_transformer, run 1    
+ Val_acc 0.9051900286064569, test_acc 0.8998302207130731, conicity 0.24450945854187012
+ Dataset tweet, model type vanilla_transformer, run 2    
+ Val_acc 0.9035553739272578, test_acc 0.8966771768130002, conicity 0.24292989075183868
+ Dataset tweet, model type vanilla_transformer, run 3    
+ Val_acc 0.9015120555782591, test_acc 0.8988600533592045, conicity 0.26218777894973755
+ Dataset tweet, model type vanilla_transformer, run 4    
+ Val_acc 0.9047813649366572, test_acc 0.8991025951976716, conicity 0.24983522295951843
+ Dataset tweet, model type vanilla_transformer, run 5    
+ Val_acc 0.9039640375970576, test_acc 0.9000727625515401, conicity 0.24929164350032806
+ 
+ Mean test accuracies 0.8989085617268978, std 0.001201989977527441
+ 
+  Mean conicities 0.24975079894065857, std 0.006765986411098647
+ 
+  
+ Running model type diversity_transformer
+ Dataset tweet, model type diversity_transformer, run 1    
+ Val_acc 0.9060073559460564, test_acc 0.8932815910744604, conicity 0.11171860247850418
+ Dataset tweet, model type diversity_transformer, run 2    
+ Val_acc 0.9076420106252554, test_acc 0.9024981809362115, conicity 0.11028480529785156
+ Dataset tweet, model type diversity_transformer, run 3    
+ Val_acc 0.9019207192480588, test_acc 0.8978898860053359, conicity 0.11099128425121307
+ Dataset tweet, model type diversity_transformer, run 4    
+ Val_acc 0.9043727012668574, test_acc 0.8923114237205918, conicity 0.11153797805309296
+ Dataset tweet, model type diversity_transformer, run 5    
+ Val_acc 0.9043727012668574, test_acc 0.8869755032743148, conicity 0.110761359333992
+ 
+ Mean test accuracies 0.8945913170021829, std 0.005259524101258216
+ 
+  Mean conicities 0.11105880588293075, std 0.0005209698728557266
+ 
+ 
+ 
+ Working on the dataset Anemia
+ 
+  
+ Running model type vanilla_transformer
+ 
+  
+ Running model type diversity_transformer
+ 
+ 
+ 
+ Working on the dataset Diabetes
+ 
+  
+ Running model type vanilla_transformer
+ 
+  
+ Running model type diversity_transformer

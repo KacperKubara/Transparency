@@ -1,0 +1,6300 @@
+
+ 
+ 
+ 
+ Working on the dataset sst
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset sst, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.516
+Mean concity value 0.2588173449039459
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.571
+Mean concity value 0.25543412566185
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.666
+Mean concity value 0.2513907253742218
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.708
+Mean concity value 0.24700535833835602
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.669
+Mean concity value 0.24372616410255432
+
+ epoch 6
+-- validation accuracy 0.686
+Mean concity value 0.24122688174247742
+
+ epoch 7
+-- validation accuracy 0.674
+Mean concity value 0.2393917590379715
+
+ epoch 8
+-- validation accuracy 0.731
+Mean concity value 0.23806290328502655
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.731
+Mean concity value 0.23689979314804077
+
+ epoch 10
+-- validation accuracy 0.724
+Mean concity value 0.23590373992919922
+
+ epoch 11
+-- validation accuracy 0.713
+Mean concity value 0.2352898120880127
+
+ epoch 12
+-- validation accuracy 0.721
+Mean concity value 0.23430250585079193
+
+ epoch 13
+-- validation accuracy 0.639
+Mean concity value 0.23338396847248077
+
+ epoch 14
+-- validation accuracy 0.683
+Mean concity value 0.2324337512254715
+
+ epoch 15
+-- validation accuracy 0.719
+Mean concity value 0.23148994147777557
+Training concluded. Best model with validation accuracy 0.731 achieved test accuracy: 0.7223188405797102
+Execution took 85.3 seconds
+
+ Val_acc 0.730816077953715, test_acc 0.7223188405797102, conicity 0.234064981341362
+
+ Dataset sst, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.514
+Mean concity value 0.26527658104896545
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.577
+Mean concity value 0.2622848451137543
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.658
+Mean concity value 0.25809937715530396
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.618
+Mean concity value 0.25335878133773804
+
+ epoch 5
+-- validation accuracy 0.66
+Mean concity value 0.2489386647939682
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.663
+Mean concity value 0.24556617438793182
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.666
+Mean concity value 0.24314916133880615
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.649
+Mean concity value 0.24102242290973663
+
+ epoch 9
+-- validation accuracy 0.636
+Mean concity value 0.2387523502111435
+
+ epoch 10
+-- validation accuracy 0.695
+Mean concity value 0.23691320419311523
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.705
+Mean concity value 0.2353876680135727
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.576
+Mean concity value 0.23398780822753906
+
+ epoch 13
+-- validation accuracy 0.72
+Mean concity value 0.23267003893852234
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.711
+Mean concity value 0.23179760575294495
+
+ epoch 15
+-- validation accuracy 0.714
+Mean concity value 0.23087002336978912
+Training concluded. Best model with validation accuracy 0.72 achieved test accuracy: 0.7020289855072464
+Execution took 81.6 seconds
+
+ Val_acc 0.7198538367844093, test_acc 0.7020289855072464, conicity 0.23180997371673584
+
+ Dataset sst, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.54
+Mean concity value 0.2631550431251526
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.536
+Mean concity value 0.258791983127594
+
+ epoch 3
+-- validation accuracy 0.649
+Mean concity value 0.25384587049484253
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.631
+Mean concity value 0.2491993010044098
+
+ epoch 5
+-- validation accuracy 0.626
+Mean concity value 0.24570129811763763
+
+ epoch 6
+-- validation accuracy 0.676
+Mean concity value 0.24365641176700592
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.647
+Mean concity value 0.24230962991714478
+
+ epoch 8
+-- validation accuracy 0.67
+Mean concity value 0.2411809116601944
+
+ epoch 9
+-- validation accuracy 0.521
+Mean concity value 0.2394753396511078
+
+ epoch 10
+-- validation accuracy 0.733
+Mean concity value 0.23737835884094238
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.717
+Mean concity value 0.23653651773929596
+
+ epoch 12
+-- validation accuracy 0.724
+Mean concity value 0.2356228083372116
+
+ epoch 13
+-- validation accuracy 0.721
+Mean concity value 0.23485101759433746
+
+ epoch 14
+-- validation accuracy 0.741
+Mean concity value 0.23414228856563568
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.705
+Mean concity value 0.2333839237689972
+Training concluded. Best model with validation accuracy 0.741 achieved test accuracy: 0.6904347826086956
+Execution took 80.4 seconds
+
+ Val_acc 0.7405602923264312, test_acc 0.6904347826086956, conicity 0.23609602451324463
+
+ Dataset sst, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.538
+Mean concity value 0.2757532298564911
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.607
+Mean concity value 0.27207520604133606
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.615
+Mean concity value 0.266282856464386
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.625
+Mean concity value 0.2618721127510071
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.67
+Mean concity value 0.2581019103527069
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.686
+Mean concity value 0.2549891173839569
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.638
+Mean concity value 0.25189462304115295
+
+ epoch 8
+-- validation accuracy 0.604
+Mean concity value 0.24922457337379456
+
+ epoch 9
+-- validation accuracy 0.686
+Mean concity value 0.24637535214424133
+
+ epoch 10
+-- validation accuracy 0.697
+Mean concity value 0.24408292770385742
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.717
+Mean concity value 0.24230264127254486
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.71
+Mean concity value 0.2403011918067932
+
+ epoch 13
+-- validation accuracy 0.715
+Mean concity value 0.23845666646957397
+
+ epoch 14
+-- validation accuracy 0.732
+Mean concity value 0.23684163391590118
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.726
+Mean concity value 0.2352679818868637
+Training concluded. Best model with validation accuracy 0.732 achieved test accuracy: 0.7223188405797102
+Execution took 82.9 seconds
+
+ Val_acc 0.7320341047503045, test_acc 0.7223188405797102, conicity 0.23678083717823029
+
+ Dataset sst, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.503
+Mean concity value 0.27851250767707825
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.513
+Mean concity value 0.27512872219085693
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.648
+Mean concity value 0.26951730251312256
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.633
+Mean concity value 0.2635226249694824
+
+ epoch 5
+-- validation accuracy 0.715
+Mean concity value 0.2587278187274933
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.689
+Mean concity value 0.2543652653694153
+
+ epoch 7
+-- validation accuracy 0.71
+Mean concity value 0.2507478892803192
+
+ epoch 8
+-- validation accuracy 0.719
+Mean concity value 0.248191699385643
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.725
+Mean concity value 0.24586841464042664
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.726
+Mean concity value 0.2438461035490036
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.704
+Mean concity value 0.2424776703119278
+
+ epoch 12
+-- validation accuracy 0.73
+Mean concity value 0.24113070964813232
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.744
+Mean concity value 0.23995953798294067
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.697
+Mean concity value 0.23857055604457855
+
+ epoch 15
+-- validation accuracy 0.742
+Mean concity value 0.23724673688411713
+Training concluded. Best model with validation accuracy 0.744 achieved test accuracy: 0.7252173913043478
+Execution took 82.4 seconds
+
+ Val_acc 0.7442143727161997, test_acc 0.7252173913043478, conicity 0.23808468878269196
+
+ Mean test accuracies 0.712463768115942, std 0.013791741743038075
+
+ Mean conicities 0.23536730110645293, std 0.002202904116886411
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset sst, model type diversity_transformer, run 1
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.575
+Mean concity value 0.23970863223075867
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.518
+Mean concity value 0.15888841450214386
+
+ epoch 3
+-- validation accuracy 0.504
+Mean concity value 0.1457025557756424
+
+ epoch 4
+-- validation accuracy 0.703
+Mean concity value 0.14133983850479126
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.691
+Mean concity value 0.13905727863311768
+
+ epoch 6
+-- validation accuracy 0.671
+Mean concity value 0.13769817352294922
+
+ epoch 7
+-- validation accuracy 0.706
+Mean concity value 0.13668587803840637
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.702
+Mean concity value 0.1359480619430542
+
+ epoch 9
+-- validation accuracy 0.72
+Mean concity value 0.13533271849155426
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.732
+Mean concity value 0.13481593132019043
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.731
+Mean concity value 0.13438120484352112
+
+ epoch 12
+-- validation accuracy 0.719
+Mean concity value 0.133990079164505
+
+ epoch 13
+-- validation accuracy 0.694
+Mean concity value 0.13361401855945587
+
+ epoch 14
+-- validation accuracy 0.728
+Mean concity value 0.1332397758960724
+
+ epoch 15
+-- validation accuracy 0.734
+Mean concity value 0.13291728496551514
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.734 achieved test accuracy: 0.7333333333333333
+Execution took 1.5e+02 seconds
+
+ Val_acc 0.7344701583434835, test_acc 0.7333333333333333, conicity 0.13389404118061066
+
+ Dataset sst, model type diversity_transformer, run 2
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.52
+Mean concity value 0.22824978828430176
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.566
+Mean concity value 0.1586352437734604
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.67
+Mean concity value 0.14601585268974304
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.626
+Mean concity value 0.1418272703886032
+
+ epoch 5
+-- validation accuracy 0.705
+Mean concity value 0.1397896409034729
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.721
+Mean concity value 0.1385796070098877
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.717
+Mean concity value 0.13773280382156372
+
+ epoch 8
+-- validation accuracy 0.727
+Mean concity value 0.13695845007896423
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.688
+Mean concity value 0.1363678127527237
+
+ epoch 10
+-- validation accuracy 0.716
+Mean concity value 0.13583697378635406
+
+ epoch 11
+-- validation accuracy 0.7
+Mean concity value 0.13543343544006348
+
+ epoch 12
+-- validation accuracy 0.72
+Mean concity value 0.13504023849964142
+
+ epoch 13
+-- validation accuracy 0.687
+Mean concity value 0.13463684916496277
+
+ epoch 14
+-- validation accuracy 0.716
+Mean concity value 0.13425195217132568
+
+ epoch 15
+-- validation accuracy 0.726
+Mean concity value 0.13396133482456207
+Training concluded. Best model with validation accuracy 0.727 achieved test accuracy: 0.7089855072463768
+Execution took 1.48e+02 seconds
+
+ Val_acc 0.7271619975639464, test_acc 0.7089855072463768, conicity 0.13540112972259521
+
+ Dataset sst, model type diversity_transformer, run 3
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.54
+Mean concity value 0.22683075070381165
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.63
+Mean concity value 0.1604469269514084
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.616
+Mean concity value 0.14652520418167114
+
+ epoch 4
+-- validation accuracy 0.674
+Mean concity value 0.14204147458076477
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.531
+Mean concity value 0.13981793820858002
+
+ epoch 6
+-- validation accuracy 0.721
+Mean concity value 0.1385089010000229
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.627
+Mean concity value 0.1376982033252716
+
+ epoch 8
+-- validation accuracy 0.687
+Mean concity value 0.1370449662208557
+
+ epoch 9
+-- validation accuracy 0.695
+Mean concity value 0.1365235447883606
+
+ epoch 10
+-- validation accuracy 0.683
+Mean concity value 0.13601899147033691
+
+ epoch 11
+-- validation accuracy 0.743
+Mean concity value 0.13558319211006165
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.738
+Mean concity value 0.13518168032169342
+
+ epoch 13
+-- validation accuracy 0.738
+Mean concity value 0.13481839001178741
+
+ epoch 14
+-- validation accuracy 0.738
+Mean concity value 0.1344032734632492
+
+ epoch 15
+-- validation accuracy 0.727
+Mean concity value 0.13403622806072235
+Training concluded. Best model with validation accuracy 0.743 achieved test accuracy: 0.7310144927536232
+Execution took 1.49e+02 seconds
+
+ Val_acc 0.7429963459196103, test_acc 0.7310144927536232, conicity 0.13524112105369568
+
+ Dataset sst, model type diversity_transformer, run 4
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.538
+Mean concity value 0.22793303430080414
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.541
+Mean concity value 0.15612591803073883
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.655
+Mean concity value 0.14301766455173492
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.566
+Mean concity value 0.13869374990463257
+
+ epoch 5
+-- validation accuracy 0.683
+Mean concity value 0.1367444545030594
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.625
+Mean concity value 0.13561959564685822
+
+ epoch 7
+-- validation accuracy 0.706
+Mean concity value 0.13484495878219604
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.686
+Mean concity value 0.13423317670822144
+
+ epoch 9
+-- validation accuracy 0.717
+Mean concity value 0.13376867771148682
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.586
+Mean concity value 0.1333761364221573
+
+ epoch 11
+-- validation accuracy 0.674
+Mean concity value 0.13304784893989563
+
+ epoch 12
+-- validation accuracy 0.688
+Mean concity value 0.1327729970216751
+
+ epoch 13
+-- validation accuracy 0.637
+Mean concity value 0.13245515525341034
+
+ epoch 14
+-- validation accuracy 0.699
+Mean concity value 0.1321749985218048
+
+ epoch 15
+-- validation accuracy 0.706
+Mean concity value 0.13188718259334564
+Training concluded. Best model with validation accuracy 0.717 achieved test accuracy: 0.6776811594202898
+Execution took 1.49e+02 seconds
+
+ Val_acc 0.7174177831912302, test_acc 0.6776811594202898, conicity 0.1330675184726715
+
+ Dataset sst, model type diversity_transformer, run 5
+Options: {'dataset_name': 'sst', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 50, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 61
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.516
+Mean concity value 0.2281719595193863
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.552
+Mean concity value 0.16101376712322235
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.693
+Mean concity value 0.1484723836183548
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.675
+Mean concity value 0.14408181607723236
+
+ epoch 5
+-- validation accuracy 0.692
+Mean concity value 0.14203733205795288
+
+ epoch 6
+-- validation accuracy 0.627
+Mean concity value 0.1407332420349121
+
+ epoch 7
+-- validation accuracy 0.713
+Mean concity value 0.1398872435092926
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.715
+Mean concity value 0.13920360803604126
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.674
+Mean concity value 0.13848565518856049
+
+ epoch 10
+-- validation accuracy 0.708
+Mean concity value 0.13792525231838226
+
+ epoch 11
+-- validation accuracy 0.731
+Mean concity value 0.13749496638774872
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.708
+Mean concity value 0.13706354796886444
+
+ epoch 13
+-- validation accuracy 0.728
+Mean concity value 0.13666601479053497
+
+ epoch 14
+-- validation accuracy 0.716
+Mean concity value 0.13628536462783813
+
+ epoch 15
+-- validation accuracy 0.685
+Mean concity value 0.13597218692302704
+Training concluded. Best model with validation accuracy 0.731 achieved test accuracy: 0.6910144927536231
+Execution took 1.5e+02 seconds
+
+ Val_acc 0.730816077953715, test_acc 0.6910144927536231, conicity 0.13688160479068756
+
+ Mean test accuracies 0.7084057971014492, std 0.021814362576494817
+
+ Mean conicities 0.13489708304405212, std 0.0013163701052337866
+
+ 
+ 
+ 
+ Working on the dataset cls_en
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset cls_en, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.676
+Mean concity value 0.23479972779750824
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.685
+Mean concity value 0.21701891720294952
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.759
+Mean concity value 0.20358911156654358
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.768
+Mean concity value 0.19669270515441895
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.775
+Mean concity value 0.19542281329631805
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.772
+Mean concity value 0.1950293332338333
+
+ epoch 7
+-- validation accuracy 0.779
+Mean concity value 0.19544260203838348
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.776
+Mean concity value 0.19681233167648315
+
+ epoch 9
+-- validation accuracy 0.767
+Mean concity value 0.19796207547187805
+
+ epoch 10
+-- validation accuracy 0.765
+Mean concity value 0.19772586226463318
+
+ epoch 11
+-- validation accuracy 0.753
+Mean concity value 0.19820132851600647
+
+ epoch 12
+-- validation accuracy 0.781
+Mean concity value 0.1969892382621765
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.763
+Mean concity value 0.1998557299375534
+
+ epoch 14
+-- validation accuracy 0.782
+Mean concity value 0.19980627298355103
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.783
+Mean concity value 0.20024137198925018
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.783 achieved test accuracy: 0.7915971990663555
+Execution took 98.9 seconds
+
+ Val_acc 0.782594198066022, test_acc 0.7915971990663555, conicity 0.20420154929161072
+
+ Dataset cls_en, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.694
+Mean concity value 0.24648039042949677
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.756
+Mean concity value 0.22900758683681488
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.752
+Mean concity value 0.21554306149482727
+
+ epoch 4
+-- validation accuracy 0.777
+Mean concity value 0.20980778336524963
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.782
+Mean concity value 0.20859253406524658
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.784
+Mean concity value 0.20879203081130981
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.785
+Mean concity value 0.20831754803657532
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.789
+Mean concity value 0.2080511897802353
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.787
+Mean concity value 0.20876847207546234
+
+ epoch 10
+-- validation accuracy 0.788
+Mean concity value 0.2105206698179245
+
+ epoch 11
+-- validation accuracy 0.784
+Mean concity value 0.21170474588871002
+
+ epoch 12
+-- validation accuracy 0.751
+Mean concity value 0.21271277964115143
+
+ epoch 13
+-- validation accuracy 0.693
+Mean concity value 0.21450811624526978
+
+ epoch 14
+-- validation accuracy 0.784
+Mean concity value 0.21147377789020538
+
+ epoch 15
+-- validation accuracy 0.787
+Mean concity value 0.20997217297554016
+Training concluded. Best model with validation accuracy 0.789 achieved test accuracy: 0.7842614204734911
+Execution took 97.9 seconds
+
+ Val_acc 0.788596198732911, test_acc 0.7842614204734911, conicity 0.21138103306293488
+
+ Dataset cls_en, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.66
+Mean concity value 0.2516690790653229
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.733
+Mean concity value 0.22678418457508087
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.766
+Mean concity value 0.21023999154567719
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.772
+Mean concity value 0.201856791973114
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.775
+Mean concity value 0.19729028642177582
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.782
+Mean concity value 0.19478285312652588
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.786
+Mean concity value 0.19365590810775757
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.788
+Mean concity value 0.1946083903312683
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.787
+Mean concity value 0.19489145278930664
+
+ epoch 10
+-- validation accuracy 0.784
+Mean concity value 0.19567756354808807
+
+ epoch 11
+-- validation accuracy 0.787
+Mean concity value 0.19703218340873718
+
+ epoch 12
+-- validation accuracy 0.786
+Mean concity value 0.1980307251214981
+
+ epoch 13
+-- validation accuracy 0.78
+Mean concity value 0.19946853816509247
+
+ epoch 14
+-- validation accuracy 0.766
+Mean concity value 0.20414558053016663
+
+ epoch 15
+-- validation accuracy 0.749
+Mean concity value 0.20372889935970306
+Training concluded. Best model with validation accuracy 0.788 achieved test accuracy: 0.7635878626208736
+Execution took 98.3 seconds
+
+ Val_acc 0.7879293097699233, test_acc 0.7635878626208736, conicity 0.20368550717830658
+
+ Dataset cls_en, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.694
+Mean concity value 0.24757641553878784
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.748
+Mean concity value 0.2297859638929367
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.767
+Mean concity value 0.21483635902404785
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.76
+Mean concity value 0.21020597219467163
+
+ epoch 5
+-- validation accuracy 0.781
+Mean concity value 0.2082580178976059
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.787
+Mean concity value 0.20708493888378143
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.794
+Mean concity value 0.20688652992248535
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.797
+Mean concity value 0.207292839884758
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.804
+Mean concity value 0.20958025753498077
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.798
+Mean concity value 0.2107999175786972
+
+ epoch 11
+-- validation accuracy 0.757
+Mean concity value 0.21241337060928345
+
+ epoch 12
+-- validation accuracy 0.786
+Mean concity value 0.2183758169412613
+
+ epoch 13
+-- validation accuracy 0.727
+Mean concity value 0.2165057361125946
+
+ epoch 14
+-- validation accuracy 0.766
+Mean concity value 0.2142614871263504
+
+ epoch 15
+-- validation accuracy 0.794
+Mean concity value 0.21297450363636017
+Training concluded. Best model with validation accuracy 0.804 achieved test accuracy: 0.7929309769923307
+Execution took 97.5 seconds
+
+ Val_acc 0.8039346448816272, test_acc 0.7929309769923307, conicity 0.21887849271297455
+
+ Dataset cls_en, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.604
+Mean concity value 0.23259899020195007
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.75
+Mean concity value 0.21833857893943787
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.742
+Mean concity value 0.21006397902965546
+
+ epoch 4
+-- validation accuracy 0.743
+Mean concity value 0.20607078075408936
+
+ epoch 5
+-- validation accuracy 0.781
+Mean concity value 0.20278161764144897
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.771
+Mean concity value 0.20290949940681458
+
+ epoch 7
+-- validation accuracy 0.786
+Mean concity value 0.2023838311433792
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.792
+Mean concity value 0.20274987816810608
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.791
+Mean concity value 0.20297196507453918
+
+ epoch 10
+-- validation accuracy 0.792
+Mean concity value 0.2046855241060257
+
+ epoch 11
+-- validation accuracy 0.793
+Mean concity value 0.20621956884860992
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.79
+Mean concity value 0.20817984640598297
+
+ epoch 13
+-- validation accuracy 0.603
+Mean concity value 0.21040551364421844
+
+ epoch 14
+-- validation accuracy 0.782
+Mean concity value 0.21649104356765747
+
+ epoch 15
+-- validation accuracy 0.781
+Mean concity value 0.2163611203432083
+Training concluded. Best model with validation accuracy 0.793 achieved test accuracy: 0.7719239746582194
+Execution took 1e+02 seconds
+
+ Val_acc 0.7932644214738246, test_acc 0.7719239746582194, conicity 0.2191399484872818
+
+ Mean test accuracies 0.7808602867622542, std 0.011408285311286745
+
+ Mean conicities 0.2114573061466217, std 0.0067401734059793625
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset cls_en, model type diversity_transformer, run 1
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.665
+Mean concity value 0.17854544520378113
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.712
+Mean concity value 0.13541769981384277
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.758
+Mean concity value 0.13224980235099792
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.769
+Mean concity value 0.13039062917232513
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.776
+Mean concity value 0.1280142366886139
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.784
+Mean concity value 0.12564972043037415
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.782
+Mean concity value 0.12324760109186172
+
+ epoch 8
+-- validation accuracy 0.781
+Mean concity value 0.12081672996282578
+
+ epoch 9
+-- validation accuracy 0.784
+Mean concity value 0.11848485469818115
+
+ epoch 10
+-- validation accuracy 0.783
+Mean concity value 0.11620225757360458
+
+ epoch 11
+-- validation accuracy 0.781
+Mean concity value 0.11390510946512222
+
+ epoch 12
+-- validation accuracy 0.782
+Mean concity value 0.11183888465166092
+
+ epoch 13
+-- validation accuracy 0.724
+Mean concity value 0.11039984226226807
+
+ epoch 14
+-- validation accuracy 0.761
+Mean concity value 0.11348747462034225
+
+ epoch 15
+-- validation accuracy 0.758
+Mean concity value 0.11166208982467651
+Training concluded. Best model with validation accuracy 0.784 achieved test accuracy: 0.782594198066022
+Execution took 1.58e+02 seconds
+
+ Val_acc 0.7839279759919974, test_acc 0.782594198066022, conicity 0.11185159534215927
+
+ Dataset cls_en, model type diversity_transformer, run 2
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.656
+Mean concity value 0.17514200508594513
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.71
+Mean concity value 0.13536037504673004
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.751
+Mean concity value 0.13210614025592804
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.743
+Mean concity value 0.12947291135787964
+
+ epoch 5
+-- validation accuracy 0.777
+Mean concity value 0.12705639004707336
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.737
+Mean concity value 0.12496612221002579
+
+ epoch 7
+-- validation accuracy 0.766
+Mean concity value 0.12311238795518875
+
+ epoch 8
+-- validation accuracy 0.78
+Mean concity value 0.12073180824518204
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.786
+Mean concity value 0.118475541472435
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.784
+Mean concity value 0.11631180346012115
+
+ epoch 11
+-- validation accuracy 0.781
+Mean concity value 0.11418294161558151
+
+ epoch 12
+-- validation accuracy 0.781
+Mean concity value 0.11209821701049805
+
+ epoch 13
+-- validation accuracy 0.782
+Mean concity value 0.109998919069767
+
+ epoch 14
+-- validation accuracy 0.667
+Mean concity value 0.10833540558815002
+
+ epoch 15
+-- validation accuracy 0.731
+Mean concity value 0.11295869946479797
+Training concluded. Best model with validation accuracy 0.786 achieved test accuracy: 0.7502500833611204
+Execution took 1.58e+02 seconds
+
+ Val_acc 0.7862620873624542, test_acc 0.7502500833611204, conicity 0.11225184798240662
+
+ Dataset cls_en, model type diversity_transformer, run 3
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.685
+Mean concity value 0.18269099295139313
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.615
+Mean concity value 0.13686618208885193
+
+ epoch 3
+-- validation accuracy 0.715
+Mean concity value 0.13448531925678253
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.787
+Mean concity value 0.13214929401874542
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.786
+Mean concity value 0.1301887035369873
+
+ epoch 6
+-- validation accuracy 0.782
+Mean concity value 0.12800563871860504
+
+ epoch 7
+-- validation accuracy 0.793
+Mean concity value 0.12592214345932007
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.794
+Mean concity value 0.12343261390924454
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.798
+Mean concity value 0.12106448411941528
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.794
+Mean concity value 0.11872883886098862
+
+ epoch 11
+-- validation accuracy 0.797
+Mean concity value 0.11645334959030151
+
+ epoch 12
+-- validation accuracy 0.65
+Mean concity value 0.11447703093290329
+
+ epoch 13
+-- validation accuracy 0.751
+Mean concity value 0.11848270893096924
+
+ epoch 14
+-- validation accuracy 0.783
+Mean concity value 0.11613854765892029
+
+ epoch 15
+-- validation accuracy 0.792
+Mean concity value 0.11429813504219055
+Training concluded. Best model with validation accuracy 0.798 achieved test accuracy: 0.7932644214738246
+Execution took 1.58e+02 seconds
+
+ Val_acc 0.7975991997332444, test_acc 0.7932644214738246, conicity 0.11473792046308517
+
+ Dataset cls_en, model type diversity_transformer, run 4
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.69
+Mean concity value 0.1819268763065338
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.737
+Mean concity value 0.13561034202575684
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.77
+Mean concity value 0.13205796480178833
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.765
+Mean concity value 0.1294679492712021
+
+ epoch 5
+-- validation accuracy 0.711
+Mean concity value 0.12718072533607483
+
+ epoch 6
+-- validation accuracy 0.777
+Mean concity value 0.12491858005523682
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.787
+Mean concity value 0.12240411341190338
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.789
+Mean concity value 0.12000197172164917
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.786
+Mean concity value 0.1176934465765953
+
+ epoch 10
+-- validation accuracy 0.79
+Mean concity value 0.11540969461202621
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.742
+Mean concity value 0.11335092782974243
+
+ epoch 12
+-- validation accuracy 0.736
+Mean concity value 0.11506282538175583
+
+ epoch 13
+-- validation accuracy 0.768
+Mean concity value 0.11368453502655029
+
+ epoch 14
+-- validation accuracy 0.784
+Mean concity value 0.11224669218063354
+
+ epoch 15
+-- validation accuracy 0.791
+Mean concity value 0.11072345077991486
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.791 achieved test accuracy: 0.7789263087695899
+Execution took 1.59e+02 seconds
+
+ Val_acc 0.7912637545848616, test_acc 0.7789263087695899, conicity 0.11100376397371292
+
+ Dataset cls_en, model type diversity_transformer, run 5
+Options: {'dataset_name': 'cls_en', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 963
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.649
+Mean concity value 0.17984631657600403
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.758
+Mean concity value 0.13503670692443848
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.747
+Mean concity value 0.13213539123535156
+
+ epoch 4
+-- validation accuracy 0.768
+Mean concity value 0.12958896160125732
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.773
+Mean concity value 0.12751300632953644
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.744
+Mean concity value 0.1250610202550888
+
+ epoch 7
+-- validation accuracy 0.781
+Mean concity value 0.12343059480190277
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.784
+Mean concity value 0.12082523107528687
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.778
+Mean concity value 0.11853569746017456
+
+ epoch 10
+-- validation accuracy 0.787
+Mean concity value 0.11630468815565109
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.781
+Mean concity value 0.1141437292098999
+
+ epoch 12
+-- validation accuracy 0.779
+Mean concity value 0.11200793087482452
+
+ epoch 13
+-- validation accuracy 0.753
+Mean concity value 0.11247102916240692
+
+ epoch 14
+-- validation accuracy 0.773
+Mean concity value 0.11304691433906555
+
+ epoch 15
+-- validation accuracy 0.759
+Mean concity value 0.11120082437992096
+Training concluded. Best model with validation accuracy 0.787 achieved test accuracy: 0.7792597532510837
+Execution took 1.59e+02 seconds
+
+ Val_acc 0.7869289763254418, test_acc 0.7792597532510837, conicity 0.1121482327580452
+
+ Mean test accuracies 0.776858952984328, std 0.014283572221230443
+
+ Mean conicities 0.11239867210388184, std 0.0012491134255505983
+
+ 
+ 
+ 
+ Working on the dataset cls_de
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset cls_de, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.641
+Mean concity value 0.28470882773399353
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.71
+Mean concity value 0.25346508622169495
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.754
+Mean concity value 0.22956335544586182
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.767
+Mean concity value 0.21841441094875336
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.781
+Mean concity value 0.2104337513446808
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.787
+Mean concity value 0.2087939828634262
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.729
+Mean concity value 0.20698820054531097
+
+ epoch 8
+-- validation accuracy 0.788
+Mean concity value 0.20701566338539124
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.789
+Mean concity value 0.2074812799692154
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.787
+Mean concity value 0.20938672125339508
+
+ epoch 11
+-- validation accuracy 0.79
+Mean concity value 0.21043190360069275
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.789
+Mean concity value 0.2118973731994629
+
+ epoch 13
+-- validation accuracy 0.781
+Mean concity value 0.21412983536720276
+
+ epoch 14
+-- validation accuracy 0.751
+Mean concity value 0.21591299772262573
+
+ epoch 15
+-- validation accuracy 0.783
+Mean concity value 0.21557879447937012
+Training concluded. Best model with validation accuracy 0.79 achieved test accuracy: 0.7835223482321547
+Execution took 99.8 seconds
+
+ Val_acc 0.7897897897897898, test_acc 0.7835223482321547, conicity 0.2174363136291504
+
+ Dataset cls_de, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.66
+Mean concity value 0.278289258480072
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.755
+Mean concity value 0.24406905472278595
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.756
+Mean concity value 0.21979135274887085
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.787
+Mean concity value 0.20695088803768158
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.684
+Mean concity value 0.1992427408695221
+
+ epoch 6
+-- validation accuracy 0.785
+Mean concity value 0.19817626476287842
+
+ epoch 7
+-- validation accuracy 0.802
+Mean concity value 0.19608651101589203
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.798
+Mean concity value 0.19629061222076416
+
+ epoch 9
+-- validation accuracy 0.802
+Mean concity value 0.19728396832942963
+
+ epoch 10
+-- validation accuracy 0.803
+Mean concity value 0.19793066382408142
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.801
+Mean concity value 0.1988391876220703
+
+ epoch 12
+-- validation accuracy 0.8
+Mean concity value 0.20004962384700775
+
+ epoch 13
+-- validation accuracy 0.797
+Mean concity value 0.20134073495864868
+
+ epoch 14
+-- validation accuracy 0.77
+Mean concity value 0.20503173768520355
+
+ epoch 15
+-- validation accuracy 0.797
+Mean concity value 0.20703959465026855
+Training concluded. Best model with validation accuracy 0.803 achieved test accuracy: 0.789859906604403
+Execution took 95.5 seconds
+
+ Val_acc 0.8031364698031365, test_acc 0.789859906604403, conicity 0.2095586359500885
+
+ Dataset cls_de, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.66
+Mean concity value 0.29083165526390076
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.759
+Mean concity value 0.2715966999530792
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.79
+Mean concity value 0.25573092699050903
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.776
+Mean concity value 0.24459221959114075
+
+ epoch 5
+-- validation accuracy 0.79
+Mean concity value 0.23491601645946503
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.787
+Mean concity value 0.23033449053764343
+
+ epoch 7
+-- validation accuracy 0.776
+Mean concity value 0.2275361567735672
+
+ epoch 8
+-- validation accuracy 0.795
+Mean concity value 0.22594380378723145
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.796
+Mean concity value 0.22655725479125977
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.797
+Mean concity value 0.22741711139678955
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.799
+Mean concity value 0.22821907699108124
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.792
+Mean concity value 0.2302001565694809
+
+ epoch 13
+-- validation accuracy 0.792
+Mean concity value 0.23236556351184845
+
+ epoch 14
+-- validation accuracy 0.67
+Mean concity value 0.23589648306369781
+
+ epoch 15
+-- validation accuracy 0.751
+Mean concity value 0.2355128973722458
+Training concluded. Best model with validation accuracy 0.799 achieved test accuracy: 0.7368245496997998
+Execution took 96.8 seconds
+
+ Val_acc 0.7994661327994661, test_acc 0.7368245496997998, conicity 0.23135511577129364
+
+ Dataset cls_de, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.651
+Mean concity value 0.28495150804519653
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.766
+Mean concity value 0.2531115412712097
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.625
+Mean concity value 0.22477050125598907
+
+ epoch 4
+-- validation accuracy 0.765
+Mean concity value 0.21225601434707642
+
+ epoch 5
+-- validation accuracy 0.652
+Mean concity value 0.20699727535247803
+
+ epoch 6
+-- validation accuracy 0.785
+Mean concity value 0.20380203425884247
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.757
+Mean concity value 0.2034541368484497
+
+ epoch 8
+-- validation accuracy 0.799
+Mean concity value 0.20387999713420868
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.799
+Mean concity value 0.20464403927326202
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.793
+Mean concity value 0.20615343749523163
+
+ epoch 11
+-- validation accuracy 0.793
+Mean concity value 0.20738756656646729
+
+ epoch 12
+-- validation accuracy 0.725
+Mean concity value 0.20956069231033325
+
+ epoch 13
+-- validation accuracy 0.761
+Mean concity value 0.21040047705173492
+
+ epoch 14
+-- validation accuracy 0.768
+Mean concity value 0.2081930935382843
+
+ epoch 15
+-- validation accuracy 0.787
+Mean concity value 0.20145343244075775
+Training concluded. Best model with validation accuracy 0.799 achieved test accuracy: 0.7891927951967979
+Execution took 96.5 seconds
+
+ Val_acc 0.7994661327994661, test_acc 0.7891927951967979, conicity 0.20391090214252472
+
+ Dataset cls_de, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.688
+Mean concity value 0.27322664856910706
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.76
+Mean concity value 0.2511947751045227
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.77
+Mean concity value 0.23335757851600647
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.679
+Mean concity value 0.22302284836769104
+
+ epoch 5
+-- validation accuracy 0.763
+Mean concity value 0.2138538807630539
+
+ epoch 6
+-- validation accuracy 0.777
+Mean concity value 0.21405129134655
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.786
+Mean concity value 0.21308758854866028
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.79
+Mean concity value 0.21343086659908295
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.788
+Mean concity value 0.21563822031021118
+
+ epoch 10
+-- validation accuracy 0.793
+Mean concity value 0.21726462244987488
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.786
+Mean concity value 0.21908603608608246
+
+ epoch 12
+-- validation accuracy 0.789
+Mean concity value 0.2214367836713791
+
+ epoch 13
+-- validation accuracy 0.791
+Mean concity value 0.22408244013786316
+
+ epoch 14
+-- validation accuracy 0.771
+Mean concity value 0.22541922330856323
+
+ epoch 15
+-- validation accuracy 0.772
+Mean concity value 0.2171688973903656
+Training concluded. Best model with validation accuracy 0.793 achieved test accuracy: 0.7751834556370913
+Execution took 96.4 seconds
+
+ Val_acc 0.7931264597931265, test_acc 0.7751834556370913, conicity 0.21059173345565796
+
+ Mean test accuracies 0.7749166110740494, std 0.019759790344074588
+
+ Mean conicities 0.21457054018974303, std 0.009428813343058284
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset cls_de, model type diversity_transformer, run 1
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.702
+Mean concity value 0.18843859434127808
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.616
+Mean concity value 0.13385267555713654
+
+ epoch 3
+-- validation accuracy 0.738
+Mean concity value 0.13037815690040588
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.777
+Mean concity value 0.12793198227882385
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.765
+Mean concity value 0.12592266499996185
+
+ epoch 6
+-- validation accuracy 0.786
+Mean concity value 0.12377788871526718
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.798
+Mean concity value 0.12144836038351059
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.795
+Mean concity value 0.11908579617738724
+
+ epoch 9
+-- validation accuracy 0.794
+Mean concity value 0.11689532548189163
+
+ epoch 10
+-- validation accuracy 0.792
+Mean concity value 0.11476405709981918
+
+ epoch 11
+-- validation accuracy 0.798
+Mean concity value 0.1126956194639206
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.795
+Mean concity value 0.11046544462442398
+
+ epoch 13
+-- validation accuracy 0.621
+Mean concity value 0.10864642262458801
+
+ epoch 14
+-- validation accuracy 0.771
+Mean concity value 0.11497528105974197
+
+ epoch 15
+-- validation accuracy 0.776
+Mean concity value 0.1105240136384964
+Training concluded. Best model with validation accuracy 0.798 achieved test accuracy: 0.7725150100066711
+Execution took 1.57e+02 seconds
+
+ Val_acc 0.7984651317984651, test_acc 0.7725150100066711, conicity 0.11095813661813736
+
+ Dataset cls_de, model type diversity_transformer, run 2
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.57
+Mean concity value 0.19917725026607513
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.745
+Mean concity value 0.132581889629364
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.673
+Mean concity value 0.12911446392536163
+
+ epoch 4
+-- validation accuracy 0.745
+Mean concity value 0.12671643495559692
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.779
+Mean concity value 0.1246257945895195
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.79
+Mean concity value 0.12255098670721054
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.763
+Mean concity value 0.12051951885223389
+
+ epoch 8
+-- validation accuracy 0.798
+Mean concity value 0.11837947368621826
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.795
+Mean concity value 0.11618877947330475
+
+ epoch 10
+-- validation accuracy 0.798
+Mean concity value 0.11417730897665024
+
+ epoch 11
+-- validation accuracy 0.794
+Mean concity value 0.11214060336351395
+
+ epoch 12
+-- validation accuracy 0.789
+Mean concity value 0.11019942164421082
+
+ epoch 13
+-- validation accuracy 0.709
+Mean concity value 0.11209874600172043
+
+ epoch 14
+-- validation accuracy 0.774
+Mean concity value 0.11125124245882034
+
+ epoch 15
+-- validation accuracy 0.768
+Mean concity value 0.10950548201799393
+Training concluded. Best model with validation accuracy 0.798 achieved test accuracy: 0.7681787858572382
+Execution took 1.58e+02 seconds
+
+ Val_acc 0.7977977977977978, test_acc 0.7681787858572382, conicity 0.11030041426420212
+
+ Dataset cls_de, model type diversity_transformer, run 3
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.675
+Mean concity value 0.2006475329399109
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.727
+Mean concity value 0.13280950486660004
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.743
+Mean concity value 0.12997792661190033
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.779
+Mean concity value 0.12782084941864014
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.696
+Mean concity value 0.12623168528079987
+
+ epoch 6
+-- validation accuracy 0.787
+Mean concity value 0.12421504408121109
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.779
+Mean concity value 0.12214560806751251
+
+ epoch 8
+-- validation accuracy 0.781
+Mean concity value 0.11994003504514694
+
+ epoch 9
+-- validation accuracy 0.789
+Mean concity value 0.11780517548322678
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.786
+Mean concity value 0.11570331454277039
+
+ epoch 11
+-- validation accuracy 0.783
+Mean concity value 0.1137017235159874
+
+ epoch 12
+-- validation accuracy 0.783
+Mean concity value 0.11177688837051392
+
+ epoch 13
+-- validation accuracy 0.688
+Mean concity value 0.11457853764295578
+
+ epoch 14
+-- validation accuracy 0.784
+Mean concity value 0.1135646179318428
+
+ epoch 15
+-- validation accuracy 0.784
+Mean concity value 0.11175516992807388
+Training concluded. Best model with validation accuracy 0.789 achieved test accuracy: 0.7805203468979319
+Execution took 1.56e+02 seconds
+
+ Val_acc 0.7887887887887888, test_acc 0.7805203468979319, conicity 0.11217409372329712
+
+ Dataset cls_de, model type diversity_transformer, run 4
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.626
+Mean concity value 0.18510286509990692
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.75
+Mean concity value 0.13230180740356445
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.783
+Mean concity value 0.1291208118200302
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.779
+Mean concity value 0.12708455324172974
+
+ epoch 5
+-- validation accuracy 0.723
+Mean concity value 0.12481258809566498
+
+ epoch 6
+-- validation accuracy 0.792
+Mean concity value 0.12296701222658157
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.791
+Mean concity value 0.12068766355514526
+
+ epoch 8
+-- validation accuracy 0.795
+Mean concity value 0.1185394674539566
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.8
+Mean concity value 0.11647363007068634
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.799
+Mean concity value 0.1143728643655777
+
+ epoch 11
+-- validation accuracy 0.794
+Mean concity value 0.11245249956846237
+
+ epoch 12
+-- validation accuracy 0.799
+Mean concity value 0.11034674197435379
+
+ epoch 13
+-- validation accuracy 0.797
+Mean concity value 0.1084999367594719
+
+ epoch 14
+-- validation accuracy 0.775
+Mean concity value 0.1064775139093399
+
+ epoch 15
+-- validation accuracy 0.773
+Mean concity value 0.11240794509649277
+Training concluded. Best model with validation accuracy 0.8 achieved test accuracy: 0.7681787858572382
+Execution took 1.57e+02 seconds
+
+ Val_acc 0.8004671338004671, test_acc 0.7681787858572382, conicity 0.11271963268518448
+
+ Dataset cls_de, model type diversity_transformer, run 5
+Options: {'dataset_name': 'cls_de', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 803
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.693
+Mean concity value 0.197765052318573
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.753
+Mean concity value 0.13326841592788696
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.746
+Mean concity value 0.13048627972602844
+
+ epoch 4
+-- validation accuracy 0.689
+Mean concity value 0.12776736915111542
+
+ epoch 5
+-- validation accuracy 0.725
+Mean concity value 0.12606042623519897
+
+ epoch 6
+-- validation accuracy 0.784
+Mean concity value 0.12391378730535507
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.8
+Mean concity value 0.12186676263809204
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.795
+Mean concity value 0.11949871480464935
+
+ epoch 9
+-- validation accuracy 0.792
+Mean concity value 0.11732018738985062
+
+ epoch 10
+-- validation accuracy 0.792
+Mean concity value 0.11512502282857895
+
+ epoch 11
+-- validation accuracy 0.793
+Mean concity value 0.11311739683151245
+
+ epoch 12
+-- validation accuracy 0.797
+Mean concity value 0.11102404445409775
+
+ epoch 13
+-- validation accuracy 0.791
+Mean concity value 0.10919127613306046
+
+ epoch 14
+-- validation accuracy 0.718
+Mean concity value 0.10708258301019669
+
+ epoch 15
+-- validation accuracy 0.748
+Mean concity value 0.11246465891599655
+Training concluded. Best model with validation accuracy 0.8 achieved test accuracy: 0.7568378919279519
+Execution took 1.58e+02 seconds
+
+ Val_acc 0.8001334668001334, test_acc 0.7568378919279519, conicity 0.11137160658836365
+
+ Mean test accuracies 0.7692461641094063, std 0.007668589990925448
+
+ Mean conicities 0.11150477677583695, std 0.0008591738912358637
+
+ 
+ 
+ 
+ Working on the dataset cls_fr
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset cls_fr, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.67
+Mean concity value 0.2662646472454071
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.637
+Mean concity value 0.23713500797748566
+
+ epoch 3
+-- validation accuracy 0.717
+Mean concity value 0.2157817780971527
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.772
+Mean concity value 0.20463545620441437
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.772
+Mean concity value 0.20110024511814117
+
+ epoch 6
+-- validation accuracy 0.786
+Mean concity value 0.19874170422554016
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.766
+Mean concity value 0.19928134977817535
+
+ epoch 8
+-- validation accuracy 0.766
+Mean concity value 0.1989934891462326
+
+ epoch 9
+-- validation accuracy 0.782
+Mean concity value 0.1992064118385315
+
+ epoch 10
+-- validation accuracy 0.781
+Mean concity value 0.20015177130699158
+
+ epoch 11
+-- validation accuracy 0.791
+Mean concity value 0.1998170167207718
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.79
+Mean concity value 0.20039361715316772
+
+ epoch 13
+-- validation accuracy 0.789
+Mean concity value 0.2024783045053482
+
+ epoch 14
+-- validation accuracy 0.738
+Mean concity value 0.20485754311084747
+
+ epoch 15
+-- validation accuracy 0.777
+Mean concity value 0.21048375964164734
+Training concluded. Best model with validation accuracy 0.791 achieved test accuracy: 0.7941961307538359
+Execution took 91.6 seconds
+
+ Val_acc 0.7911244577911245, test_acc 0.7941961307538359, conicity 0.21911445260047913
+
+ Dataset cls_fr, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.565
+Mean concity value 0.27786514163017273
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.755
+Mean concity value 0.2563989758491516
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.635
+Mean concity value 0.24401989579200745
+
+ epoch 4
+-- validation accuracy 0.748
+Mean concity value 0.2357988804578781
+
+ epoch 5
+-- validation accuracy 0.776
+Mean concity value 0.2284250259399414
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.78
+Mean concity value 0.22454869747161865
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.762
+Mean concity value 0.22391504049301147
+
+ epoch 8
+-- validation accuracy 0.781
+Mean concity value 0.22235102951526642
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.788
+Mean concity value 0.22264273464679718
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.787
+Mean concity value 0.2241361290216446
+
+ epoch 11
+-- validation accuracy 0.782
+Mean concity value 0.22368310391902924
+
+ epoch 12
+-- validation accuracy 0.748
+Mean concity value 0.22508491575717926
+
+ epoch 13
+-- validation accuracy 0.765
+Mean concity value 0.22970318794250488
+
+ epoch 14
+-- validation accuracy 0.784
+Mean concity value 0.22348934412002563
+
+ epoch 15
+-- validation accuracy 0.781
+Mean concity value 0.21997225284576416
+Training concluded. Best model with validation accuracy 0.788 achieved test accuracy: 0.8125416944629753
+Execution took 91.0 seconds
+
+ Val_acc 0.7877877877877878, test_acc 0.8125416944629753, conicity 0.2263982594013214
+
+ Dataset cls_fr, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.615
+Mean concity value 0.2613908350467682
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.755
+Mean concity value 0.23261958360671997
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.756
+Mean concity value 0.21630068123340607
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.772
+Mean concity value 0.2061295509338379
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.775
+Mean concity value 0.20161156356334686
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.786
+Mean concity value 0.1989130675792694
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.789
+Mean concity value 0.19605326652526855
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.783
+Mean concity value 0.19486939907073975
+
+ epoch 9
+-- validation accuracy 0.785
+Mean concity value 0.1951446235179901
+
+ epoch 10
+-- validation accuracy 0.788
+Mean concity value 0.19599369168281555
+
+ epoch 11
+-- validation accuracy 0.785
+Mean concity value 0.19714823365211487
+
+ epoch 12
+-- validation accuracy 0.785
+Mean concity value 0.1985427588224411
+
+ epoch 13
+-- validation accuracy 0.779
+Mean concity value 0.20029906928539276
+
+ epoch 14
+-- validation accuracy 0.759
+Mean concity value 0.20508739352226257
+
+ epoch 15
+-- validation accuracy 0.774
+Mean concity value 0.20121151208877563
+Training concluded. Best model with validation accuracy 0.789 achieved test accuracy: 0.784856571047365
+Execution took 91.1 seconds
+
+ Val_acc 0.7891224557891224, test_acc 0.784856571047365, conicity 0.20681269466876984
+
+ Dataset cls_fr, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.632
+Mean concity value 0.2718159854412079
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.743
+Mean concity value 0.23861022293567657
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.76
+Mean concity value 0.22223670780658722
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.785
+Mean concity value 0.2132457196712494
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.765
+Mean concity value 0.20592638850212097
+
+ epoch 6
+-- validation accuracy 0.78
+Mean concity value 0.20277877151966095
+
+ epoch 7
+-- validation accuracy 0.775
+Mean concity value 0.20038971304893494
+
+ epoch 8
+-- validation accuracy 0.759
+Mean concity value 0.20076024532318115
+
+ epoch 9
+-- validation accuracy 0.795
+Mean concity value 0.2022162824869156
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.752
+Mean concity value 0.20251359045505524
+
+ epoch 11
+-- validation accuracy 0.765
+Mean concity value 0.20422935485839844
+
+ epoch 12
+-- validation accuracy 0.77
+Mean concity value 0.20676995813846588
+
+ epoch 13
+-- validation accuracy 0.775
+Mean concity value 0.20236267149448395
+
+ epoch 14
+-- validation accuracy 0.787
+Mean concity value 0.2001100480556488
+
+ epoch 15
+-- validation accuracy 0.786
+Mean concity value 0.1978573352098465
+Training concluded. Best model with validation accuracy 0.795 achieved test accuracy: 0.8108739159439626
+Execution took 91.0 seconds
+
+ Val_acc 0.7951284617951284, test_acc 0.8108739159439626, conicity 0.20621700584888458
+
+ Dataset cls_fr, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.668
+Mean concity value 0.2711080312728882
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.752
+Mean concity value 0.24414925277233124
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.692
+Mean concity value 0.22572451829910278
+
+ epoch 4
+-- validation accuracy 0.763
+Mean concity value 0.2170267552137375
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.766
+Mean concity value 0.2110348343849182
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.782
+Mean concity value 0.20913997292518616
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.782
+Mean concity value 0.2079477161169052
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.784
+Mean concity value 0.20798009634017944
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.792
+Mean concity value 0.20912478864192963
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.788
+Mean concity value 0.20843778550624847
+
+ epoch 11
+-- validation accuracy 0.765
+Mean concity value 0.21122553944587708
+
+ epoch 12
+-- validation accuracy 0.777
+Mean concity value 0.2064828723669052
+
+ epoch 13
+-- validation accuracy 0.769
+Mean concity value 0.20557332038879395
+
+ epoch 14
+-- validation accuracy 0.78
+Mean concity value 0.20447216928005219
+
+ epoch 15
+-- validation accuracy 0.781
+Mean concity value 0.20474645495414734
+Training concluded. Best model with validation accuracy 0.792 achieved test accuracy: 0.8072048032021347
+Execution took 91.2 seconds
+
+ Val_acc 0.7917917917917918, test_acc 0.8072048032021347, conicity 0.21358639001846313
+
+ Mean test accuracies 0.8019346230820548, std 0.010693360963349757
+
+ Mean conicities 0.2144257605075836, std 0.00763376094246298
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset cls_fr, model type diversity_transformer, run 1
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.628
+Mean concity value 0.18754450976848602
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.759
+Mean concity value 0.13793650269508362
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.741
+Mean concity value 0.13394571840763092
+
+ epoch 4
+-- validation accuracy 0.78
+Mean concity value 0.13166216015815735
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.779
+Mean concity value 0.12943121790885925
+
+ epoch 6
+-- validation accuracy 0.738
+Mean concity value 0.12752176821231842
+
+ epoch 7
+-- validation accuracy 0.736
+Mean concity value 0.12534405291080475
+
+ epoch 8
+-- validation accuracy 0.779
+Mean concity value 0.12322892248630524
+
+ epoch 9
+-- validation accuracy 0.783
+Mean concity value 0.12118341028690338
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.779
+Mean concity value 0.11923862248659134
+
+ epoch 11
+-- validation accuracy 0.778
+Mean concity value 0.11721431463956833
+
+ epoch 12
+-- validation accuracy 0.777
+Mean concity value 0.1152220070362091
+
+ epoch 13
+-- validation accuracy 0.774
+Mean concity value 0.11330314725637436
+
+ epoch 14
+-- validation accuracy 0.774
+Mean concity value 0.1112840548157692
+
+ epoch 15
+-- validation accuracy 0.75
+Mean concity value 0.11604125052690506
+Training concluded. Best model with validation accuracy 0.783 achieved test accuracy: 0.7731821214142762
+Execution took 1.52e+02 seconds
+
+ Val_acc 0.7831164497831165, test_acc 0.7731821214142762, conicity 0.11614509671926498
+
+ Dataset cls_fr, model type diversity_transformer, run 2
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.655
+Mean concity value 0.19561462104320526
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.7
+Mean concity value 0.13986285030841827
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.75
+Mean concity value 0.13720566034317017
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.744
+Mean concity value 0.13483640551567078
+
+ epoch 5
+-- validation accuracy 0.766
+Mean concity value 0.13310368359088898
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.756
+Mean concity value 0.1308944821357727
+
+ epoch 7
+-- validation accuracy 0.758
+Mean concity value 0.12886279821395874
+
+ epoch 8
+-- validation accuracy 0.785
+Mean concity value 0.12682029604911804
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.784
+Mean concity value 0.12460516393184662
+
+ epoch 10
+-- validation accuracy 0.766
+Mean concity value 0.12263472378253937
+
+ epoch 11
+-- validation accuracy 0.73
+Mean concity value 0.12282538414001465
+
+ epoch 12
+-- validation accuracy 0.755
+Mean concity value 0.12148593366146088
+
+ epoch 13
+-- validation accuracy 0.781
+Mean concity value 0.12013299763202667
+
+ epoch 14
+-- validation accuracy 0.785
+Mean concity value 0.1183079406619072
+
+ epoch 15
+-- validation accuracy 0.785
+Mean concity value 0.11681219190359116
+Training concluded. Best model with validation accuracy 0.785 achieved test accuracy: 0.8072048032021347
+Execution took 1.54e+02 seconds
+
+ Val_acc 0.7854521187854521, test_acc 0.8072048032021347, conicity 0.11486803740262985
+
+ Dataset cls_fr, model type diversity_transformer, run 3
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.658
+Mean concity value 0.19786812365055084
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.731
+Mean concity value 0.14027036726474762
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.731
+Mean concity value 0.1369090974330902
+
+ epoch 4
+-- validation accuracy 0.775
+Mean concity value 0.13451428711414337
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.768
+Mean concity value 0.1325121819972992
+
+ epoch 6
+-- validation accuracy 0.788
+Mean concity value 0.13052859902381897
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.786
+Mean concity value 0.12799511849880219
+
+ epoch 8
+-- validation accuracy 0.788
+Mean concity value 0.12561571598052979
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.766
+Mean concity value 0.1233738511800766
+
+ epoch 10
+-- validation accuracy 0.784
+Mean concity value 0.12150808423757553
+
+ epoch 11
+-- validation accuracy 0.754
+Mean concity value 0.11939039826393127
+
+ epoch 12
+-- validation accuracy 0.766
+Mean concity value 0.12043467164039612
+
+ epoch 13
+-- validation accuracy 0.767
+Mean concity value 0.11939921975135803
+
+ epoch 14
+-- validation accuracy 0.783
+Mean concity value 0.11816216260194778
+
+ epoch 15
+-- validation accuracy 0.79
+Mean concity value 0.11649930477142334
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.79 achieved test accuracy: 0.8068712474983322
+Execution took 1.52e+02 seconds
+
+ Val_acc 0.7897897897897898, test_acc 0.8068712474983322, conicity 0.11461054533720016
+
+ Dataset cls_fr, model type diversity_transformer, run 4
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.598
+Mean concity value 0.18980616331100464
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.703
+Mean concity value 0.13964003324508667
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.695
+Mean concity value 0.1365492194890976
+
+ epoch 4
+-- validation accuracy 0.777
+Mean concity value 0.13410989940166473
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.75
+Mean concity value 0.13171754777431488
+
+ epoch 6
+-- validation accuracy 0.771
+Mean concity value 0.12941233813762665
+
+ epoch 7
+-- validation accuracy 0.769
+Mean concity value 0.12715855240821838
+
+ epoch 8
+-- validation accuracy 0.791
+Mean concity value 0.1251135617494583
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.79
+Mean concity value 0.12295808643102646
+
+ epoch 10
+-- validation accuracy 0.789
+Mean concity value 0.12078525871038437
+
+ epoch 11
+-- validation accuracy 0.667
+Mean concity value 0.1200365200638771
+
+ epoch 12
+-- validation accuracy 0.771
+Mean concity value 0.11994846165180206
+
+ epoch 13
+-- validation accuracy 0.781
+Mean concity value 0.11881541460752487
+
+ epoch 14
+-- validation accuracy 0.788
+Mean concity value 0.11707568168640137
+
+ epoch 15
+-- validation accuracy 0.785
+Mean concity value 0.115590400993824
+Training concluded. Best model with validation accuracy 0.791 achieved test accuracy: 0.8085390260173448
+Execution took 1.53e+02 seconds
+
+ Val_acc 0.7911244577911245, test_acc 0.8085390260173448, conicity 0.1139175221323967
+
+ Dataset cls_fr, model type diversity_transformer, run 5
+Options: {'dataset_name': 'cls_fr', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 648
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.649
+Mean concity value 0.19024039804935455
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.763
+Mean concity value 0.13882112503051758
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.745
+Mean concity value 0.13564631342887878
+
+ epoch 4
+-- validation accuracy 0.756
+Mean concity value 0.13339410722255707
+
+ epoch 5
+-- validation accuracy 0.794
+Mean concity value 0.13155712187290192
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.768
+Mean concity value 0.12934790551662445
+
+ epoch 7
+-- validation accuracy 0.775
+Mean concity value 0.12754254043102264
+
+ epoch 8
+-- validation accuracy 0.754
+Mean concity value 0.12524202466011047
+
+ epoch 9
+-- validation accuracy 0.739
+Mean concity value 0.12377748638391495
+
+ epoch 10
+-- validation accuracy 0.734
+Mean concity value 0.12264928221702576
+
+ epoch 11
+-- validation accuracy 0.768
+Mean concity value 0.12149454653263092
+
+ epoch 12
+-- validation accuracy 0.785
+Mean concity value 0.11946897208690643
+
+ epoch 13
+-- validation accuracy 0.787
+Mean concity value 0.11775074899196625
+
+ epoch 14
+-- validation accuracy 0.785
+Mean concity value 0.11618740856647491
+
+ epoch 15
+-- validation accuracy 0.785
+Mean concity value 0.11446193605661392
+Training concluded. Best model with validation accuracy 0.794 achieved test accuracy: 0.8098732488325551
+Execution took 1.53e+02 seconds
+
+ Val_acc 0.7941274607941274, test_acc 0.8098732488325551, conicity 0.11266414821147919
+
+ Mean test accuracies 0.8011340893929286, std 0.01401632660351581
+
+ Mean conicities 0.11444106996059418, std 0.0011442275582233229
+
+ 
+ 
+ 
+ Working on the dataset cls_jp
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset cls_jp, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.701
+Mean concity value 0.24531888961791992
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.758
+Mean concity value 0.21854068338871002
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.668
+Mean concity value 0.20076391100883484
+
+ epoch 4
+-- validation accuracy 0.758
+Mean concity value 0.19205252826213837
+
+ epoch 5
+-- validation accuracy 0.746
+Mean concity value 0.18774543702602386
+
+ epoch 6
+-- validation accuracy 0.748
+Mean concity value 0.1858973354101181
+
+ epoch 7
+-- validation accuracy 0.773
+Mean concity value 0.1834966540336609
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.783
+Mean concity value 0.18329837918281555
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.781
+Mean concity value 0.18252570927143097
+
+ epoch 10
+-- validation accuracy 0.783
+Mean concity value 0.18339794874191284
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.787
+Mean concity value 0.1846950799226761
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.773
+Mean concity value 0.18619932234287262
+
+ epoch 13
+-- validation accuracy 0.786
+Mean concity value 0.18822428584098816
+
+ epoch 14
+-- validation accuracy 0.58
+Mean concity value 0.19118888676166534
+
+ epoch 15
+-- validation accuracy 0.738
+Mean concity value 0.1942843794822693
+Training concluded. Best model with validation accuracy 0.787 achieved test accuracy: 0.750417083750417
+Execution took 90.3 seconds
+
+ Val_acc 0.7867156208277704, test_acc 0.750417083750417, conicity 0.1943400651216507
+
+ Dataset cls_jp, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.722
+Mean concity value 0.26061514019966125
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.76
+Mean concity value 0.2431054264307022
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.693
+Mean concity value 0.22671028971672058
+
+ epoch 4
+-- validation accuracy 0.769
+Mean concity value 0.21871480345726013
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.784
+Mean concity value 0.213240846991539
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.771
+Mean concity value 0.2105480134487152
+
+ epoch 7
+-- validation accuracy 0.779
+Mean concity value 0.20892344415187836
+
+ epoch 8
+-- validation accuracy 0.772
+Mean concity value 0.20742225646972656
+
+ epoch 9
+-- validation accuracy 0.789
+Mean concity value 0.2091372013092041
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.786
+Mean concity value 0.20990115404129028
+
+ epoch 11
+-- validation accuracy 0.785
+Mean concity value 0.21065744757652283
+
+ epoch 12
+-- validation accuracy 0.777
+Mean concity value 0.21136921644210815
+
+ epoch 13
+-- validation accuracy 0.783
+Mean concity value 0.2120533436536789
+
+ epoch 14
+-- validation accuracy 0.753
+Mean concity value 0.21497416496276855
+
+ epoch 15
+-- validation accuracy 0.751
+Mean concity value 0.20960932970046997
+Training concluded. Best model with validation accuracy 0.789 achieved test accuracy: 0.7514180847514181
+Execution took 91.0 seconds
+
+ Val_acc 0.7890520694259012, test_acc 0.7514180847514181, conicity 0.21645547449588776
+
+ Dataset cls_jp, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.732
+Mean concity value 0.24683748185634613
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.708
+Mean concity value 0.23535628616809845
+
+ epoch 3
+-- validation accuracy 0.774
+Mean concity value 0.22454257309436798
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.775
+Mean concity value 0.2200751155614853
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.775
+Mean concity value 0.21656709909439087
+
+ epoch 6
+-- validation accuracy 0.785
+Mean concity value 0.2127871811389923
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.777
+Mean concity value 0.2107999175786972
+
+ epoch 8
+-- validation accuracy 0.779
+Mean concity value 0.20975886285305023
+
+ epoch 9
+-- validation accuracy 0.783
+Mean concity value 0.20876085758209229
+
+ epoch 10
+-- validation accuracy 0.791
+Mean concity value 0.20876342058181763
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.781
+Mean concity value 0.2105141133069992
+
+ epoch 12
+-- validation accuracy 0.781
+Mean concity value 0.2124171108007431
+
+ epoch 13
+-- validation accuracy 0.787
+Mean concity value 0.21419008076190948
+
+ epoch 14
+-- validation accuracy 0.79
+Mean concity value 0.2156500220298767
+
+ epoch 15
+-- validation accuracy 0.723
+Mean concity value 0.21719637513160706
+Training concluded. Best model with validation accuracy 0.791 achieved test accuracy: 0.721388054721388
+Execution took 92.6 seconds
+
+ Val_acc 0.790720961281709, test_acc 0.721388054721388, conicity 0.21945372223854065
+
+ Dataset cls_jp, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.722
+Mean concity value 0.24205106496810913
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.737
+Mean concity value 0.2261584848165512
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.756
+Mean concity value 0.2103634774684906
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.768
+Mean concity value 0.20401529967784882
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.768
+Mean concity value 0.1989494413137436
+
+ epoch 6
+-- validation accuracy 0.769
+Mean concity value 0.19631356000900269
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.772
+Mean concity value 0.19474247097969055
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.765
+Mean concity value 0.19448307156562805
+
+ epoch 9
+-- validation accuracy 0.787
+Mean concity value 0.19414298236370087
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.779
+Mean concity value 0.1953890025615692
+
+ epoch 11
+-- validation accuracy 0.783
+Mean concity value 0.19631327688694
+
+ epoch 12
+-- validation accuracy 0.784
+Mean concity value 0.19756244122982025
+
+ epoch 13
+-- validation accuracy 0.771
+Mean concity value 0.19907023012638092
+
+ epoch 14
+-- validation accuracy 0.781
+Mean concity value 0.20085300505161285
+
+ epoch 15
+-- validation accuracy 0.6
+Mean concity value 0.20315514504909515
+Training concluded. Best model with validation accuracy 0.787 achieved test accuracy: 0.6082749416082749
+Execution took 90.2 seconds
+
+ Val_acc 0.7867156208277704, test_acc 0.6082749416082749, conicity 0.227670818567276
+
+ Dataset cls_jp, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.606
+Mean concity value 0.24519766867160797
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.746
+Mean concity value 0.22611641883850098
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.699
+Mean concity value 0.21831803023815155
+
+ epoch 4
+-- validation accuracy 0.762
+Mean concity value 0.2161083221435547
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.736
+Mean concity value 0.21347187459468842
+
+ epoch 6
+-- validation accuracy 0.768
+Mean concity value 0.2092682272195816
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.782
+Mean concity value 0.20845092833042145
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.765
+Mean concity value 0.20833471417427063
+
+ epoch 9
+-- validation accuracy 0.776
+Mean concity value 0.2094365656375885
+
+ epoch 10
+-- validation accuracy 0.776
+Mean concity value 0.20974531769752502
+
+ epoch 11
+-- validation accuracy 0.779
+Mean concity value 0.2106197476387024
+
+ epoch 12
+-- validation accuracy 0.775
+Mean concity value 0.2115485668182373
+
+ epoch 13
+-- validation accuracy 0.773
+Mean concity value 0.21211665868759155
+
+ epoch 14
+-- validation accuracy 0.772
+Mean concity value 0.21328876912593842
+
+ epoch 15
+-- validation accuracy 0.776
+Mean concity value 0.21833138167858124
+Training concluded. Best model with validation accuracy 0.782 achieved test accuracy: 0.745412078745412
+Execution took 90.2 seconds
+
+ Val_acc 0.7817089452603472, test_acc 0.745412078745412, conicity 0.22784820199012756
+
+ Mean test accuracies 0.7153820487153819, std 0.05465502132045806
+
+ Mean conicities 0.21715365648269652, std 0.012257419902088085
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset cls_jp, model type diversity_transformer, run 1
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.672
+Mean concity value 0.18181030452251434
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.728
+Mean concity value 0.13394249975681305
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.719
+Mean concity value 0.1298883855342865
+
+ epoch 4
+-- validation accuracy 0.771
+Mean concity value 0.1278446465730667
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.748
+Mean concity value 0.12573717534542084
+
+ epoch 6
+-- validation accuracy 0.773
+Mean concity value 0.1238611564040184
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.775
+Mean concity value 0.12164313346147537
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.778
+Mean concity value 0.1195031926035881
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.785
+Mean concity value 0.11725931614637375
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.788
+Mean concity value 0.11511065810918808
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.779
+Mean concity value 0.11353505402803421
+
+ epoch 12
+-- validation accuracy 0.785
+Mean concity value 0.11111244559288025
+
+ epoch 13
+-- validation accuracy 0.785
+Mean concity value 0.10902416706085205
+
+ epoch 14
+-- validation accuracy 0.777
+Mean concity value 0.1069343239068985
+
+ epoch 15
+-- validation accuracy 0.774
+Mean concity value 0.1048281118273735
+Training concluded. Best model with validation accuracy 0.788 achieved test accuracy: 0.7711044377711045
+Execution took 1.53e+02 seconds
+
+ Val_acc 0.787716955941255, test_acc 0.7711044377711045, conicity 0.10661593824625015
+
+ Dataset cls_jp, model type diversity_transformer, run 2
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.559
+Mean concity value 0.17926135659217834
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.636
+Mean concity value 0.13251972198486328
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.737
+Mean concity value 0.12916895747184753
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.745
+Mean concity value 0.1261993795633316
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.73
+Mean concity value 0.12425655126571655
+
+ epoch 6
+-- validation accuracy 0.725
+Mean concity value 0.12216760218143463
+
+ epoch 7
+-- validation accuracy 0.765
+Mean concity value 0.12028761953115463
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.76
+Mean concity value 0.11798524111509323
+
+ epoch 9
+-- validation accuracy 0.768
+Mean concity value 0.11590999364852905
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.767
+Mean concity value 0.11376811563968658
+
+ epoch 11
+-- validation accuracy 0.77
+Mean concity value 0.1116819977760315
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.773
+Mean concity value 0.10960085690021515
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.77
+Mean concity value 0.10751727223396301
+
+ epoch 14
+-- validation accuracy 0.628
+Mean concity value 0.10548543184995651
+
+ epoch 15
+-- validation accuracy 0.731
+Mean concity value 0.10927139967679977
+Training concluded. Best model with validation accuracy 0.773 achieved test accuracy: 0.726393059726393
+Execution took 1.52e+02 seconds
+
+ Val_acc 0.7726969292389854, test_acc 0.726393059726393, conicity 0.11044424772262573
+
+ Dataset cls_jp, model type diversity_transformer, run 3
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.636
+Mean concity value 0.1827583611011505
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.759
+Mean concity value 0.13199539482593536
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.775
+Mean concity value 0.12779347598552704
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.754
+Mean concity value 0.1254378706216812
+
+ epoch 5
+-- validation accuracy 0.771
+Mean concity value 0.1232740581035614
+
+ epoch 6
+-- validation accuracy 0.774
+Mean concity value 0.12139672785997391
+
+ epoch 7
+-- validation accuracy 0.768
+Mean concity value 0.11932290345430374
+
+ epoch 8
+-- validation accuracy 0.781
+Mean concity value 0.1171051636338234
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.781
+Mean concity value 0.11508674919605255
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.78
+Mean concity value 0.11289279907941818
+
+ epoch 11
+-- validation accuracy 0.779
+Mean concity value 0.11081065982580185
+
+ epoch 12
+-- validation accuracy 0.779
+Mean concity value 0.10877347737550735
+
+ epoch 13
+-- validation accuracy 0.778
+Mean concity value 0.10673216730356216
+
+ epoch 14
+-- validation accuracy 0.772
+Mean concity value 0.10474485158920288
+
+ epoch 15
+-- validation accuracy 0.759
+Mean concity value 0.10852009057998657
+Training concluded. Best model with validation accuracy 0.781 achieved test accuracy: 0.7517517517517518
+Execution took 1.51e+02 seconds
+
+ Val_acc 0.7813751668891856, test_acc 0.7517517517517518, conicity 0.11009214073419571
+
+ Dataset cls_jp, model type diversity_transformer, run 4
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.732
+Mean concity value 0.183465376496315
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.76
+Mean concity value 0.13529661297798157
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.779
+Mean concity value 0.1313125491142273
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.759
+Mean concity value 0.1287548691034317
+
+ epoch 5
+-- validation accuracy 0.712
+Mean concity value 0.126630961894989
+
+ epoch 6
+-- validation accuracy 0.771
+Mean concity value 0.12489650398492813
+
+ epoch 7
+-- validation accuracy 0.782
+Mean concity value 0.12261809408664703
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.786
+Mean concity value 0.12036903947591782
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.79
+Mean concity value 0.11834254860877991
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.79
+Mean concity value 0.11612046509981155
+
+ epoch 11
+-- validation accuracy 0.784
+Mean concity value 0.11385880410671234
+
+ epoch 12
+-- validation accuracy 0.79
+Mean concity value 0.11176358908414841
+
+ epoch 13
+-- validation accuracy 0.787
+Mean concity value 0.10952909290790558
+
+ epoch 14
+-- validation accuracy 0.753
+Mean concity value 0.10882221162319183
+
+ epoch 15
+-- validation accuracy 0.77
+Mean concity value 0.11097269505262375
+Training concluded. Best model with validation accuracy 0.79 achieved test accuracy: 0.7764431097764432
+Execution took 1.53e+02 seconds
+
+ Val_acc 0.7897196261682243, test_acc 0.7764431097764432, conicity 0.11292150616645813
+
+ Dataset cls_jp, model type diversity_transformer, run 5
+Options: {'dataset_name': 'cls_jp', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 566
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.726
+Mean concity value 0.17951346933841705
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.654
+Mean concity value 0.13299226760864258
+
+ epoch 3
+-- validation accuracy 0.751
+Mean concity value 0.12942005693912506
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.78
+Mean concity value 0.1272939294576645
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.779
+Mean concity value 0.1253107637166977
+
+ epoch 6
+-- validation accuracy 0.776
+Mean concity value 0.12330085784196854
+
+ epoch 7
+-- validation accuracy 0.736
+Mean concity value 0.1214393675327301
+
+ epoch 8
+-- validation accuracy 0.786
+Mean concity value 0.11919727176427841
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.781
+Mean concity value 0.11704296618700027
+
+ epoch 10
+-- validation accuracy 0.786
+Mean concity value 0.11494401097297668
+
+ epoch 11
+-- validation accuracy 0.783
+Mean concity value 0.11287419497966766
+
+ epoch 12
+-- validation accuracy 0.777
+Mean concity value 0.1108197420835495
+
+ epoch 13
+-- validation accuracy 0.778
+Mean concity value 0.10864689201116562
+
+ epoch 14
+-- validation accuracy 0.732
+Mean concity value 0.107496477663517
+
+ epoch 15
+-- validation accuracy 0.737
+Mean concity value 0.10996934026479721
+Training concluded. Best model with validation accuracy 0.786 achieved test accuracy: 0.7510844177510844
+Execution took 1.48e+02 seconds
+
+ Val_acc 0.7860480640854473, test_acc 0.7510844177510844, conicity 0.11111383140087128
+
+ Mean test accuracies 0.7553553553553554, std 0.01767918786886467
+
+ Mean conicities 0.1102375328540802, std 0.002056765873575847
+
+ 
+ 
+ 
+ Working on the dataset imdb
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset imdb, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.755
+Mean concity value 0.16070298850536346
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.779
+Mean concity value 0.1651555448770523
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.801
+Mean concity value 0.1783572882413864
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.756
+Mean concity value 0.1837814301252365
+
+ epoch 5
+-- validation accuracy 0.799
+Mean concity value 0.19161741435527802
+
+ epoch 6
+-- validation accuracy 0.765
+Mean concity value 0.20141670107841492
+
+ epoch 7
+-- validation accuracy 0.826
+Mean concity value 0.2089197039604187
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.802
+Mean concity value 0.21530838310718536
+
+ epoch 9
+-- validation accuracy 0.824
+Mean concity value 0.21748387813568115
+
+ epoch 10
+-- validation accuracy 0.82
+Mean concity value 0.22234474122524261
+
+ epoch 11
+-- validation accuracy 0.832
+Mean concity value 0.22490036487579346
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.796
+Mean concity value 0.2288254052400589
+
+ epoch 13
+-- validation accuracy 0.827
+Mean concity value 0.2319353073835373
+
+ epoch 14
+-- validation accuracy 0.805
+Mean concity value 0.23603656888008118
+
+ epoch 15
+-- validation accuracy 0.798
+Mean concity value 0.23805156350135803
+Training concluded. Best model with validation accuracy 0.832 achieved test accuracy: 0.7947658402203857
+Execution took 3.08e+02 seconds
+
+ Val_acc 0.8317430765650454, test_acc 0.7947658402203857, conicity 0.24284592270851135
+
+ Dataset imdb, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.634
+Mean concity value 0.16461528837680817
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.795
+Mean concity value 0.17526839673519135
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.801
+Mean concity value 0.18691585958003998
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.808
+Mean concity value 0.19715876877307892
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.806
+Mean concity value 0.20542021095752716
+
+ epoch 6
+-- validation accuracy 0.818
+Mean concity value 0.21251238882541656
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.797
+Mean concity value 0.219253271818161
+
+ epoch 8
+-- validation accuracy 0.811
+Mean concity value 0.22680124640464783
+
+ epoch 9
+-- validation accuracy 0.772
+Mean concity value 0.2315366417169571
+
+ epoch 10
+-- validation accuracy 0.809
+Mean concity value 0.2362467646598816
+
+ epoch 11
+-- validation accuracy 0.804
+Mean concity value 0.24126243591308594
+
+ epoch 12
+-- validation accuracy 0.805
+Mean concity value 0.2435971349477768
+
+ epoch 13
+-- validation accuracy 0.818
+Mean concity value 0.2451557219028473
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.821
+Mean concity value 0.24758684635162354
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.825
+Mean concity value 0.24927212297916412
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.825 achieved test accuracy: 0.8234618916437099
+Execution took 3.04e+02 seconds
+
+ Val_acc 0.8245287409820805, test_acc 0.8234618916437099, conicity 0.24691861867904663
+
+ Dataset imdb, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.733
+Mean concity value 0.16147589683532715
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.775
+Mean concity value 0.16586704552173615
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.801
+Mean concity value 0.17726877331733704
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.782
+Mean concity value 0.18543878197669983
+
+ epoch 5
+-- validation accuracy 0.811
+Mean concity value 0.19474272429943085
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.796
+Mean concity value 0.20314116775989532
+
+ epoch 7
+-- validation accuracy 0.721
+Mean concity value 0.2086126059293747
+
+ epoch 8
+-- validation accuracy 0.82
+Mean concity value 0.21506907045841217
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.823
+Mean concity value 0.2187349945306778
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.819
+Mean concity value 0.22289147973060608
+
+ epoch 11
+-- validation accuracy 0.82
+Mean concity value 0.22454065084457397
+
+ epoch 12
+-- validation accuracy 0.814
+Mean concity value 0.22814325988292694
+
+ epoch 13
+-- validation accuracy 0.83
+Mean concity value 0.22879065573215485
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.823
+Mean concity value 0.23039758205413818
+
+ epoch 15
+-- validation accuracy 0.807
+Mean concity value 0.23133684694766998
+Training concluded. Best model with validation accuracy 0.83 achieved test accuracy: 0.8014233241505969
+Execution took 3.08e+02 seconds
+
+ Val_acc 0.8301140330463114, test_acc 0.8014233241505969, conicity 0.2321823239326477
+
+ Dataset imdb, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.641
+Mean concity value 0.16856339573860168
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.704
+Mean concity value 0.1742083877325058
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.795
+Mean concity value 0.1826750785112381
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.747
+Mean concity value 0.19062583148479462
+
+ epoch 5
+-- validation accuracy 0.771
+Mean concity value 0.19651547074317932
+
+ epoch 6
+-- validation accuracy 0.813
+Mean concity value 0.2003520280122757
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.763
+Mean concity value 0.20692969858646393
+
+ epoch 8
+-- validation accuracy 0.809
+Mean concity value 0.21166816353797913
+
+ epoch 9
+-- validation accuracy 0.805
+Mean concity value 0.2172892987728119
+
+ epoch 10
+-- validation accuracy 0.807
+Mean concity value 0.22268235683441162
+
+ epoch 11
+-- validation accuracy 0.819
+Mean concity value 0.22636306285858154
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.826
+Mean concity value 0.23129573464393616
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.805
+Mean concity value 0.2322712540626526
+
+ epoch 14
+-- validation accuracy 0.821
+Mean concity value 0.23449979722499847
+
+ epoch 15
+-- validation accuracy 0.802
+Mean concity value 0.23517517745494843
+Training concluded. Best model with validation accuracy 0.826 achieved test accuracy: 0.8005050505050505
+Execution took 3.06e+02 seconds
+
+ Val_acc 0.825692343495462, test_acc 0.8005050505050505, conicity 0.2376309335231781
+
+ Dataset imdb, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.732
+Mean concity value 0.16633616387844086
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.729
+Mean concity value 0.1694415956735611
+
+ epoch 3
+-- validation accuracy 0.786
+Mean concity value 0.1755676120519638
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.806
+Mean concity value 0.17934800684452057
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.801
+Mean concity value 0.18639875948429108
+
+ epoch 6
+-- validation accuracy 0.811
+Mean concity value 0.1896778792142868
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.823
+Mean concity value 0.1956145018339157
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.775
+Mean concity value 0.20165091753005981
+
+ epoch 9
+-- validation accuracy 0.789
+Mean concity value 0.20542117953300476
+
+ epoch 10
+-- validation accuracy 0.814
+Mean concity value 0.20978419482707977
+
+ epoch 11
+-- validation accuracy 0.813
+Mean concity value 0.21258856356143951
+
+ epoch 12
+-- validation accuracy 0.793
+Mean concity value 0.2154194414615631
+
+ epoch 13
+-- validation accuracy 0.797
+Mean concity value 0.21768899261951447
+
+ epoch 14
+-- validation accuracy 0.822
+Mean concity value 0.21695339679718018
+
+ epoch 15
+-- validation accuracy 0.828
+Mean concity value 0.21980468928813934
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.828 achieved test accuracy: 0.8250688705234159
+Execution took 3.04e+02 seconds
+
+ Val_acc 0.8280195485222248, test_acc 0.8250688705234159, conicity 0.22251321375370026
+
+ Mean test accuracies 0.8090449954086317, std 0.012645364963961953
+
+ Mean conicities 0.2364182025194168, std 0.008536233628700015
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset imdb, model type diversity_transformer, run 1
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.775
+Mean concity value 0.10046510398387909
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.744
+Mean concity value 0.08982236683368683
+
+ epoch 3
+-- validation accuracy 0.771
+Mean concity value 0.08867783099412918
+
+ epoch 4
+-- validation accuracy 0.796
+Mean concity value 0.08745233714580536
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.778
+Mean concity value 0.08640893548727036
+
+ epoch 6
+-- validation accuracy 0.801
+Mean concity value 0.08591040223836899
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.805
+Mean concity value 0.08510709553956985
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.811
+Mean concity value 0.08438576012849808
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.783
+Mean concity value 0.0838439092040062
+
+ epoch 10
+-- validation accuracy 0.825
+Mean concity value 0.08318305760622025
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.815
+Mean concity value 0.08250834792852402
+
+ epoch 12
+-- validation accuracy 0.78
+Mean concity value 0.08214850723743439
+
+ epoch 13
+-- validation accuracy 0.809
+Mean concity value 0.08171640336513519
+
+ epoch 14
+-- validation accuracy 0.818
+Mean concity value 0.0813027173280716
+
+ epoch 15
+-- validation accuracy 0.818
+Mean concity value 0.08106580376625061
+Training concluded. Best model with validation accuracy 0.825 achieved test accuracy: 0.8078512396694215
+Execution took 4.61e+02 seconds
+
+ Val_acc 0.8247614614847568, test_acc 0.8078512396694215, conicity 0.08105482161045074
+
+ Dataset imdb, model type diversity_transformer, run 2
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.681
+Mean concity value 0.09694436937570572
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.674
+Mean concity value 0.08864877372980118
+
+ epoch 3
+-- validation accuracy 0.764
+Mean concity value 0.08798398077487946
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.794
+Mean concity value 0.08716604113578796
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.811
+Mean concity value 0.08640676736831665
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.822
+Mean concity value 0.08537689596414566
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.816
+Mean concity value 0.0846933051943779
+
+ epoch 8
+-- validation accuracy 0.819
+Mean concity value 0.08396180719137192
+
+ epoch 9
+-- validation accuracy 0.816
+Mean concity value 0.0834842324256897
+
+ epoch 10
+-- validation accuracy 0.827
+Mean concity value 0.08275123685598373
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.822
+Mean concity value 0.08226887136697769
+
+ epoch 12
+-- validation accuracy 0.805
+Mean concity value 0.08199485391378403
+
+ epoch 13
+-- validation accuracy 0.799
+Mean concity value 0.08155448734760284
+
+ epoch 14
+-- validation accuracy 0.831
+Mean concity value 0.08109711855649948
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.815
+Mean concity value 0.08067738264799118
+Training concluded. Best model with validation accuracy 0.831 achieved test accuracy: 0.8119834710743802
+Execution took 4.62e+02 seconds
+
+ Val_acc 0.8312776355596928, test_acc 0.8119834710743802, conicity 0.08080114424228668
+
+ Dataset imdb, model type diversity_transformer, run 3
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.759
+Mean concity value 0.09800318628549576
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.773
+Mean concity value 0.08754177391529083
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.8
+Mean concity value 0.08770035207271576
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.778
+Mean concity value 0.0870395302772522
+
+ epoch 5
+-- validation accuracy 0.781
+Mean concity value 0.08628224581480026
+
+ epoch 6
+-- validation accuracy 0.791
+Mean concity value 0.08557511121034622
+
+ epoch 7
+-- validation accuracy 0.814
+Mean concity value 0.08505071699619293
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.804
+Mean concity value 0.08448144793510437
+
+ epoch 9
+-- validation accuracy 0.811
+Mean concity value 0.08391712605953217
+
+ epoch 10
+-- validation accuracy 0.818
+Mean concity value 0.08345863968133926
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.816
+Mean concity value 0.08276285976171494
+
+ epoch 12
+-- validation accuracy 0.82
+Mean concity value 0.08242703974246979
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.824
+Mean concity value 0.08202135562896729
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.812
+Mean concity value 0.08140666037797928
+
+ epoch 15
+-- validation accuracy 0.821
+Mean concity value 0.0809873566031456
+Training concluded. Best model with validation accuracy 0.824 achieved test accuracy: 0.8163452708907254
+Execution took 4.61e+02 seconds
+
+ Val_acc 0.8235978589713754, test_acc 0.8163452708907254, conicity 0.08136851340532303
+
+ Dataset imdb, model type diversity_transformer, run 4
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.665
+Mean concity value 0.09713556617498398
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.763
+Mean concity value 0.08902999758720398
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.709
+Mean concity value 0.08829420059919357
+
+ epoch 4
+-- validation accuracy 0.766
+Mean concity value 0.08756142109632492
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.795
+Mean concity value 0.08700516074895859
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.814
+Mean concity value 0.0863703116774559
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.785
+Mean concity value 0.0854499563574791
+
+ epoch 8
+-- validation accuracy 0.809
+Mean concity value 0.08477824181318283
+
+ epoch 9
+-- validation accuracy 0.815
+Mean concity value 0.0841597467660904
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.823
+Mean concity value 0.08337463438510895
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.755
+Mean concity value 0.08277126401662827
+
+ epoch 12
+-- validation accuracy 0.823
+Mean concity value 0.08221357315778732
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.816
+Mean concity value 0.08168838918209076
+
+ epoch 14
+-- validation accuracy 0.81
+Mean concity value 0.08130881190299988
+
+ epoch 15
+-- validation accuracy 0.82
+Mean concity value 0.08086909353733063
+Training concluded. Best model with validation accuracy 0.823 achieved test accuracy: 0.8163452708907254
+Execution took 4.62e+02 seconds
+
+ Val_acc 0.8233651384686991, test_acc 0.8163452708907254, conicity 0.08086797595024109
+
+ Dataset imdb, model type diversity_transformer, run 5
+Options: {'dataset_name': 'imdb', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+- maximum sequence length: 500
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.75
+Mean concity value 0.09841961413621902
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.726
+Mean concity value 0.08845533430576324
+
+ epoch 3
+-- validation accuracy 0.799
+Mean concity value 0.0872034877538681
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.802
+Mean concity value 0.08613529056310654
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.815
+Mean concity value 0.08523488789796829
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.815
+Mean concity value 0.08449220657348633
+
+ epoch 7
+-- validation accuracy 0.796
+Mean concity value 0.08391366899013519
+
+ epoch 8
+-- validation accuracy 0.819
+Mean concity value 0.08327702432870865
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.795
+Mean concity value 0.08282312750816345
+
+ epoch 10
+-- validation accuracy 0.822
+Mean concity value 0.08245594799518585
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.797
+Mean concity value 0.08196637779474258
+
+ epoch 12
+-- validation accuracy 0.822
+Mean concity value 0.08134043216705322
+
+ epoch 13
+-- validation accuracy 0.824
+Mean concity value 0.08105655014514923
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.827
+Mean concity value 0.08069651573896408
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.829
+Mean concity value 0.08020583540201187
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.829 achieved test accuracy: 0.821625344352617
+Execution took 4.61e+02 seconds
+
+ Val_acc 0.8287177100302536, test_acc 0.821625344352617, conicity 0.08078371733427048
+
+ Mean test accuracies 0.8148301193755738, std 0.004638418248066838
+
+ Mean conicities 0.0809752345085144, std 0.00021885750826422293
+Skipping amazon
+
+ 
+ 
+ 
+ Working on the dataset yelp
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset yelp, model type vanilla_transformer, run 1
+
+ Dataset yelp, model type vanilla_transformer failed with exception 'yelp'
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset yelp, model type diversity_transformer, run 1
+
+ Dataset yelp, model type diversity_transformer failed with exception 'yelp'
+
+ 
+ 
+ 
+ Working on the dataset 20News_sports
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset 20News_sports, model type vanilla_transformer, run 1
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.511
+Mean concity value 0.18076887726783752
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.46
+Mean concity value 0.18074102699756622
+
+ epoch 3
+-- validation accuracy 0.5
+Mean concity value 0.18068255484104156
+
+ epoch 4
+-- validation accuracy 0.511
+Mean concity value 0.18051362037658691
+
+ epoch 5
+-- validation accuracy 0.522
+Mean concity value 0.180174320936203
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.561
+Mean concity value 0.17993661761283875
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.561
+Mean concity value 0.17973892390727997
+
+ epoch 8
+-- validation accuracy 0.579
+Mean concity value 0.17974570393562317
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.691
+Mean concity value 0.1797955334186554
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.705
+Mean concity value 0.18017514050006866
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.68
+Mean concity value 0.18045826256275177
+
+ epoch 12
+-- validation accuracy 0.716
+Mean concity value 0.18077631294727325
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.763
+Mean concity value 0.18077954649925232
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.82
+Mean concity value 0.18079206347465515
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.741
+Mean concity value 0.18074800074100494
+Training concluded. Best model with validation accuracy 0.82 achieved test accuracy: 0.7535014005602241
+Execution took 19.7 seconds
+
+ Val_acc 0.8201438848920863, test_acc 0.7535014005602241, conicity 0.18005768954753876
+
+ Dataset 20News_sports, model type vanilla_transformer, run 2
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.493
+Mean concity value 0.17661520838737488
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.511
+Mean concity value 0.17659315466880798
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.518
+Mean concity value 0.17640945315361023
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.586
+Mean concity value 0.176076278090477
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.486
+Mean concity value 0.1756277233362198
+
+ epoch 6
+-- validation accuracy 0.55
+Mean concity value 0.17518670856952667
+
+ epoch 7
+-- validation accuracy 0.651
+Mean concity value 0.1750582456588745
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.669
+Mean concity value 0.17493216693401337
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.54
+Mean concity value 0.17504675686359406
+
+ epoch 10
+-- validation accuracy 0.723
+Mean concity value 0.17530885338783264
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.748
+Mean concity value 0.17588968575000763
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.737
+Mean concity value 0.1765277087688446
+
+ epoch 13
+-- validation accuracy 0.701
+Mean concity value 0.17686207592487335
+
+ epoch 14
+-- validation accuracy 0.802
+Mean concity value 0.17722786962985992
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.759
+Mean concity value 0.17762742936611176
+Training concluded. Best model with validation accuracy 0.802 achieved test accuracy: 0.7310924369747899
+Execution took 19.4 seconds
+
+ Val_acc 0.802158273381295, test_acc 0.7310924369747899, conicity 0.17643216252326965
+
+ Dataset 20News_sports, model type vanilla_transformer, run 3
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.504
+Mean concity value 0.1901533156633377
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.496
+Mean concity value 0.1907786875963211
+
+ epoch 3
+-- validation accuracy 0.496
+Mean concity value 0.1904323548078537
+
+ epoch 4
+-- validation accuracy 0.59
+Mean concity value 0.19040004909038544
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.507
+Mean concity value 0.1900043487548828
+
+ epoch 6
+-- validation accuracy 0.547
+Mean concity value 0.18960806727409363
+
+ epoch 7
+-- validation accuracy 0.543
+Mean concity value 0.1894329935312271
+
+ epoch 8
+-- validation accuracy 0.622
+Mean concity value 0.18922728300094604
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.543
+Mean concity value 0.18893955647945404
+
+ epoch 10
+-- validation accuracy 0.604
+Mean concity value 0.18850180506706238
+
+ epoch 11
+-- validation accuracy 0.687
+Mean concity value 0.18799614906311035
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.734
+Mean concity value 0.1879347264766693
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.791
+Mean concity value 0.18774233758449554
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.741
+Mean concity value 0.18723686039447784
+
+ epoch 15
+-- validation accuracy 0.773
+Mean concity value 0.18662725389003754
+Training concluded. Best model with validation accuracy 0.791 achieved test accuracy: 0.7647058823529411
+Execution took 19.0 seconds
+
+ Val_acc 0.7913669064748201, test_acc 0.7647058823529411, conicity 0.18499141931533813
+
+ Dataset 20News_sports, model type vanilla_transformer, run 4
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.482
+Mean concity value 0.1916223019361496
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.518
+Mean concity value 0.19161371886730194
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.504
+Mean concity value 0.19150465726852417
+
+ epoch 4
+-- validation accuracy 0.525
+Mean concity value 0.191331148147583
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.54
+Mean concity value 0.1911657452583313
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.629
+Mean concity value 0.19099287688732147
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.561
+Mean concity value 0.19103600084781647
+
+ epoch 8
+-- validation accuracy 0.608
+Mean concity value 0.1911432445049286
+
+ epoch 9
+-- validation accuracy 0.622
+Mean concity value 0.1914883702993393
+
+ epoch 10
+-- validation accuracy 0.59
+Mean concity value 0.19192954897880554
+
+ epoch 11
+-- validation accuracy 0.712
+Mean concity value 0.1920778900384903
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.766
+Mean concity value 0.19249527156352997
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.719
+Mean concity value 0.19304504990577698
+
+ epoch 14
+-- validation accuracy 0.734
+Mean concity value 0.19289298355579376
+
+ epoch 15
+-- validation accuracy 0.781
+Mean concity value 0.19277793169021606
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.781 achieved test accuracy: 0.773109243697479
+Execution took 19.7 seconds
+
+ Val_acc 0.7805755395683454, test_acc 0.773109243697479, conicity 0.191864475607872
+
+ Dataset 20News_sports, model type vanilla_transformer, run 5
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.511
+Mean concity value 0.18668758869171143
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.522
+Mean concity value 0.1867566704750061
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.518
+Mean concity value 0.18660904467105865
+
+ epoch 4
+-- validation accuracy 0.525
+Mean concity value 0.1862458884716034
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.525
+Mean concity value 0.18584690988063812
+
+ epoch 6
+-- validation accuracy 0.496
+Mean concity value 0.18550343811511993
+
+ epoch 7
+-- validation accuracy 0.507
+Mean concity value 0.18514485657215118
+
+ epoch 8
+-- validation accuracy 0.511
+Mean concity value 0.18481646478176117
+
+ epoch 9
+-- validation accuracy 0.716
+Mean concity value 0.18477100133895874
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.612
+Mean concity value 0.1849905103445053
+
+ epoch 11
+-- validation accuracy 0.676
+Mean concity value 0.18497049808502197
+
+ epoch 12
+-- validation accuracy 0.712
+Mean concity value 0.18537256121635437
+
+ epoch 13
+-- validation accuracy 0.719
+Mean concity value 0.18598374724388123
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.802
+Mean concity value 0.18601560592651367
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.788
+Mean concity value 0.1862626075744629
+Training concluded. Best model with validation accuracy 0.802 achieved test accuracy: 0.7787114845938375
+Execution took 19.6 seconds
+
+ Val_acc 0.802158273381295, test_acc 0.7787114845938375, conicity 0.185075044631958
+
+ Mean test accuracies 0.7602240896358543, std 0.01686265203730244
+
+ Mean conicities 0.1836841583251953, std 0.005221183884262523
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset 20News_sports, model type diversity_transformer, run 1
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.482
+Mean concity value 0.1917942464351654
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.489
+Mean concity value 0.18626652657985687
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.507
+Mean concity value 0.1754552274942398
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.522
+Mean concity value 0.16200707852840424
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.536
+Mean concity value 0.14920681715011597
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.594
+Mean concity value 0.1398909091949463
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.64
+Mean concity value 0.13391728699207306
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.64
+Mean concity value 0.13023145496845245
+
+ epoch 9
+-- validation accuracy 0.612
+Mean concity value 0.1277555674314499
+
+ epoch 10
+-- validation accuracy 0.604
+Mean concity value 0.12600046396255493
+
+ epoch 11
+-- validation accuracy 0.687
+Mean concity value 0.12484517693519592
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.741
+Mean concity value 0.12421592324972153
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.737
+Mean concity value 0.12378869205713272
+
+ epoch 14
+-- validation accuracy 0.856
+Mean concity value 0.12348466366529465
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.856
+Mean concity value 0.12329886108636856
+Training concluded. Best model with validation accuracy 0.856 achieved test accuracy: 0.8263305322128851
+Execution took 30.5 seconds
+
+ Val_acc 0.8561151079136691, test_acc 0.8263305322128851, conicity 0.12188851833343506
+
+ Dataset 20News_sports, model type diversity_transformer, run 2
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.489
+Mean concity value 0.18904386460781097
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.482
+Mean concity value 0.18354134261608124
+
+ epoch 3
+-- validation accuracy 0.475
+Mean concity value 0.1737021654844284
+
+ epoch 4
+-- validation accuracy 0.471
+Mean concity value 0.16143611073493958
+
+ epoch 5
+-- validation accuracy 0.518
+Mean concity value 0.14992770552635193
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.576
+Mean concity value 0.14132988452911377
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.525
+Mean concity value 0.13547885417938232
+
+ epoch 8
+-- validation accuracy 0.709
+Mean concity value 0.13151046633720398
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.698
+Mean concity value 0.1287759244441986
+
+ epoch 10
+-- validation accuracy 0.73
+Mean concity value 0.12694436311721802
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.777
+Mean concity value 0.1257978081703186
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.608
+Mean concity value 0.1250731498003006
+
+ epoch 13
+-- validation accuracy 0.784
+Mean concity value 0.12462271749973297
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.723
+Mean concity value 0.1242712065577507
+
+ epoch 15
+-- validation accuracy 0.824
+Mean concity value 0.12399203330278397
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.824 achieved test accuracy: 0.8067226890756303
+Execution took 30.3 seconds
+
+ Val_acc 0.8237410071942446, test_acc 0.8067226890756303, conicity 0.12277653813362122
+
+ Dataset 20News_sports, model type diversity_transformer, run 3
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.5
+Mean concity value 0.1967761069536209
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.529
+Mean concity value 0.19114378094673157
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.471
+Mean concity value 0.17947357892990112
+
+ epoch 4
+-- validation accuracy 0.522
+Mean concity value 0.1663043051958084
+
+ epoch 5
+-- validation accuracy 0.496
+Mean concity value 0.1525460034608841
+
+ epoch 6
+-- validation accuracy 0.547
+Mean concity value 0.1423766165971756
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.547
+Mean concity value 0.13560493290424347
+
+ epoch 8
+-- validation accuracy 0.608
+Mean concity value 0.1314418464899063
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.576
+Mean concity value 0.12880471348762512
+
+ epoch 10
+-- validation accuracy 0.586
+Mean concity value 0.12705998122692108
+
+ epoch 11
+-- validation accuracy 0.755
+Mean concity value 0.12595362961292267
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.64
+Mean concity value 0.12522326409816742
+
+ epoch 13
+-- validation accuracy 0.734
+Mean concity value 0.12481667101383209
+
+ epoch 14
+-- validation accuracy 0.734
+Mean concity value 0.1245543584227562
+
+ epoch 15
+-- validation accuracy 0.777
+Mean concity value 0.12429240345954895
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.777 achieved test accuracy: 0.7703081232492998
+Execution took 30.3 seconds
+
+ Val_acc 0.7769784172661871, test_acc 0.7703081232492998, conicity 0.12288931012153625
+
+ Dataset 20News_sports, model type diversity_transformer, run 4
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.514
+Mean concity value 0.1873287409543991
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.543
+Mean concity value 0.18129484355449677
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.518
+Mean concity value 0.17072038352489471
+
+ epoch 4
+-- validation accuracy 0.536
+Mean concity value 0.15792253613471985
+
+ epoch 5
+-- validation accuracy 0.532
+Mean concity value 0.146523579955101
+
+ epoch 6
+-- validation accuracy 0.597
+Mean concity value 0.1383541226387024
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.54
+Mean concity value 0.13293834030628204
+
+ epoch 8
+-- validation accuracy 0.64
+Mean concity value 0.1292262226343155
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.644
+Mean concity value 0.1269366443157196
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.658
+Mean concity value 0.12535639107227325
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.701
+Mean concity value 0.12428540736436844
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.755
+Mean concity value 0.12380567938089371
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.82
+Mean concity value 0.12344906479120255
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.741
+Mean concity value 0.12331345677375793
+
+ epoch 15
+-- validation accuracy 0.806
+Mean concity value 0.12320591509342194
+Training concluded. Best model with validation accuracy 0.82 achieved test accuracy: 0.7591036414565826
+Execution took 30.4 seconds
+
+ Val_acc 0.8201438848920863, test_acc 0.7591036414565826, conicity 0.12179671227931976
+
+ Dataset 20News_sports, model type diversity_transformer, run 5
+Options: {'dataset_name': '20News_sports', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0001, 'embedding_size': 300, 'max_length': 500, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': False, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.5
+Mean concity value 0.18260639905929565
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.525
+Mean concity value 0.17685113847255707
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.518
+Mean concity value 0.16681380569934845
+
+ epoch 4
+-- validation accuracy 0.507
+Mean concity value 0.15509699285030365
+
+ epoch 5
+-- validation accuracy 0.529
+Mean concity value 0.14391350746154785
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.554
+Mean concity value 0.13546688854694366
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.586
+Mean concity value 0.13027673959732056
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.608
+Mean concity value 0.1272466480731964
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.572
+Mean concity value 0.12509125471115112
+
+ epoch 10
+-- validation accuracy 0.716
+Mean concity value 0.1235637441277504
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.691
+Mean concity value 0.12273865193128586
+
+ epoch 12
+-- validation accuracy 0.745
+Mean concity value 0.12206368893384933
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.788
+Mean concity value 0.12172418087720871
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.799
+Mean concity value 0.12147235870361328
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.824
+Mean concity value 0.12121004611253738
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.824 achieved test accuracy: 0.773109243697479
+Execution took 30.6 seconds
+
+ Val_acc 0.8237410071942446, test_acc 0.773109243697479, conicity 0.12005584686994553
+
+ Mean test accuracies 0.7871148459383753, std 0.025241188405756423
+
+ Mean conicities 0.12188138514757156, std 0.001015580819197736
+
+ 
+ 
+ 
+ Working on the dataset tweet
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset tweet, model type vanilla_transformer, run 1
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.875
+Mean concity value 0.24244926869869232
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.877
+Mean concity value 0.22059012949466705
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.865
+Mean concity value 0.2184862345457077
+
+ epoch 4
+-- validation accuracy 0.894
+Mean concity value 0.21800969541072845
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.89
+Mean concity value 0.2206088751554489
+
+ epoch 6
+-- validation accuracy 0.888
+Mean concity value 0.22390344738960266
+
+ epoch 7
+-- validation accuracy 0.828
+Mean concity value 0.22500915825366974
+
+ epoch 8
+-- validation accuracy 0.904
+Mean concity value 0.22922326624393463
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.902
+Mean concity value 0.2294672727584839
+
+ epoch 10
+-- validation accuracy 0.9
+Mean concity value 0.23396575450897217
+
+ epoch 11
+-- validation accuracy 0.886
+Mean concity value 0.2350691258907318
+
+ epoch 12
+-- validation accuracy 0.905
+Mean concity value 0.23389308154582977
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.903
+Mean concity value 0.23627184331417084
+
+ epoch 14
+-- validation accuracy 0.9
+Mean concity value 0.24024870991706848
+
+ epoch 15
+-- validation accuracy 0.903
+Mean concity value 0.24322666227817535
+Training concluded. Best model with validation accuracy 0.905 achieved test accuracy: 0.8998302207130731
+Execution took 1.77e+02 seconds
+
+ Val_acc 0.9051900286064569, test_acc 0.8998302207130731, conicity 0.24450945854187012
+
+ Dataset tweet, model type vanilla_transformer, run 2
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.875
+Mean concity value 0.24283045530319214
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.88
+Mean concity value 0.20119504630565643
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.88
+Mean concity value 0.20305515825748444
+
+ epoch 4
+-- validation accuracy 0.883
+Mean concity value 0.2067657858133316
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.885
+Mean concity value 0.2108267992734909
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.862
+Mean concity value 0.21467341482639313
+
+ epoch 7
+-- validation accuracy 0.901
+Mean concity value 0.21888896822929382
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.891
+Mean concity value 0.22259698808193207
+
+ epoch 9
+-- validation accuracy 0.897
+Mean concity value 0.2270306795835495
+
+ epoch 10
+-- validation accuracy 0.897
+Mean concity value 0.22939488291740417
+
+ epoch 11
+-- validation accuracy 0.89
+Mean concity value 0.2332531213760376
+
+ epoch 12
+-- validation accuracy 0.899
+Mean concity value 0.23601441085338593
+
+ epoch 13
+-- validation accuracy 0.896
+Mean concity value 0.23708835244178772
+
+ epoch 14
+-- validation accuracy 0.904
+Mean concity value 0.23708100616931915
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.899
+Mean concity value 0.24061140418052673
+Training concluded. Best model with validation accuracy 0.904 achieved test accuracy: 0.8966771768130002
+Execution took 1.78e+02 seconds
+
+ Val_acc 0.9035553739272578, test_acc 0.8966771768130002, conicity 0.24292989075183868
+
+ Dataset tweet, model type vanilla_transformer, run 3
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.873
+Mean concity value 0.2390921264886856
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.886
+Mean concity value 0.20318840444087982
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.889
+Mean concity value 0.2004268318414688
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.895
+Mean concity value 0.20475536584854126
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.879
+Mean concity value 0.21198593080043793
+
+ epoch 6
+-- validation accuracy 0.896
+Mean concity value 0.21312867105007172
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.895
+Mean concity value 0.21612845361232758
+
+ epoch 8
+-- validation accuracy 0.899
+Mean concity value 0.21996884047985077
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.894
+Mean concity value 0.228883296251297
+
+ epoch 10
+-- validation accuracy 0.897
+Mean concity value 0.23651868104934692
+
+ epoch 11
+-- validation accuracy 0.896
+Mean concity value 0.2403777837753296
+
+ epoch 12
+-- validation accuracy 0.879
+Mean concity value 0.24587216973304749
+
+ epoch 13
+-- validation accuracy 0.902
+Mean concity value 0.24943169951438904
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.901
+Mean concity value 0.2519693076610565
+
+ epoch 15
+-- validation accuracy 0.9
+Mean concity value 0.2572629451751709
+Training concluded. Best model with validation accuracy 0.902 achieved test accuracy: 0.8988600533592045
+Execution took 1.77e+02 seconds
+
+ Val_acc 0.9015120555782591, test_acc 0.8988600533592045, conicity 0.26218777894973755
+
+ Dataset tweet, model type vanilla_transformer, run 4
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.876
+Mean concity value 0.23194395005702972
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.885
+Mean concity value 0.19478178024291992
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.889
+Mean concity value 0.19960907101631165
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.889
+Mean concity value 0.2058165967464447
+
+ epoch 5
+-- validation accuracy 0.891
+Mean concity value 0.2122177630662918
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.894
+Mean concity value 0.21989384293556213
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.885
+Mean concity value 0.22391170263290405
+
+ epoch 8
+-- validation accuracy 0.898
+Mean concity value 0.2287062257528305
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.898
+Mean concity value 0.23134586215019226
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 10
+-- validation accuracy 0.895
+Mean concity value 0.2365516722202301
+
+ epoch 11
+-- validation accuracy 0.902
+Mean concity value 0.23938767611980438
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.9
+Mean concity value 0.24018250405788422
+
+ epoch 13
+-- validation accuracy 0.895
+Mean concity value 0.24330449104309082
+
+ epoch 14
+-- validation accuracy 0.895
+Mean concity value 0.2476292848587036
+
+ epoch 15
+-- validation accuracy 0.905
+Mean concity value 0.24901926517486572
+new best valiadtion accuracy achieved:. Saving model ...
+Training concluded. Best model with validation accuracy 0.905 achieved test accuracy: 0.8991025951976716
+Execution took 1.78e+02 seconds
+
+ Val_acc 0.9047813649366572, test_acc 0.8991025951976716, conicity 0.24983522295951843
+
+ Dataset tweet, model type vanilla_transformer, run 5
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': False, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.875
+Mean concity value 0.24848148226737976
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.882
+Mean concity value 0.20343999564647675
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.884
+Mean concity value 0.19981198012828827
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.892
+Mean concity value 0.2069593369960785
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.89
+Mean concity value 0.2097795307636261
+
+ epoch 6
+-- validation accuracy 0.899
+Mean concity value 0.2159767746925354
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 7
+-- validation accuracy 0.896
+Mean concity value 0.22029253840446472
+
+ epoch 8
+-- validation accuracy 0.898
+Mean concity value 0.2244880348443985
+
+ epoch 9
+-- validation accuracy 0.888
+Mean concity value 0.22723719477653503
+
+ epoch 10
+-- validation accuracy 0.894
+Mean concity value 0.23101630806922913
+
+ epoch 11
+-- validation accuracy 0.897
+Mean concity value 0.2346852719783783
+
+ epoch 12
+-- validation accuracy 0.89
+Mean concity value 0.23900583386421204
+
+ epoch 13
+-- validation accuracy 0.9
+Mean concity value 0.24209317564964294
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.904
+Mean concity value 0.24653981626033783
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 15
+-- validation accuracy 0.9
+Mean concity value 0.24806536734104156
+Training concluded. Best model with validation accuracy 0.904 achieved test accuracy: 0.9000727625515401
+Execution took 1.78e+02 seconds
+
+ Val_acc 0.9039640375970576, test_acc 0.9000727625515401, conicity 0.24929164350032806
+
+ Mean test accuracies 0.8989085617268978, std 0.001201989977527441
+
+ Mean conicities 0.24975079894065857, std 0.006765986411098647
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset tweet, model type diversity_transformer, run 1
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.878
+Mean concity value 0.1486470252275467
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.882
+Mean concity value 0.12328140437602997
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.869
+Mean concity value 0.12087713927030563
+
+ epoch 4
+-- validation accuracy 0.888
+Mean concity value 0.11907710880041122
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.892
+Mean concity value 0.117934949696064
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.864
+Mean concity value 0.11688902229070663
+
+ epoch 7
+-- validation accuracy 0.888
+Mean concity value 0.11597073823213577
+
+ epoch 8
+-- validation accuracy 0.902
+Mean concity value 0.1153130903840065
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.888
+Mean concity value 0.11452507972717285
+
+ epoch 10
+-- validation accuracy 0.896
+Mean concity value 0.1139349639415741
+
+ epoch 11
+-- validation accuracy 0.9
+Mean concity value 0.1134529784321785
+
+ epoch 12
+-- validation accuracy 0.903
+Mean concity value 0.1130453571677208
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 13
+-- validation accuracy 0.906
+Mean concity value 0.11253482103347778
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.899
+Mean concity value 0.11213041096925735
+
+ epoch 15
+-- validation accuracy 0.903
+Mean concity value 0.11187323927879333
+Training concluded. Best model with validation accuracy 0.906 achieved test accuracy: 0.8932815910744604
+Execution took 3.15e+02 seconds
+
+ Val_acc 0.9060073559460564, test_acc 0.8932815910744604, conicity 0.11171860247850418
+
+ Dataset tweet, model type diversity_transformer, run 2
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.877
+Mean concity value 0.14806242287158966
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.879
+Mean concity value 0.12164246290922165
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.888
+Mean concity value 0.11892477422952652
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.891
+Mean concity value 0.1171923577785492
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.896
+Mean concity value 0.11586429178714752
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.89
+Mean concity value 0.11495056003332138
+
+ epoch 7
+-- validation accuracy 0.842
+Mean concity value 0.11408712714910507
+
+ epoch 8
+-- validation accuracy 0.904
+Mean concity value 0.11357830464839935
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 9
+-- validation accuracy 0.897
+Mean concity value 0.11294291168451309
+
+ epoch 10
+-- validation accuracy 0.904
+Mean concity value 0.11244682222604752
+
+ epoch 11
+-- validation accuracy 0.908
+Mean concity value 0.11187195777893066
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.901
+Mean concity value 0.11137660592794418
+
+ epoch 13
+-- validation accuracy 0.886
+Mean concity value 0.11089789122343063
+
+ epoch 14
+-- validation accuracy 0.906
+Mean concity value 0.11055874079465866
+
+ epoch 15
+-- validation accuracy 0.907
+Mean concity value 0.11025449633598328
+Training concluded. Best model with validation accuracy 0.908 achieved test accuracy: 0.9024981809362115
+Execution took 3.26e+02 seconds
+
+ Val_acc 0.9076420106252554, test_acc 0.9024981809362115, conicity 0.11028480529785156
+
+ Dataset tweet, model type diversity_transformer, run 3
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.876
+Mean concity value 0.14775879681110382
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.878
+Mean concity value 0.12074821442365646
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.879
+Mean concity value 0.11836165189743042
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.894
+Mean concity value 0.11658451706171036
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.881
+Mean concity value 0.11546941101551056
+
+ epoch 6
+-- validation accuracy 0.892
+Mean concity value 0.11452279984951019
+
+ epoch 7
+-- validation accuracy 0.895
+Mean concity value 0.113653264939785
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.894
+Mean concity value 0.11305373162031174
+
+ epoch 9
+-- validation accuracy 0.891
+Mean concity value 0.1123613640666008
+
+ epoch 10
+-- validation accuracy 0.896
+Mean concity value 0.11202411353588104
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.885
+Mean concity value 0.11165732145309448
+
+ epoch 12
+-- validation accuracy 0.893
+Mean concity value 0.11133552342653275
+
+ epoch 13
+-- validation accuracy 0.902
+Mean concity value 0.11108999699354172
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 14
+-- validation accuracy 0.898
+Mean concity value 0.11070393770933151
+
+ epoch 15
+-- validation accuracy 0.899
+Mean concity value 0.11046972870826721
+Training concluded. Best model with validation accuracy 0.902 achieved test accuracy: 0.8978898860053359
+Execution took 3.18e+02 seconds
+
+ Val_acc 0.9019207192480588, test_acc 0.8978898860053359, conicity 0.11099128425121307
+
+ Dataset tweet, model type diversity_transformer, run 4
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.875
+Mean concity value 0.15183183550834656
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.853
+Mean concity value 0.1215955838561058
+
+ epoch 3
+-- validation accuracy 0.886
+Mean concity value 0.11968162655830383
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.893
+Mean concity value 0.11816126853227615
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 5
+-- validation accuracy 0.89
+Mean concity value 0.11682318896055222
+
+ epoch 6
+-- validation accuracy 0.881
+Mean concity value 0.1158447191119194
+
+ epoch 7
+-- validation accuracy 0.897
+Mean concity value 0.11506107449531555
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 8
+-- validation accuracy 0.889
+Mean concity value 0.1145816370844841
+
+ epoch 9
+-- validation accuracy 0.892
+Mean concity value 0.11395978182554245
+
+ epoch 10
+-- validation accuracy 0.897
+Mean concity value 0.11336483806371689
+
+ epoch 11
+-- validation accuracy 0.904
+Mean concity value 0.1128600686788559
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 12
+-- validation accuracy 0.893
+Mean concity value 0.1125645861029625
+
+ epoch 13
+-- validation accuracy 0.896
+Mean concity value 0.11213622242212296
+
+ epoch 14
+-- validation accuracy 0.889
+Mean concity value 0.11183679103851318
+
+ epoch 15
+-- validation accuracy 0.903
+Mean concity value 0.11146337538957596
+Training concluded. Best model with validation accuracy 0.904 achieved test accuracy: 0.8923114237205918
+Execution took 3.26e+02 seconds
+
+ Val_acc 0.9043727012668574, test_acc 0.8923114237205918, conicity 0.11153797805309296
+
+ Dataset tweet, model type diversity_transformer, run 5
+Options: {'dataset_name': 'tweet', 'num_epochs': 15, 'batch_size': 16, 'lr': 0.0005, 'embedding_size': 300, 'max_length': 512, 'num_heads': 4, 'depth': 1, 'seed': 1, 'max_pool': True, 'lr_warmup': 5000, 'gradient_clipping': 5.0, 'diversity_transformer': True, 'diversity_weight': 0.5}
+Using pretrained embeddings ... 
+[INFO]: GPU training enabled
+
+ epoch 1
+-- validation accuracy 0.875
+Mean concity value 0.14515241980552673
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 2
+-- validation accuracy 0.88
+Mean concity value 0.11977102607488632
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 3
+-- validation accuracy 0.895
+Mean concity value 0.11784395575523376
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 4
+-- validation accuracy 0.893
+Mean concity value 0.11661436408758163
+
+ epoch 5
+-- validation accuracy 0.9
+Mean concity value 0.11566145718097687
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 6
+-- validation accuracy 0.892
+Mean concity value 0.11503665149211884
+
+ epoch 7
+-- validation accuracy 0.896
+Mean concity value 0.11445599794387817
+
+ epoch 8
+-- validation accuracy 0.892
+Mean concity value 0.11385031789541245
+
+ epoch 9
+-- validation accuracy 0.899
+Mean concity value 0.1133984848856926
+
+ epoch 10
+-- validation accuracy 0.904
+Mean concity value 0.11285398155450821
+new best valiadtion accuracy achieved:. Saving model ...
+
+ epoch 11
+-- validation accuracy 0.893
+Mean concity value 0.11257027089595795
+
+ epoch 12
+-- validation accuracy 0.895
+Mean concity value 0.11207804828882217
+
+ epoch 13
+-- validation accuracy 0.898
+Mean concity value 0.11176446825265884
+
+ epoch 14
+-- validation accuracy 0.88
+Mean concity value 0.11142437905073166
+
+ epoch 15
+-- validation accuracy 0.889
+Mean concity value 0.11118984967470169
+Training concluded. Best model with validation accuracy 0.904 achieved test accuracy: 0.8869755032743148
+Execution took 3.27e+02 seconds
+
+ Val_acc 0.9043727012668574, test_acc 0.8869755032743148, conicity 0.110761359333992
+
+ Mean test accuracies 0.8945913170021829, std 0.005259524101258216
+
+ Mean conicities 0.11105880588293075, std 0.0005209698728557266
+
+ 
+ 
+ 
+ Working on the dataset Anemia
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset Anemia, model type vanilla_transformer, run 1
+
+ Dataset Anemia, model type vanilla_transformer failed with exception 'Anemia'
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset Anemia, model type diversity_transformer, run 1
+
+ Dataset Anemia, model type diversity_transformer failed with exception 'Anemia'
+
+ 
+ 
+ 
+ Working on the dataset Diabetes
+
+ 
+  
+ Running model type vanilla_transformer
+
+ Dataset Diabetes, model type vanilla_transformer, run 1
+
+ Dataset Diabetes, model type vanilla_transformer failed with exception 'Diabetes'
+
+ 
+  
+ Running model type diversity_transformer
+
+ Dataset Diabetes, model type diversity_transformer, run 1
+
+ Dataset Diabetes, model type diversity_transformer failed with exception 'Diabetes'
