@@ -3,7 +3,8 @@
 # Towards Transparent and Explainable Attention Models
 Code for [Towards Transparent and Explainable Attention Models](https://www.aclweb.org/anthology/2020.acl-main.387/) paper (ACL 2020)
 
-Please not that the code is a modified copy of: https://github.com/akashkm99/Interpretable-Attention
+Please note that the code is a modified copy of: https://github.com/akashkm99/Interpretable-Attention
+
 When using this code, please cite:
 ```
 @inproceedings{mohankumar-etal-2020-towards,
