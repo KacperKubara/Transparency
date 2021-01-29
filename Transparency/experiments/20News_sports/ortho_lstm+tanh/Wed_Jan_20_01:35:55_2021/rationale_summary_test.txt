@@ -1,0 +1,1 @@
+{'Fraction Length Average': 0.20076553729109736, 'Fraction Length STD': 0.0755951403303084, 'Attn Sum Average': 0.8585233899310795, 'Attn Sum STD': 0.29409444992530887, 'loss': 0.2478274810356587}

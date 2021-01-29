@@ -1,0 +1,1 @@
+{"model": {"encoder": {"vocab_size": 24, "embed_size": 50, "type": "ortholstm", "hidden_size": 32}, "decoder": {"attention": {"type": "tanh_qa"}, "output_size": 36}, "generator": {"hidden_size": 64, "sparsity_lambda": 0.5}}, "training": {"bsize": 50, "weight_decay": 1e-05, "pos_weight": null, "basepath": "./experiments", "exp_dirname": "babi_1/ortho_lstm+tanh"}}
