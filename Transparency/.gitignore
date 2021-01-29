@@ -154,5 +154,3 @@ json*
 # Models
 .pt
 .DS_Store
-
-/experiments
