@@ -38,7 +38,7 @@ for dataset_name in $qa_datasets; do
         echo "--- Model "${model_name}
         for (( i=0; i<num_runs; ++i)); do 
             echo "*** Run "${i}
-            python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --n_iter ${n_epochs} --attention tanh
+            python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight} --attention tanh
         done
     done
 done
