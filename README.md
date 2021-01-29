@@ -114,6 +114,8 @@ The below mentioned commands trains a given model on a dataset and performs all 
 
 ### Text Classification datasets
 
+#### LSTM-based models
+
 ```
 python train_and_run_experiments_bc.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight}
 ```
@@ -139,6 +141,21 @@ model_name=diversity_lstm
 output_path=./experiments
 diversity_weight=0.5
 python train_and_run_experiments_bc.py --dataset ${dataset_name} --data_dir . --output_dir ${output_path} --encoder ${model_name} --diversity ${diversity_weight}
+```
+#### Transformer-based models
+For the transformer-based experiments use:
+
+```
+python ExperimentsTransformer.py --model_type ${} --dataset_name ${} 
+```
+
+```dataset_name``` can be any of the following: ```sst```, ```imdb```, ```amazon```,```20News_sports``` ,```tweet```, ```cls_en```,```cls_de```,```cls_fr```,```cls_jp```
+```model_type``` can be ```vanilla_transformer```, or ```diversity_transformer```
+
+You can also easily run all the transformer related experiments from our paper with a simple command:
+
+```
+python transformer_results.py --num_runs 5
 ```
 
 ### Tasks with two input sequences (NLI, Paraphrase Detection, QA)
