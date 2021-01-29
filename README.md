@@ -178,7 +178,26 @@ The ```dataset_name``` can be any of ```snli```, ```qqp```, ```cnn```, ```babi_1
 As before, ```model_name``` can be ```vanilla_lstm```, ```ortho_lstm```, or ```diversity_lstm```. 
 
 ## Training & Running All Reproduced Experiments
-To train and perform all experiments from the original paper which we reproduced run the `run_all_datasets.job`
+To train and perform all experiments from the original paper which we reproduced, run the `run_all_datasets.sh` script. Beware that these experiments together took more than 24 hours on a GTX 1080Ti GPU, so you might prefer to run the datasets separately. 
+
+Once the script is done, the results are logged in the experiments folder. We did not attach all our experimtents as they surpass 1 GB of memory. This is how an example directory will look:
+```
+-- Transparency /
+    |
+    -- experiments / % folder with all experiments
+       |
+       -- babi_1 / % folder with all experiments of a given dataset
+          |
+          -- lstm+tanh / % folder with experiments of a given dataset and model
+             |
+             -- Wed_Jan_20_23:54:13_2021 / % folder with results of a particular run
+        
+```
+To obtain plots and tables (in latex format) which you can see in our paper, run this Python script:
+```
+python plot_all_results/plot_all_results.py
+```
+The outputs will appear in the `experiments` folder in the `all_datasets` folder. The name of the folder with the results is the creation date in Unix format (the highest number is the most recent). You can see an example in our `experiments` folder which overlaps with the results in our paper.
 
 
 
