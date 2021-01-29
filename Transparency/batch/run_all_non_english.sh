@@ -1,9 +1,4 @@
 #!/bin/bash
-#SBATCH --time=30:00:00
-#SBATCH -p gpu
-#SBATCH --gres=gpu:1
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=kjk1u17@soton.ac.uk
 
 # Go to the script dir
 cd $HOME/Transparency/Transparency
