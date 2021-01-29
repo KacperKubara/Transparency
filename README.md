@@ -41,7 +41,7 @@ Follow this steps to run the repo with Docker:
 6)  Now you have the exact setup necessary for running the package along with all necessary dependencies
 
 ### Manual installation
-Clone this repository into a folder named Transparency (This step is necessary)
+You need to use Linux to run these experiments. 
 
 Add your present working directory, in which the Transparency folder is present, to your python path 
 
@@ -76,7 +76,9 @@ cd Transparency
 pip install -r requirements.txt
 python -m spacy download en
 ```
-#### WSL2 Additional Comments on Installation from Kacper
+
+
+#### (Optional) Use an isolated Conda environment
 Run this instead of the lines above:
 ```
 conda create -n "maka_paper" Python=3.7
@@ -86,7 +88,15 @@ python -m spacy download en
 conda install -c anaconda jupyter
 conda install -c anaconda pytest
 ```
-#### GOLD COMMENT
+---
+
+Inside your terminal, open Python terminal to download NLTK taggers:
+```
+nltk.download('averaged_perceptron_tagger')
+nltk.download('universal_tagset')
+```
+
+#### Set PYTHONPATH
 To set the PYTHONPATH:
 ```
 cd Transparency
@@ -101,14 +111,14 @@ echo $PYTHONPATH
 
 In my case, it outputs:
 ```
-:/home/kacpe/repos/Transparency
+:/home/kacper/repos/Transparency
 ```
 
 ## Preparing the Datasets 
 
 Each dataset has a separate ipython notebook in the `./preprocess` folder. Follow the instructions in the ipython notebooks to download and preprocess the datasets.
 
-## Training & Running Experiments
+## Training & Running Experiments for Single Datasets
 
 The below mentioned commands trains a given model on a dataset and performs all the experiments mentioned in the paper. 
 
@@ -167,7 +177,8 @@ python train_and_run_experiments_qa.py --dataset ${dataset_name} --data_dir . --
 The ```dataset_name``` can be any of ```snli```, ```qqp```, ```cnn```, ```babi_1```, ```babi_2```, and ```babi_3```. 
 As before, ```model_name``` can be ```vanilla_lstm```, ```ortho_lstm```, or ```diversity_lstm```. 
 
-
+## Training & Running All Reproduced Experiments
+To train and perform all experiments from the original paper which we reproduced run the `run_all_datasets.job`
 
 
 
