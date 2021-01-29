@@ -178,7 +178,7 @@ The ```dataset_name``` can be any of ```snli```, ```qqp```, ```cnn```, ```babi_1
 As before, ```model_name``` can be ```vanilla_lstm```, ```ortho_lstm```, or ```diversity_lstm```. 
 
 ## Training & Running All Reproduced Experiments
-To train and perform all experiments from the original paper which we reproduced, run the `run_all_datasets.sh` script. Beware that these experiments together took more than 24 hours on a GTX 1080Ti GPU, so you might prefer to run the datasets separately. 
+To train and perform all experiments from the original paper which we reproduced, run the `run_all_datasets.sh` script. Beware that these experiments together took more than 24 hours on a GTX 1080Ti GPU, so you might prefer to run the datasets separately. That is why we don't add this part to the `results.ipynb` notebook. Often making all experiments on the trained model would take longer than training the model itself.
 
 Once the script is done, the results are logged in the experiments folder. We did not attach all our experimtents as they surpass 1 GB of memory. This is how an example directory will look:
 ```
@@ -193,7 +193,7 @@ Once the script is done, the results are logged in the experiments folder. We di
              -- Wed_Jan_20_23:54:13_2021 / % folder with results of a particular run
         
 ```
-To obtain plots and tables (in latex format) which you can see in our paper, run this Python script:
+Now you have to manually replace names of the log folders in the plot_all_results/plot_all_results.py as values of the `model_folders` attributes for each dataset in the `datasets` dictionary. To obtain plots and tables (in latex format) which you can see in our paper, run this Python script (takes about 30 mins to run):
 ```
 python plot_all_results/plot_all_results.py
 ```
