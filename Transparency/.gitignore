@@ -1,5 +1,4 @@
 unused_files
-experiments
 # not tracking job outputs
 slurm-*.out
 *.pyc
