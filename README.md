@@ -1,5 +1,3 @@
-[![KacperKubara](https://circleci.com/gh/KacperKubara/Transparency.svg?style=shield&circle-token=a5666e678dfb36927f320d07b004fd9ee6ae0a08)](https://app.circleci.com/pipelines/github/KacperKubara/Transparency)
-
 # Towards Transparent and Explainable Attention Models
 Code for [Towards Transparent and Explainable Attention Models](https://www.aclweb.org/anthology/2020.acl-main.387/) paper (ACL 2020)
 
